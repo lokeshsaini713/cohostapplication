@@ -1,5 +1,6 @@
 ﻿using Business.Communication;
 using Business.IServices;
+using Data;
 using Data.IRepository;
 using Shared.Common;
 using Shared.Common.Enums;
@@ -17,14 +18,17 @@ namespace Business.Services
     {
         private readonly IAccountRepository _accountRepositry;
         private readonly INotificationService _notificationService;
-        public AccountService(IAccountRepository accountRepositry, INotificationService notificationService)
+        private readonly AppDbContext _context;
+        public AccountService(IAccountRepository accountRepositry, INotificationService notificationService, AppDbContext context)
         {
             _accountRepositry = accountRepositry;
             _notificationService = notificationService;
+            _context = context;
         }
 
         public async Task<ApiResponse<ProfileDto>> Login(ApiLoginRequest request)
         {
+            //var lokesh= _context.UserDetail.ToList();
             var objUserContext = await _accountRepositry.FindByEmailAsync(request.Email);
 
             if (objUserContext == null)

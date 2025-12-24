@@ -57,7 +57,7 @@ namespace Business.Services
                 return response;
             }
 
-            userDetailsObj.UserId = getUserDetail.Id;
+            userDetailsObj.UserId = (int)getUserDetail.Id;
             userDetailsObj.UserType = getUserDetail.UserType;
             userDetailsObj.FirstName = getUserDetail.FirstName ?? "N/A";
             userDetailsObj.LastName = getUserDetail.LastName ?? "N/A";

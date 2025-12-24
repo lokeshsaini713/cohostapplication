@@ -1,5 +1,6 @@
-﻿using Data.Entities;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Shared.Model;
+using Shared.Model.Entities;
 using System.Collections.Generic;
 
 namespace Data
@@ -9,7 +10,7 @@ namespace Data
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options) { }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Shared.Model.UserDetail> UserDetail { get; set; }
         // Add DbSet for other tables
 
         // Optional: OnModelCreating for custom mapping
