@@ -1,5 +1,6 @@
 using Errlake.Crosscutting;
 using IOC.Extensions;
+using Microsoft.EntityFrameworkCore;
 using Shared.Common;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,8 @@ builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
     .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
 .AddEnvironmentVariables();
+builder.Services.AddDbContext<Data.AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TemplateDbConnection")));
 
 var services = builder.Services;
 var configuration = builder.Configuration;
@@ -52,7 +55,7 @@ services.AddMvc().AddViewLocalization().AddDataAnnotationsLocalization();
 
 
 services.AddControllersWithViews();
-services.AddError();
+//services.AddError();
 services.AddSession();
 
 var app = builder.Build();
@@ -63,11 +66,11 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.ConfigureExceptionMiddlewareHandler();
+//app.ConfigureExceptionMiddlewareHandler();
 
 
 app.UseHttpsRedirection();
-app.UseStatusCodePagesWithRedirects("/Error/Error{0}");
+//app.UseStatusCodePagesWithRedirects("/Error/Error{0}");
 app.UseAuthentication();
 app.UseStaticFiles();
 app.UseRouting();
