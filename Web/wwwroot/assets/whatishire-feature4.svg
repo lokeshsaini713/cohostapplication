@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2686" data-name="Rectangle 2686" width="50" height="50" transform="translate(403 1364)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8042" data-name="Mask Group 8042" transform="translate(-403 -1364)" clip-path="url(#clip-path)">
+    <g id="search-globe-svgrepo-com" transform="translate(407.388 1368.568)">
+      <path id="Path_9462" data-name="Path 9462" d="M38.4,20.022a18.2,18.2,0,1,0-18.2,18.2" transform="translate(0 0)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9463" data-name="Path 9463" d="M2,11.82H38.4" transform="translate(0 8.202)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9464" data-name="Path 9464" d="M14.871,38.224c-3.513,0-6.371-8.154-6.371-18.2s2.858-18.2,6.371-18.2,6.371,8.154,6.371,18.2" transform="translate(5.331 0)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9465" data-name="Path 9465" d="M21.24,27.431a6.371,6.371,0,1,0-6.371-6.371A6.371,6.371,0,0,0,21.24,27.431Z" transform="translate(10.555 10.556)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9466" data-name="Path 9466" d="M24.771,24.584,20.84,20.67" transform="translate(15.452 15.46)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

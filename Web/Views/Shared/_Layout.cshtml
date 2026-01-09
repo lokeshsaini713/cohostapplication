@@ -2,7 +2,7 @@
 @{
     var SessionUserName = LoginMemberSession.UserDetailSession?.UserName;
 }
-<!DOCTYPE html>
+@* <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -55,10 +55,290 @@
         </div>
     </footer>
 
+   
+</body>
+</html> *@
+
+<!DOCTYPE html>
+<html class="__className_c70c06" lang="en">
+<head>
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-N4QVS668');</script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link as="script" fetchpriority="low" href="./_next/static/chunks/webpack-7a592c82c886e1b9.js" rel="preload" />
+    @await Html.PartialAsync("_CSSPartial")
+    <style>
+        /* Base dropdown */
+        .nav-item.dropdown {
+            position: relative;
+        }
+
+        /* Dropdown menu hidden by default */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 220px;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 10px 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.25s ease;
+            z-index: 999;
+        }
+
+        /* Show dropdown */
+        .nav-item.dropdown.show .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Dropdown items */
+        .dropdown-menu li {
+            list-style: none;
+        }
+
+            .dropdown-menu li a {
+                display: block;
+                padding: 10px 18px;
+                color: #333;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+                .dropdown-menu li a:hover {
+                    background-color: #f5f7fa;
+                    color: #0d6efd;
+                }
+
+        /* Dropdown arrow */
+
+
+        .navbar,
+        .navbar-collapse,
+        .navbar-nav {
+            overflow: visible !important;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 220px;
+            background: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+            padding: 10px 0;
+            /* hidden */
+            display: block; /* IMPORTANT */
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(12px);
+            transition: opacity 0.25s ease, transform 0.25s ease;
+            z-index: 9999;
+        }
+
+        /* show */
+        .nav-item.dropdown.show > .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    </style>
+    @await Html.PartialAsync("_AssetsPartial")
+
+    <meta content="" name="next-size-adjust" />
+    <title>
+        @ViewData["Title"] - Cohostweb
+    </title>
+    <meta content="cohostweb delivers software & web development, mobile app development, e-commerce solutions and SEO services to help businesses grow securely and scale faster" name="description" />
+    <link href="manifest.webmanifest" rel="manifest" />
+    <meta content="Website Design and Mobile App Development Company" name="keywords" />
+    <link href="https://www.cohostweb.com/" rel="canonical" />
+    <meta content="Website Design and Mobile App Development Company" property="og:title" />
+    <meta content="CoHostWeb delivers software & web development, mobile app development, e-commerce solutions and SEO services to help businesses grow securely and scale faster" property="og:description" />
+    <meta content="https://www.cohostweb.com/" property="og:url" />
+    <meta content="cohostweb" property="og:site_name" />
+    <meta content="https://www.cohostweb.com/img/dots-logo-w.jpg" property="og:image" />
+    <meta content="268" property="og:image:width" />
+    <meta content="42" property="og:image:height" />
+    <meta content="Website Design and Mobile App Development Company" property="og:image:alt" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <meta content="@@cohostweb" name="twitter:site" />
+    <meta content="@@cohostweb" name="twitter:creator" />
+    <meta content="Website Design and Mobile App Development Company" name="twitter:title" />
+    <meta content="cohostweb is an Award Winning offshore Website Design and Mobile Apps Development outsourcing agency based in Brighton, East Sussex. Discuss with Us Today!" name="twitter:description" />
+    <meta content="https://www.cohostweb.com/img/dots-logo-w.jpg" name="twitter:image" />
+    <meta name="google-site-verification" content="TpAiLQKVzC4m3JYU2o6g_qCbbfpG9QPaTYwNcoWNp9Q" />
+    <link href="favicon.ico" rel="icon" sizes="16x16" type="image/x-icon" />
+    <script nomodule="" src="./_next/static/chunks/polyfills-42372ed130431b0a.js">
+    </script>
+   
+          
+</head>
+<body>
+
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4QVS668"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <header class="Header_Header__MfdqS">
+        <div class="Header_HeaderContainer__H98OD container">
+            <!-- <div class="Header_TopHeader__NQ2XG">
+             <ul class="Header_HeadLinkList__bbhkN d-flex flex-wrap justify-content-end">
+              <li class="Header_ListItem__repM_ list-group-item">
+                UK -->
+            <!-- -->
+            <!-- <a href="tel:+442080901819">
+                +44 208 0901819
+               </a>
+              </li>
+              <li class="Header_ListItem__repM_ list-group-item">
+               Aus
+
+               <a href="tel:+61395115598">
+                +61 3 9511 5598
+               </a>
+              </li>
+              <li class="Header_ListItem__repM_ list-group-item">
+               Us
+
+               <a href="tel:+13015639488">
+                +1 301 563 9488
+               </a>
+              </li>
+              <li class="Header_ListItem__repM_ list-group-item">
+               INDIA
+
+                <a href="tel:+919829029555">
+                +91
+               </a>
+              </li>
+             </ul>
+            </div> -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="Header_Logo___7H4X navbar-brand" href="/">
+                    <img alt="Logo" class="" src="./assets/cohostweblogo.png" />
+                </a>
+                <button aria-controls="navbarScroll" aria-label="Toggle navigation" class="navbar-toggler collapsed" type="button">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarScroll">
+                    <div class="ms-auto navbar-nav navbar-nav-scroll">
+
+                        @* <div class="cloud-serNav nav-item dropdown">
+                            <a aria-expanded="false" class="dropdown-toggle nav-link" href="#" id="cloud-ser-dropdown" role="button" tabindex="0">
+                                Services
+                            </a>
+                        </div> *@
+
+                        <div class="cloud-serNav nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" id="cloud-ser-dropdown">
+                                Services
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="/software-development">Software Development</a></li>
+                                <li><a href="/app-development">Mobile Apps</a></li>
+                                <li><a href="/web-development">Web Development</a></li>
+                                <li><a href="/ecommerce-development">Ecommerce Development</a></li>
+                                <li><a href="/search-engine-optimization">SEO</a></li>
+                            </ul>
+                        </div>
+                        @* <div class="cloud-serNav nav-item">
+                            <a aria-expanded="false" class="nav-link" href="https://imed.cohostweb.com" id="cloud-ser-dropdown" role="button" tabindex="0">
+                                HMS
+                            </a>
+                        </div> *@
+                        <div class="data-and-aiNav nav-item">
+                            <a aria-expanded="false" class="nav-link" href="/aboutus" id="data-and-ai-dropdown" role="button" tabindex="0">
+                                About Us
+                            </a>
+                        </div>
+                        <div class="securityNav nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link" href="#" id="security-dropdown" role="button" tabindex="0">
+                                Portfolio
+                            </a>
+                        </div>
+                        <div class="industriesNav nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link" href="#" id="industries-dropdown" role="button" tabindex="0">
+                                Blog
+                            </a>
+                        </div>
+
+
+                        <div class="SingleNav nav-item dropdown">
+                            <a aria-expanded="false" class="dropdown-toggle nav-link" href="/aboutus" id="about-us-dropdown" role="button" tabindex="0">
+                                About Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn-custom btn-small btn-rds" href="contact.html">
+                    Contact us
+                </a>
+            </nav>
+        </div>
+    </header>
+    @RenderBody()
+
+
+    @await Html.PartialAsync("_FooterPartial")
     @await Html.PartialAsync("_JsScriptsPartial")
     @await Html.PartialAsync("_ValidationScriptsPartial")
     @await Html.PartialAsync("_CommonScriptsPartial")
-    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const dropdowns = document.querySelectorAll(".nav-item.dropdown");
+
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector(".dropdown-toggle");
+
+                toggle.addEventListener("mouseover", function (e) {
+                    e.preventDefault();
+
+                    // Close other dropdowns
+                    dropdowns.forEach(d => {
+                        if (d !== dropdown) {
+                            d.classList.remove("show");
+                        }
+                    });
+
+                    // Toggle current dropdown
+                    dropdown.classList.toggle("show");
+                });
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener("click", function (e) {
+                dropdowns.forEach(dropdown => {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove("show");
+                    }
+                });
+            });
+
+        });
+
+    </script>
+
     @RenderSection("Scripts", required: false)
+    @* <script src="_next/static/chunks/webpack-7a592c82c886e1b9.js" async=""></script> *@
 </body>
+<!-- Mirrored from www.cohostweb.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Dec 2025 19:58:03 GMT -->
 </html>

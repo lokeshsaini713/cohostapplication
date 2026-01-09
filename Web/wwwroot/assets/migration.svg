@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8327" data-name="Group 8327" transform="translate(-447 -3025)">
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="30" cy="30" r="30" transform="translate(447 3025)" fill="#f48120"/>
+    <g id="MDI_download" data-name="MDI / download" transform="translate(464 3040)">
+      <g id="Boundary" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_download" data-name="Path / download" d="M5,24H23V21.529H5M23,10.412H17.857V3H10.143v7.412H5l9,8.647Z" transform="translate(0 1)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

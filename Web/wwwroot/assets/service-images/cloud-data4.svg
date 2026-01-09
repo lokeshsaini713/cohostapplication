@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3616" data-name="Rectangle 3616" width="40" height="40" transform="translate(379 3253)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8048" data-name="Mask Group 8048" transform="translate(-379 -3253)" clip-path="url(#clip-path)">
+    <path id="Icon_awesome-headphones-alt" data-name="Icon awesome-headphones-alt" d="M9.325,17.17H8.392a3.733,3.733,0,0,0-3.73,3.737v3.716a3.733,3.733,0,0,0,3.73,3.737h.932a1.867,1.867,0,0,0,1.865-1.868V19.038A1.867,1.867,0,0,0,9.325,17.17Zm12.122,0h-.932a1.867,1.867,0,0,0-1.865,1.868v7.453a1.867,1.867,0,0,0,1.865,1.868h.932a3.733,3.733,0,0,0,3.73-3.737V20.907a3.733,3.733,0,0,0-3.73-3.737ZM14.92,2.25C6.581,2.25.266,9.193,0,17.17V23.7a.932.932,0,0,0,.932.932h.932A.932.932,0,0,0,2.8,23.7V17.17a12.122,12.122,0,0,1,24.245,0V23.7a.932.932,0,0,0,.932.932h.932a.932.932,0,0,0,.932-.932V17.17C29.573,9.193,23.259,2.25,14.92,2.25Z" transform="translate(384.08 3257.695)"/>
+  </g>
+</svg>

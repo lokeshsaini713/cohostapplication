@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8336" data-name="Group 8336" transform="translate(-652 -4270)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(652 4270)" fill="#fff2e8"/>
+    <g id="chat_bubble" data-name="chat bubble" transform="translate(668 4285)">
+      <path id="Path_9083" data-name="Path 9083" d="M19,26c4.712,0,7.069,0,8.538-1.462S29,20.713,29,16s0-7.069-1.462-8.538S23.713,6,19,6H14C9.287,6,6.931,6,5.463,7.463S4,11.288,4,16s0,7.069,1.463,8.538A5.451,5.451,0,0,0,9,25.875" transform="translate(-1.5 -2.25)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_9084" data-name="Path 9084" d="M22.231,36.875a10.98,10.98,0,0,0-4.8,1.431c-2.5,1.294-3.75,1.944-4.362,1.531s-.5-1.694-.263-4.256l.05-.581" transform="translate(-4.731 -13.125)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_9085" data-name="Path 9085" d="M0,0H30V30H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>

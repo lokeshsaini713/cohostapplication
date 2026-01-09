@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8328" data-name="Group 8328" transform="translate(-829 -3025)">
+    <g id="Group_7253" data-name="Group 7253" transform="translate(562 1628)">
+      <circle id="Ellipse_30" data-name="Ellipse 30" cx="30" cy="30" r="30" transform="translate(267 1397)" fill="#f48120"/>
+    </g>
+    <g id="MDI_face-agent" data-name="MDI / face-agent" transform="translate(845 3040)">
+      <g id="Boundary" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_face-agent" data-name="Path / face-agent" d="M22.064,17.368a8.989,8.989,0,0,0,.288-5.869,10.682,10.682,0,0,1-2.448.281A10.832,10.832,0,0,1,11,7.093a11.155,11.155,0,0,1-5.676,5.955A6.244,6.244,0,0,0,5.276,14,8.8,8.8,0,0,0,14,22.871a8.555,8.555,0,0,0,3.564-.781c.684,1.33,1,1.989.972,1.989a15.4,15.4,0,0,1-4.536,1,10.766,10.766,0,0,1-7.716-3.246,11.055,11.055,0,0,1-2.688-4.5H2V11.779H3.308A10.955,10.955,0,0,1,14,2.92a10.8,10.8,0,0,1,7.7,3.246,11.029,11.029,0,0,1,2.964,5.613H26v5.479h0v.073h-.072l-4.272,3.99-6.36-.732V18.552h5.8l.972-1.184m-11.34-3.649a1.315,1.315,0,0,1,.96.415,1.4,1.4,0,0,1,0,1.952,1.351,1.351,0,0,1-.96.4,1.385,1.385,0,0,1,0-2.77m6.54,0A1.385,1.385,0,1,1,15.9,15.11a1.369,1.369,0,0,1,1.368-1.391Z" transform="translate(0 0.08)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

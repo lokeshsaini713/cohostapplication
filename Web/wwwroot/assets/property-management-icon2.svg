@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8503" data-name="Group 8503" transform="translate(-415 -3559)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(415 3559)" fill="#fff2e8"/>
+    <g id="airline-rapid-board" transform="translate(423.333 3568.333)">
+      <path id="Path_9173" data-name="Path 9173" d="M22.083,25.042H19.5V22.458a3.879,3.879,0,0,0-3.875-3.875H10.458a3.879,3.879,0,0,0-3.875,3.875v2.583H4V22.458A6.466,6.466,0,0,1,10.458,16h5.167a6.466,6.466,0,0,1,6.458,6.458Z" transform="translate(1.167 4.667)" fill="#f48120"/>
+      <path id="Path_9174" data-name="Path 9174" d="M12.458,6.583a3.875,3.875,0,1,1-3.875,3.875,3.875,3.875,0,0,1,3.875-3.875m0-2.583a6.458,6.458,0,1,0,6.458,6.458A6.458,6.458,0,0,0,12.458,4Z" transform="translate(1.75 1.167)" fill="#f48120"/>
+      <rect id="Rectangle_2768" data-name="Rectangle 2768" width="36" height="2" transform="translate(2.667 33.667)" fill="#f48120"/>
+      <path id="Path_9175" data-name="Path 9175" d="M31.167,9.167H28.583V6.583H26V4h5.167Z" transform="translate(7.583 1.167)" fill="#f48120"/>
+      <path id="Path_9176" data-name="Path 9176" d="M19,4h5.167V6.583H21.583V9.167H19Z" transform="translate(5.541 1.167)" fill="#f48120"/>
+      <rect id="Rectangle_2769" data-name="Rectangle 2769" width="3" height="3" transform="translate(35.667 16.667)" fill="#f48120"/>
+      <rect id="Rectangle_2770" data-name="Rectangle 2770" width="2" height="2" transform="translate(33.667 14.667)" fill="#f48120"/>
+      <path id="Path_9177" data-name="Path 9177" d="M19,11h2.583v2.583h2.583v2.583H19Z" transform="translate(5.541 3.208)" fill="#f48120"/>
+      <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="42" height="42" transform="translate(-0.333 -0.333)" fill="none"/>
+    </g>
+  </g>
+</svg>

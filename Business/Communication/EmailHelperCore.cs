@@ -76,8 +76,22 @@ namespace Business.Communication
                 await smtp.SendMailAsync(message);
                 return true;
             }
-            catch (Exception )
+            catch (Exception ex)
             {
+                var message = ex.Message;
+                string logDirectory = Path.Combine("D:\\INETPUB\\VHOSTS\\cohostweb.com\\httpdocs\\", "Logs1");
+                Directory.CreateDirectory(logDirectory);
+
+                string logFilePath = Path.Combine(logDirectory, "error.log");
+
+                string logMessage =
+                    $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}]\n" +
+                    $"Message: {ex.Message}\n" +
+                    $"InnerException: {ex.InnerException}\n" +
+                    $"StackTrace: {ex.StackTrace}\n" +
+                    $"--------------------------------------------------\n";
+
+                File.AppendAllText(logFilePath, logMessage);
                 return false;
             }
         }

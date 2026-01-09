@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="50" viewBox="0 0 80 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="1" y2="0.61" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fe9a45"/>
+      <stop offset="1" stop-color="#cb5e00"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8353" data-name="Group 8353" transform="translate(-405 -1992)">
+    <rect id="Rectangle_3574" data-name="Rectangle 3574" width="80" height="50" rx="25" transform="translate(405 1992)" fill="url(#linear-gradient)"/>
+    <g id="decision-tree-svgrepo-com" transform="translate(426.757 1998.757)">
+      <path id="Path_9546" data-name="Path 9546" d="M33.926,13.122V4H24.8V7.421H20.243a2.283,2.283,0,0,0-2.28,2.28v6.841H11.122V13.122H2v9.122h9.122V18.823h6.841v6.841a2.283,2.283,0,0,0,2.28,2.28H24.8v3.421h9.122V22.243H24.8v3.421H20.243V9.7H24.8v3.421ZM8.841,19.963H4.28V15.4H8.841Zm18.243,4.561h4.561v4.561H27.084Zm0-18.243h4.561v4.561H27.084Z" transform="translate(0.28 0.561)" fill="#fff"/>
+      <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="36" height="36" transform="translate(0.243 0.243)" fill="none"/>
+    </g>
+  </g>
+</svg>

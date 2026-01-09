@@ -1,0 +1,10 @@
+<svg id="banner-main2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <path id="mobile-check-svgrepo-com" d="M10.825,14.054l1.483,1.607,3.339-3.617M9.86,24.7h6.751a5.989,5.989,0,0,0,2.542-.263,2.411,2.411,0,0,0,1.054-1.054,5.989,5.989,0,0,0,.263-2.542V6.86a5.989,5.989,0,0,0-.263-2.542,2.411,2.411,0,0,0-1.054-1.054A5.99,5.99,0,0,0,16.611,3H9.86a5.99,5.99,0,0,0-2.542.263A2.411,2.411,0,0,0,6.265,4.32,5.989,5.989,0,0,0,6,6.86V20.845a5.99,5.99,0,0,0,.263,2.542A2.411,2.411,0,0,0,7.32,24.44,5.989,5.989,0,0,0,9.86,24.7Z" transform="translate(9.264 8.648)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

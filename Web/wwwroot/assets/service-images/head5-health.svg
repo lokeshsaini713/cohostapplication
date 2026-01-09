@@ -1,0 +1,25 @@
+<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_4_90)">
+<path d="M45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45C34.9264 45 45 34.9264 45 22.5Z" fill="url(#paint0_linear_4_90)"/>
+<path d="M12.25 11.75H8.5V38H29.75V34.25H33.5V8H12.25V11.75ZM28.5 36.75H9.75V13H12.25H24.125V17.375H28.5V34.25V36.75ZM25.375 13.8837L27.6162 16.125H25.375V13.8837ZM13.5 9.25H32.25V33H29.75V16.4913L25.0087 11.75H13.5V9.25Z" fill="white"/>
+<path d="M19.125 16.125H11.625V23.625H19.125V16.125ZM17.875 22.375H12.875V17.375H17.875V22.375Z" fill="white"/>
+<path d="M26.625 19.25H21V20.5H26.625V19.25Z" fill="white"/>
+<path d="M26.625 22.375H21V23.625H26.625V22.375Z" fill="white"/>
+<path d="M21 25.5H11.625V26.75H21V25.5Z" fill="white"/>
+<path d="M26.625 25.5H22.875V26.75H26.625V25.5Z" fill="white"/>
+<path d="M15.375 28.625H11.625V29.875H15.375V28.625Z" fill="white"/>
+<path d="M26.625 28.625H17.25V29.875H26.625V28.625Z" fill="white"/>
+<path d="M20.375 31.75H11.625V33H20.375V31.75Z" fill="white"/>
+<path d="M26.625 31.75H22.25V33H26.625V31.75Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_4_90" x1="22" y1="-3.29812e-07" x2="22" y2="45" gradientUnits="userSpaceOnUse">
+<stop stop-color="#353535"/>
+<stop offset="0.122222" stop-color="#323232"/>
+<stop offset="1" stop-color="#1B1B1B"/>
+</linearGradient>
+<clipPath id="clip0_4_90">
+<rect width="45" height="45" fill="white"/>
+</clipPath>
+</defs>
+</svg>

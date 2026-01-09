@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.603" height="65" viewBox="0 0 70.603 65">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_66" data-name="Rectangle 66" width="70.603" height="65" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_17" data-name="Mask Group 17" clip-path="url(#clip-path)">
+    <g id="Group_228" data-name="Group 228" transform="translate(-4.334 0.862)">
+      <g id="Group_227" data-name="Group 227" transform="translate(0)">
+        <path id="Path_92" data-name="Path 92" d="M13107.039,3321.539s-2.687-11.039,1.672-21.473c4.328-10.43,11.641-14.516,11.641-14.516s5.813,9.734.953,20.254c-1.828,3.391-6.172,5.652-10.344,9.043S13107.039,3321.539,13107.039,3321.539Z" transform="translate(-13080.776 -3285.551)" fill="#46b82d"/>
+        <path id="Path_95" data-name="Path 95" d="M.826,35.992s-2.7-11.041,1.652-21.474S14.127,0,14.127,0s5.825,9.737.956,20.257c-1.826,3.39-6.172,5.651-10.345,9.042S.826,35.992.826,35.992Z" transform="translate(81.282 46.946) rotate(120)" fill="#46b82d"/>
+        <path id="Path_97" data-name="Path 97" d="M.826,35.992s-2.7-11.041,1.652-21.474S14.127,0,14.127,0s5.825,9.737.956,20.257c-1.826,3.39-6.172,5.651-10.345,9.042S.826,35.992.826,35.992Z" transform="translate(13.058 71.564) rotate(-120)" fill="#46b82d"/>
+        <path id="Path_93" data-name="Path 93" d="M13160.211,3290.59s6.766,11.387-.375,23.125c0-.008,8.438,1.477,12.172,4.258C13172.352,3299.02,13160.211,3290.59,13160.211,3290.59Z" transform="translate(-13117.74 -3289.024)" fill="#006a20"/>
+        <path id="Path_94" data-name="Path 94" d="M.376,0S7.129,11.389,0,23.125c0-.009,8.433,1.478,12.171,4.26C12.519,8.433.376,0,.376,0Z" transform="translate(71.602 60.582) rotate(120)" fill="#006a20"/>
+        <path id="Path_96" data-name="Path 96" d="M.376,0S7.129,11.389,0,23.125c0-.009,8.433,1.478,12.171,4.26C12.519,8.433.376,0,.376,0Z" transform="translate(6.089 56.363) rotate(-120)" fill="#006a20"/>
+      </g>
+      <circle id="Ellipse_25" data-name="Ellipse 25" cx="11.836" cy="11.836" r="11.836" transform="translate(27.896 27.702)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

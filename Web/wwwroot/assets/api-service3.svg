@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f0f0f"/>
+      <stop offset="0.993" stop-color="#6a6a6a"/>
+      <stop offset="1" stop-color="#545454"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8505" data-name="Group 8505" transform="translate(-375 -3622)">
+    <circle id="Ellipse_93" data-name="Ellipse 93" cx="25" cy="25" r="25" transform="translate(375 3622)" fill="url(#linear-gradient)"/>
+    <g id="Icon_feather-headphones" data-name="Icon feather-headphones" transform="translate(384.235 3629.735)">
+      <path id="Path_9089" data-name="Path 9089" d="M4.5,23.274v-7.51a11.265,11.265,0,1,1,22.529,0v7.51" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_9090" data-name="Path 9090" d="M27.029,27.258a2.5,2.5,0,0,1-2.5,2.5H23.274a2.5,2.5,0,0,1-2.5-2.5V23.5a2.5,2.5,0,0,1,2.5-2.5h3.755Zm-22.529,0a2.5,2.5,0,0,0,2.5,2.5H8.255a2.5,2.5,0,0,0,2.5-2.5V23.5a2.5,2.5,0,0,0-2.5-2.5H4.5Z" transform="translate(0 -2.732)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

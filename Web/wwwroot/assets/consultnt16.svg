@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="50" viewBox="0 0 80 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="1" y2="0.61" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fe9a45"/>
+      <stop offset="1" stop-color="#cb5e00"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8351" data-name="Group 8351" transform="translate(-1005 -2079)">
+    <rect id="Rectangle_3619" data-name="Rectangle 3619" width="80" height="50" rx="25" transform="translate(1005 2079)" fill="url(#linear-gradient)"/>
+    <g id="Page-1" transform="translate(1029.686 2087.686)">
+      <g id="Dribbble-Light-Preview">
+        <g id="icons">
+          <path id="target-_784_" data-name="target-[#784]" d="M183.577,4615.314a3.263,3.263,0,1,1-3.263-3.263,3.267,3.267,0,0,1,3.263,3.263m-3.263,6.526a6.526,6.526,0,1,1,6.526-6.526,6.528,6.528,0,0,1-6.526,6.526m0-16.314a9.788,9.788,0,1,0,9.788,9.788,9.792,9.792,0,0,0-9.788-9.788m0,22.839a13.051,13.051,0,1,1,13.051-13.051,13.067,13.067,0,0,1-13.051,13.051m0-29.365a16.314,16.314,0,1,0,16.314,16.314A16.317,16.317,0,0,0,180.314,4599" transform="translate(-164 -4599)" fill="#fff" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

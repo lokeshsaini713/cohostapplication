@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g id="Group_2474" data-name="Group 2474" transform="translate(-847 -2963)">
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="27.5" cy="27.5" r="27.5" transform="translate(847 2963)" fill="#f3f3f3"/>
+    <g id="Store" transform="translate(851.616 2967.6)">
+      <path id="Path_7036" data-name="Path 7036" d="M36.847,27.176v15.89a1.814,1.814,0,0,1-1.864,1.764H13.864A1.814,1.814,0,0,1,12,43.066V27.17" transform="translate(-1.37 -7.111)" fill="none" stroke="#f48120" stroke-width="2"/>
+      <path id="Path_7037" data-name="Path 7037" d="M26.26,49.053V38.45h7.193v10.6" transform="translate(-6.772 -11.384)" fill="none" stroke="#f48120" stroke-width="2"/>
+      <path id="Path_7038" data-name="Path 7038" d="M8.419,15.1s-.683,4.82,4.007,5.553a4.454,4.454,0,0,0,3.789-1.242,4.615,4.615,0,0,0,6.839-.075,4.6,4.6,0,0,0,3.106,1.547,7.342,7.342,0,0,0,3.665-1.336,4.137,4.137,0,0,0,2.9,1.336A4.969,4.969,0,0,0,37.651,15.1L34.719,8.8a.621.621,0,0,0-.584-.4H11.873a.621.621,0,0,0-.584.41Z" fill="none" stroke="#f48120" stroke-width="2"/>
+      <line id="Line_47" data-name="Line 47" x2="29.257" transform="translate(8.419 15.096)" fill="none" stroke="#f48120" stroke-width="2"/>
+      <line id="Line_48" data-name="Line 48" y1="6.696" transform="translate(16.246 8.4)" fill="none" stroke="#f48120" stroke-width="2"/>
+      <line id="Line_49" data-name="Line 49" y1="6.696" transform="translate(23.085 8.4)" fill="none" stroke="#f48120" stroke-width="2"/>
+      <line id="Line_50" data-name="Line 50" y1="6.696" transform="translate(29.893 8.4)" fill="none" stroke="#f48120" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

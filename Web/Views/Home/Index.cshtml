@@ -1,405 +1,42 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-    Layout =null;
+﻿@model ConsultationViewModel
+
+@{
+    ViewData["Title"] = "Web Development & Mobile App | E-commerce & SEO Services";;
+    Layout ="_Layout";
 }
+<style>
+        .inner-banner {
+            background: linear-gradient(90deg, #0d6efd, #0a58ca);
+            color: #fff;
+            padding: 80px 0;
+        }
+        .inner-banner h1 {
+            font-size: 42px;
+            font-weight: 700;
+        }
+        .content-section {
+            padding: 60px 0;
+        }
+        .content-section h2 {
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .content-section h3 {
+            font-size: 24px;
+            margin-top: 30px;
+            font-weight: 600;
+        }
+        .content-section ul {
+            padding-left: 20px;
+        }
+        .content-section ul li {
+            margin-bottom: 8px;
+        }
+    </style>
 
-<!DOCTYPE html>
-<html class="__className_c70c06" lang="en">
- 
- <!-- /Added by HTTrack -->
- <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-N4QVS668');</script>
-    <!-- End Google Tag Manager -->
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-
-    
-  <link as="image" href="./assets/cohostweblogo.png" rel="preload"/>
-  <link as="image" href="./assets/header-search-icon.svg" rel="preload"/>
-  <link as="image" href="./assets/awardss-banner4.webp" rel="preload"/>
-  <link as="image" href="./assets/awardss-banner3.webp" rel="preload"/>
-  <link as="image" href="./assets/awardss-banner5.webp" rel="preload"/>
-  <link as="image" href="./assets/awardss-banner1.webp" rel="preload"/>
-  <link as="image" href="./assets/zoho-partner.webp" rel="preload"/>
-  <link as="image" href="./assets/awardss-banner2.webp" rel="preload"/>
-  <link as="image" href="./assets/awardss-banner6.webp" rel="preload"/>
-  <link as="image" href="./assets/software-dev.svg" rel="preload"/>
-  <link data-precedence="next" href="./_next/static/css/ec4fb939b29d7800.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/5a70829ff2148b14.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/f8fbc34b1bfc2751.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/932dee4f0a11ae1d.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/a40be642fae9b067.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/448d21730a3075bd.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/9266b322afd7ee72.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/2e122f92d54c090d.css" rel="stylesheet"/>
-  <link data-precedence="next" href="./_next/static/css/0315010caa36877c.css" rel="stylesheet"/>
-  <link as="script" fetchpriority="low" href="./_next/static/chunks/webpack-7a592c82c886e1b9.js" rel="preload"/>
-  <link data-precedence="next" href="./_next/static/css/style.css" rel="stylesheet"/>
-  <!-- <script async="" src="./_next/static/chunks/4bd1b696-d17bb0f0706f9c26.js">
-  </script>
-  <script async="" src="./_next/static/chunks/11517-25b2c91162dabb4d.js">
-  </script>
-  <script async="" src="./_next/static/chunks/main-app-ada66b7c480494a0.js">
-  </script>
-  <script async="" src="./_next/static/chunks/2626716e-ee5d9d4c02135785.js">
-  </script>
-  <script async="" src="./_next/static/chunks/13b76428-3964f5bdb5838b57.js">
-  </script>
-  <script async="" src="./_next/static/chunks/84346-7a221bcdc38cb3d0.js">
-  </script>
-  <script async="" src="./_next/static/chunks/4443-98b1b1a436bdc689.js">
-  </script>
-  <script async="" src="./_next/static/chunks/85557-d3442134df046218.js">
-  </script>
-  <script async="" src="./_next/static/chunks/48173-35c5194cb0091c53.js">
-  </script>
-  <script async="" src="./_next/static/chunks/79546-21306a539190f0d1.js">
-  </script>
-  <script async="" src="./_next/static/chunks/55037-94e968edaa73a40b.js">
-  </script>
-  <script async="" src="./_next/static/chunks/27544-45b06b916ff9a659.js">
-  </script>
-  <script async="" src="./_next/static/chunks/15650-ae3ca21cf72bb4c8.js">
-  </script>
-  <script async="" src="./_next/static/chunks/5565-ef10dd11da81ed2f.js">
-  </script>
-  <script async="" src="./_next/static/chunks/43006-3a9e133d68c3dac6.js">
-  </script>
-  <script async="" src="./_next/static/chunks/62295-fd3064cdbe2ea72a.js">
-  </script>
-  <script async="" src="./_next/static/chunks/57150-aece4006aae7d95a.js">
-  </script>
-  <script async="" src="./_next/static/chunks/8495-226eeab22b228cce.js">
-  </script>
-  <script async="" src="./_next/static/chunks/app/(main)/page-1436b2ef2f2388fe.js">
-  </script>
-  <script async="" src="./_next/static/chunks/app/layout-0ec67202c6789d94.js">
-  </script>
-  <script async="" src="./_next/static/chunks/69422-69b42950545b8f54.js">
-  </script>
-  <script async="" src="./_next/static/chunks/20226-10aa307a2238b39f.js">
-  </script>
-  <script async="" src="./_next/static/chunks/67389-2a9a74c103c1683e.js">
-  </script>
-  <script async="" src="./_next/static/chunks/59403-e86a8e6eb8ea6ed3.js">
-  </script>
-  <script async="" src="./_next/static/chunks/app/(main)/layout-579bb1dfdb920f31.js">
-  </script>
-  <script async="" src="./_next/static/chunks/app/(main)/error-80dfb2d61ba7ce6d.js"> -->
-  </script>
-  <link as="script" href="../widget.clutch.co/static/js/widget.js" rel="preload"/>
-  <link as="script" href="../widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" rel="preload"/>
-  <link as="script" fetchpriority="low" href="./_next/static/chunks/52250.2d19a82aadea2e0e.js" rel="preload"/>
-  <link as="image" href="./assets/mobile-app-dev.svg" rel="preload"/>
-  <link as="image" href="./assets/web-app-dev.svg" rel="preload"/>
-  <link as="image" href="./assets/cart-icon-white.svg" rel="preload"/>
-  <link as="image" href="./assets/ai-and-ml.webp" rel="preload"/>
-  <link as="image" href="./assets/hubspot-crm-white.svg" rel="preload"/>
-  <link as="image" href="./assets/zoho-crm-white.svg" rel="preload"/>
-  <link as="image" href="./assets/sale-force-icon-white.svg" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/fisher.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/choic.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/mac.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/oport.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/stanf.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/nikpo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/unsw.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/monas.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/redro.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/jsjd-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/saint.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/honda-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/yankee-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/tui-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/away-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/commnunity-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/justeat-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/allurion-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/well-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/azets-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/comdo-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/Friday-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/dream-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/fujitsu-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/nhs-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/vmoney-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/shilplay-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/thaomas-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/airbub-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/dukin-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/trade-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/client_logo/corbel-logo.webp" rel="preload"/>
-  <link as="image" href="./assets/elevate1.svg" rel="preload"/>
-  <link as="image" href="./assets/elevate2.svg" rel="preload"/>
-  <link as="image" href="./assets/elevate3.svg" rel="preload"/>
-  <link as="image" href="./assets/service-images/custom-soft-dev.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/custom-mobile-app.webp" rel="preload"/>
-  <link as="image" href="./assets/mobile-app-icon.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/web-dev.webp" rel="preload"/>
-  <link as="image" href="./assets/icon-development.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/custom-ecommerce.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/cart-shopping.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/custom-security.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/cloud-icon.webp" rel="preload"/>
-  <link as="image" href="./assets/custom-crm.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/software-dev-icon.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/ai-ml.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/ai-ml-brain.webp" rel="preload"/>
-  <link as="image" href="./assets/custom-dedicated.webp" rel="preload"/>
-  <link as="image" href="./assets/dedicated-team.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/cumtop-cyber-security.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/cyber-shield.webp" rel="preload"/>
-  <link as="image" href="./assets/elevate8.svg" rel="preload"/>
-  <link as="image" href="./assets/elevate6.svg" rel="preload"/>
-  <link as="image" href="./assets/elevate7.svg" rel="preload"/>
-  <link as="image" href="./assets/elevate-img.webp" rel="preload"/>
-  <link as="image" href="./assets/elevate-img2.webp" rel="preload"/>
-  <link as="image" href="./assets/elevate-img3.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/success-icon.svg" rel="preload"/>
-  <link as="image" href="./assets/technical-team.svg" rel="preload"/>
-  <link as="image" href="./assets/star.svg" rel="preload"/>
-  <link as="image" href="./assets/check-circle.svg" rel="preload"/>
-  <link as="image" href="./assets/building-center.svg" rel="preload"/>
-  <link as="image" href="./assets/notification-exp.svg" rel="preload"/>
-  <link as="image" href="./assets/worldwide.svg" rel="preload"/>
-  <link as="image" href="./assets/read-tech.svg" rel="preload"/>
-  <link as="image" href="" rel="preload"/>
-  <link as="image" href="./assets/homepage/microsoft-solution-partner-data-ai-azure.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/microsoft-solution-partner-digital-app-innovation-azure.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/Googl.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/aaws.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/hubsp-1.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/1Asse.webp" rel="preload"/>
-  <link as="image" href="./assets/service-images/yext.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/shopify-plus-partner.png" rel="preload"/>
-  <link as="image" href="./assets/uploads/Sales.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/lead8-1.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/Panth-1.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/ACQUI.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/Adobe.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/BIG_C.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/Key_F.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/award_qa.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/euro-awards-signature.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/award_2.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/award_3.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/award_1.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/awards-lead5.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/awards-lead6.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/awards-lead8.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/awards-lead9.webp" rel="preload"/>
-  <link as="image" href="./assets/homepage/awards-lead7.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_acquia.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_joomla.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_sharepoint.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_pantheon.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_umbraco.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_wordpress.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_drupal.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_craftcms.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_adobecommerce.webp" rel="preload"/>
-  <link as="image" href="./assets/tech/ds_shopify.png" rel="preload"/>
-  <link as="image" href="./assets/ds_symfony.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_woocommerce.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_bigcommerce.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_android.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_reactNative.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_iOS.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_flutter.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_swift.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_mean.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_mern.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_java.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_unity.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_undreal.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_blender.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_autodeskmaya.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_3dsMax.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_%2cmagento.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_devops.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_php.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_python.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_laravel.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_dotnet.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_rubyonrails.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_angular.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_html5.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_nodejs.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_Kotlin.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_xamarin.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_golang.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_reactjs.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_javascript.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_chash.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_arvr.webp" rel="preload"/>
-  <link as="image" href="./assets/ds_blockchain.webp" rel="preload"/>
-  <link as="image" href="./assets/solution-home1.svg" rel="preload"/>
-  <link as="image" href="./assets/solution-home2.svg" rel="preload"/>
-  <link as="image" href="./assets/case-study-1.webp" rel="preload"/>
-  <link as="image" href="./assets/united-kingdom-icon.webp" rel="preload"/>
-  <link as="image" href="./assets/drupal-img.webp" rel="preload"/>
-  <link as="image" href="./assets/case-study-2.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/case%20study/trav1.webp" rel="preload"/>
-  <link as="image" href="./assets/india.webp" rel="preload"/>
-  <link as="image" href="./assets/case-study-4.webp" rel="preload"/>
-  <link as="image" href="./assets/case-study-5.webp" rel="preload"/>
-  <link as="image" href="./assets/aus.webp" rel="preload"/>
-  <link as="image" href="./assets/netlogo.webp" rel="preload"/>
-  <link as="image" href="./assets/case-study-6.webp" rel="preload"/>
-  <link as="image" href="./assets/newclient6.webp" rel="preload"/>
-  <link as="image" href="./assets/client-star.svg" rel="preload"/>
-  <link as="image" href="./assets/newclient2.webp" rel="preload"/>
-  <link as="image" href="./assets/newclient3.webp" rel="preload"/>
-  <link as="image" href="./assets/newclient4.webp" rel="preload"/>
-  <link as="image" href="./assets/newclient5.webp" rel="preload"/>
-  <link as="image" href="./assets/newclient1.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/blog/rce.webp" rel="preload"/>
-  <link as="image" href="./assets/calendar-icon.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/blog/apitest.webp" rel="preload"/>
-  <link as="image" href="./assets/uploads/blog/serve.webp" rel="preload"/>
-  <link as="image" href="./assets/lets-talk/sidebarsanta.png" rel="preload"/>
-  <link as="image" href="./assets/lets-talk/sidebaar51.png" rel="preload"/>
-  <link as="image" href="./assets/lets-talk/sidebaar6.png" rel="preload"/>
-  <link as="image" href="./assets/office-mail.svg" rel="preload"/>
-  <link as="image" href="./assets/soical-face.svg" rel="preload"/>
-  <link as="image" href="./assets/social-twiter.svg" rel="preload"/>
-  <link as="image" href="./assets/social-insta.svg" rel="preload"/>
-  <link as="image" href="./assets/social-yt.svg" rel="preload"/>
-  <link as="image" href="./assets/social-linkdin.svg" rel="preload"/>
-  <link as="image" href="./assets/cmmi3.svg" rel="preload"/>
-  <link as="image" href="./assets/cmmi2.svg" rel="preload"/>
-  <meta content="" name="next-size-adjust"/>
-  <title>
-   Web Development & Mobile App | E-commerce & SEO Services Cohostweb
-  </title>
-  <meta content="cohostweb delivers software & web development, mobile app development, e-commerce solutions and SEO services to help businesses grow securely and scale faster" name="description"/>
-  <link href="manifest.webmanifest" rel="manifest"/>
-  <meta content="Website Design and Mobile App Development Company" name="keywords"/>
-    <link href="https://www.cohostweb.com/" rel="canonical" />
-  <meta content="Website Design and Mobile App Development Company" property="og:title"/>
-  <meta content="CoHostWeb delivers software & web development, mobile app development, e-commerce solutions and SEO services to help businesses grow securely and scale faster" property="og:description"/>
-  <meta content="https://www.cohostweb.com/" property="og:url"/>
-  <meta content="cohostweb" property="og:site_name"/>
-  <meta content="https://www.cohostweb.com/img/dots-logo-w.jpg" property="og:image"/>
-  <meta content="268" property="og:image:width"/>
-  <meta content="42" property="og:image:height"/>
-  <meta content="Website Design and Mobile App Development Company" property="og:image:alt"/>
-  <meta content="website" property="og:type"/>
-  <meta content="summary" name="twitter:card"/>
-  <meta content="@@cohostweb" name="twitter:site"/>
-  <meta content="@@cohostweb" name="twitter:creator"/>
-  <meta content="Website Design and Mobile App Development Company" name="twitter:title"/>
-  <meta content="cohostweb is an Award Winning offshore Website Design and Mobile Apps Development outsourcing agency based in Brighton, East Sussex. Discuss with Us Today!" name="twitter:description"/>
-  <meta content="https://www.cohostweb.com/img/dots-logo-w.jpg" name="twitter:image"/>
-    <meta name="google-site-verification" content="TpAiLQKVzC4m3JYU2o6g_qCbbfpG9QPaTYwNcoWNp9Q" />
-  <link href="favicon1.ico" rel="icon" sizes="16x16" type="image/x-icon"/>
-  <script nomodule="" src="./_next/static/chunks/polyfills-42372ed130431b0a.js">
-  </script>
- </head>
- <body>
-    !-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4QVS668"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-  
-  <header class="Header_Header__MfdqS">
-   <div class="Header_HeaderContainer__H98OD container">
-    <!-- <div class="Header_TopHeader__NQ2XG">
-     <ul class="Header_HeadLinkList__bbhkN d-flex flex-wrap justify-content-end">
-      <li class="Header_ListItem__repM_ list-group-item">
-        UK -->
-       <!-- -->
-       <!-- <a href="tel:+442080901819">
-        +44 208 0901819
-       </a>
-      </li>
-      <li class="Header_ListItem__repM_ list-group-item">
-       Aus
-        
-       <a href="tel:+61395115598">
-        +61 3 9511 5598
-       </a>
-      </li>
-      <li class="Header_ListItem__repM_ list-group-item">
-       Us
-       
-       <a href="tel:+13015639488">
-        +1 301 563 9488
-       </a>
-      </li>
-      <li class="Header_ListItem__repM_ list-group-item">
-       INDIA
-       
-        <a href="tel:+919829029555">
-        +91 
-       </a> 
-      </li>
-     </ul>
-    </div> -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-     <a class="Header_Logo___7H4X navbar-brand" href="index.html">
-      <img alt="Logo" class="" src="./assets/cohostweblogo.png"/>
-     </a>
-     <button aria-controls="navbarScroll" aria-label="Toggle navigation" class="navbar-toggler collapsed" type="button">
-      <span class="navbar-toggler-icon">
-      </span>
-     </button>
-     <div class="navbar-collapse collapse" id="navbarScroll">
-      <div class="ms-auto navbar-nav navbar-nav-scroll">
-       
-       <div class="cloud-serNav nav-item dropdown">
-        <a aria-expanded="false" class="dropdown-toggle nav-link" href="#" id="cloud-ser-dropdown" role="button" tabindex="0">
-         Cloud
-        </a>
-       </div>
-       <div class="data-and-aiNav nav-item dropdown">
-        <a aria-expanded="false" class="dropdown-toggle nav-link" href="#" id="data-and-ai-dropdown" role="button" tabindex="0">
-         About &amp; US
-        </a>
-       </div>
-       <div class="securityNav nav-item dropdown">
-        <a aria-expanded="false" class="dropdown-toggle nav-link" href="#" id="security-dropdown" role="button" tabindex="0">
-         Cllients
-        </a>
-       </div>
-       <div class="industriesNav nav-item dropdown">
-        <a aria-expanded="false" class="dropdown-toggle nav-link" href="#" id="industries-dropdown" role="button" tabindex="0">
-         Contract
-        </a>
-       </div>
-       <div class="technologyNav nav-item dropdown">
-        <a aria-expanded="false" class="dropdown-toggle nav-link" href="#" id="technology-dropdown" role="button" tabindex="0">
-         Technologies
-        </a>
-       </div>
-       
-       <div class="SingleNav nav-item dropdown">
-        <a aria-expanded="false" class="dropdown-toggle nav-link" href="#" id="about-us-dropdown" role="button" tabindex="0">
-         About Us
-        </a>
-       </div>
-      </div>
-     </div>
-     <div class="HeadSearch d-flex" role="button">
-      <img alt="search-icon" class="" src="./assets/header-search-icon.svg"/>
-     </div>
-     <a class="btn-custom btn-small btn-rds" href="contact.html">
-      Contact us
-     </a>
-    </nav>
-   </div>
-  </header>
-  <!--$-->
-  
-  <div>
+<div>
    <div class="HomeBanner_homeBanner__EJVSA">
     <div>
      <!--$-->
@@ -425,27 +62,33 @@
       </h2>
       <div class="HomeBanner_teachServices__oQwoa justify-content-center flex-wrap list-group list-group-horizontal">
        <div class="list-group-item">
-        <a href="software-development.html">
+        <a href="software-development">
          <img alt="Software Development" class="" src="./assets/software-dev.svg"/>
          Software Development
         </a>
        </div>
        <div class="list-group-item">
-        <a href="app-development.html">
+        <a href="app-development">
          <img alt="Mobile Apps Development" class="" src="./assets/mobile-app-dev.svg"/>
          Mobile App Development
         </a>
        </div>
        <div class="list-group-item">
-        <a href="web-development.html">
+        <a href="/web-development">
          <img alt="Web Development" class="" src="./assets/web-app-dev.svg"/>
          Web Development
         </a>
        </div>
        <div class="list-group-item">
-        <a href="ecommerce-development.html">
+        <a href="ecommerce-development">
          <img alt="E-commerce Services" class="" src="./assets/cart-icon-white.svg"/>
          E-commerce Services
+        </a>
+       </div>
+        <div class="list-group-item">
+        <a href="search-engine-optimization">
+         <img alt="SEO (Search Engine Optimization)" class="" src="./assets/hubspot-crm-white.svg"/>
+         SEO (Search Engine Optimization)
         </a>
        </div>
        <!-- <div class="list-group-item">
@@ -1034,7 +677,7 @@
         <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
          <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
           <strong>
-           70%
+           80%
           </strong>
           Cost Savings
          </div>
@@ -1045,28 +688,7 @@
           Smarter Development Investments
          </h3>
          <p>
-          Our strategic development model offers cost-effective solutions, balancing on-premise and nearshore resources to reduce expenses while maintaining top-tier quality.
-         </p>
-        </div>
-       </div>
-      </div>
-      <div class="col-md-4">
-       <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
-        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
-         <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
-          <strong>
-           80%
-          </strong>
-          Productivity Boost
-         </div>
-         <img alt="elevate2" class="" src="./assets/elevate2.svg"/>
-        </div>
-        <div>
-         <h3>
-          Enhanced Efficiency &amp; Performance
-         </h3>
-         <p>
-          Leverage our agile development approach and skilled team to accelerate workflows, streamline operations, and increase overall productivity.
+          Our development approach is designed to maximize value by combining on-site expertise with nearshore support, helping control costs without compromising quality
          </p>
         </div>
        </div>
@@ -1078,6 +700,27 @@
           <strong>
            95%
           </strong>
+          Productivity Boost
+         </div>
+         <img alt="elevate2" class="" src="./assets/elevate2.svg"/>
+        </div>
+        <div>
+         <h3>
+          Enhanced Efficiency &amp; Performance
+         </h3>
+         <p>
+                                Our agile practices and experienced team help speed up processes, simplify operations, and deliver stronger productivity across projects
+         </p>
+        </div>
+       </div>
+      </div>
+      <div class="col-md-4">
+       <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
+        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
+         <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
+          <strong>
+           90%
+          </strong>
           Threat Prevention
          </div>
          <img alt="elevate3" class="" src="./assets/elevate3.svg"/>
@@ -1087,7 +730,7 @@
           Enterprise-Grade Security
          </h3>
          <p>
-          Our robust security framework, backed by industry best practices, safeguards your solutions from evolving cyber threats, ensuring data integrity and compliance.
+          Our security approach follows established industry standards to protect your systems, maintain data integrity, and meet compliance requirements
          </p>
         </div>
        </div>
@@ -1224,7 +867,7 @@
          <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
           <img alt="Cloud Solutions" class="" src="./assets/service-images/cloud-icon.webp"/>
           <span>
-           Cloud Solutions
+           SEO
           </span>
          </div>
          <p>
@@ -1255,7 +898,7 @@
           </span>
          </div>
          <p>
-          We build robust, scalable APIs for seamless data exchange. Our expertise includes RESTful, GraphQL, and third-party integrations, delivering secure and efficient solutions.
+                                We create APIs that are easy to integrate, secure, and built to scale, with experience across REST, GraphQL, and external platforms.
          </p>
          <div class="Services_webDevServiceButton__TxECN hstack gap-3">
           <a class="btn-custom btn-line btn-small btn-rds" href="api-development.html">
@@ -1424,34 +1067,7 @@
      </div>
     </div>
    </div> -->
-   <div class="CodeSuccess_CodeSuccessSec__C4E0D bg-white">
-    <div class="container">
-     <div class="CodeSuccess_CodeSuccessCol__jRdLw d-flex align-items-center" style="background-image:url(./assets/service-images/free-consultant-bg.webp)">
-      <div class="container">
-       <div class="row">
-        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
-         <h2>
-          From Code to Success
-          <span>
-           <img alt="custom soft dev" class="" src="./assets/service-images/success-icon.svg"/>
-          </span>
-         </h2>
-         <p>
-          We Build More Than Software.
-         </p>
-        </div>
-        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
-         <div class="CodeSuccess_btnRow__fWXZZ">
-          <a class="btn-custom btn-arrow" href="contact.html">
-           Discuss Your Requirement!
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
+   
  
   
    <div class="Technologies_technologiesOuter__R_U_r sec-pad">
@@ -1474,26 +1090,14 @@
      <div class="Technologies_marqueeGroup__Q4igw d-flex flex-column align-items-center justify-content-center">
       <div class="Technologies_animateSlideToLeft__mtX_0 undefined">
        <ul class="Technologies_marqueeGroupLogo__o_bgW flex-row justify-content-center align-items-center list-group">
-        <li class="list-group-item">
-         <a href="technology/acquia-development.html">
-          <img alt="s_acquia" class="" src="./assets/ds_acquia.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/joomla-development.html">
-          <img alt="ds_joomla" class="" src="./assets/ds_joomla.webp"/>
-         </a>
-        </li>
+       
+        
         <li class="list-group-item">
          <a href="technology/sharepoint-development.html">
           <img alt="ds_sharepoint" class="" src="./assets/ds_sharepoint.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/pantheon.html">
-          <img alt="s_pantheon" class="" src="./assets/ds_pantheon.webp"/>
-         </a>
-        </li>
+        
         <li class="list-group-item">
          <a href="technology/umbraco-development.html">
           <img alt="ds_umbraco" class="" src="./assets/ds_umbraco.webp"/>
@@ -1504,51 +1108,15 @@
           <img alt="ds_wordpress" class="" src="./assets/ds_wordpress.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/drupal-development.html">
-          <img alt="ds_drupal" class="" src="./assets/ds_drupal.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/craftcms.html">
-          <img alt="ds_craftcms" class="" src="./assets/ds_craftcms.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/adobe-commerce-development.html">
-          <img alt="ds_adobecommerce" class="" src="./assets/ds_adobecommerce.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/shopify-development.html">
-          <img alt="ds_shopify" class="" src="./assets/tech/ds_shopify.png"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/symfony-development.html">
-          <img alt="ds_symfony" class="" src="./assets/ds_symfony.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
+       
+       @*  <li class="list-group-item">
          <a href="technology/woocommerce-development.html">
           <img alt="ds_woocommerce" class="" src="./assets/ds_woocommerce.webp"/>
          </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/bigcommerce-development.html">
-          <img alt="s_bigcommerce" class="" src="./assets/ds_bigcommerce.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/acquia-development.html">
-          <img alt="s_acquia" class="" src="./assets/ds_acquia.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/joomla-development.html">
-          <img alt="ds_joomla" class="" src="./assets/ds_joomla.webp"/>
-         </a>
-        </li>
+        </li> *@
+       
+        
+       
         <li class="list-group-item">
          <a href="technology/sharepoint-development.html">
           <img alt="ds_sharepoint" class="" src="./assets/ds_sharepoint.webp"/>
@@ -1578,56 +1146,20 @@
           <img alt="ds_iOS" class="" src="./assets/ds_iOS.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/flutter-development.html">
-          <img alt="s_flutter" class="" src="./assets/ds_flutter.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/swift-development.html">
-          <img alt="ds_swift" class="" src="./assets/ds_swift.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/meanstack-development.html">
-          <img alt="ds_mean" class="" src="./assets/ds_mean.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/mernstack-development.html">
-          <img alt="ds_mern" class="" src="./assets/ds_mern.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/java-development.html">
-          <img alt="ds_java" class="" src="./assets/ds_java.webp"/>
-         </a>
-        </li>
+          
         <li class="list-group-item">
          <a href="technology/unity-development.html">
           <img alt="ds_unity" class="" src="./assets/ds_unity.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/unreal-development.html">
-          <img alt="ds_undreal" class="" src="./assets/ds_undreal.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="hire-on-demand-developers.html">
-          <img alt="ds_blender" class="" src="./assets/ds_blender.webp"/>
-         </a>
-        </li>
+      
+       
         <li class="list-group-item">
          <a href="hire-on-demand-developers.html">
           <img alt="ds_autodeskmaya" class="" src="./assets/ds_autodeskmaya.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/3d-development.html">
-          <img alt="ds_3dsMax" class="" src="./assets/ds_3dsMax.webp"/>
-         </a>
-        </li>
+        
         <li class="list-group-item">
          <a href="technology/magento-development.html">
           <img alt="ds_,magento" class="" src="./assets/ds_%2cmagento.webp"/>
@@ -1662,21 +1194,13 @@
           <img alt="ds_python" class="" src="./assets/ds_python.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/laravel-development.html">
-          <img alt="ds_laravel" class="" src="./assets/ds_laravel.webp"/>
-         </a>
-        </li>
+      
         <li class="list-group-item">
          <a href="technology/dotnet-development.html">
           <img alt="ds_dotnet" class="" src="./assets/ds_dotnet.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/ror-development.html">
-          <img alt="ds_rubyonrails" class="" src="./assets/ds_rubyonrails.webp"/>
-         </a>
-        </li>
+       
         <li class="list-group-item">
          <a href="technology/angular-development.html">
           <img alt="ds_angular" class="" src="./assets/ds_angular.webp"/>
@@ -1692,21 +1216,7 @@
           <img alt="ds_nodejs" class="" src="./assets/ds_nodejs.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="hire-on-demand-developers.html">
-          <img alt="ds_Kotlin" class="" src="./assets/ds_Kotlin.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/xamarin-development.html">
-          <img alt="ds_xamarin" class="" src="./assets/ds_xamarin.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="hire-on-demand-developers.html">
-          <img alt="ds_golang" class="" src="./assets/ds_golang.webp"/>
-         </a>
-        </li>
+      
         <li class="list-group-item">
          <a href="technology/reactjs-development.html">
           <img alt="ds_reactjs" class="" src="./assets/ds_reactjs.webp"/>
@@ -1722,31 +1232,14 @@
           <img alt="ds_chash" class="" src="./assets/ds_chash.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/ar-vr-development.html">
-          <img alt="ds_arvr" class="" src="./assets/ds_arvr.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/blockchain-development.html">
-          <img alt="ds_blockchain" class="" src="./assets/ds_blockchain.webp"/>
-         </a>
-        </li>
+        
         <li class="list-group-item">
          <a href="technology/php-development.html">
           <img alt="ds_php" class="" src="./assets/ds_php.webp"/>
          </a>
         </li>
-        <li class="list-group-item">
-         <a href="technology/python-development.html">
-          <img alt="ds_python" class="" src="./assets/ds_python.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="technology/laravel-development.html">
-          <img alt="ds_laravel" class="" src="./assets/ds_laravel.webp"/>
-         </a>
-        </li>
+        
+       
         <li class="list-group-item">
          <a href="technology/dotnet-development.html">
           <img alt="ds_dotnet" class="" src="./assets/ds_dotnet.webp"/>
@@ -2329,8 +1822,7 @@
        
        </button> -->
       </div>
-     </div>
-     <div>
+<div>
       <!-- <div class="container">
        <div class="text-center mt-4">
         <div class="clutch-widget" data-clutchcompany-id="77483" data-height="375" data-nofollow="true" data-url="https://widget.clutch.co" data-widget-type="12">
@@ -2345,8 +1837,6 @@
        </div>
       </div> -->
      </div>
-    </div>
-   </div>
    <div class="HomeContact_HomeContact__uJEce sec-pad bg-black">
     <div class="container">
      <div class="row">
@@ -2362,10 +1852,7 @@
          <img alt="circle-check-green" data-nimg="1" decoding="async" height="20" loading="lazy" src="./assets/circle-check-green.svg" style="color:transparent" width="20"/>
          100% Confidential
         </li>
-        <li class="list-group-item d-flex align-items-center">
-         <img alt="circle-check-green" data-nimg="1" decoding="async" height="20" loading="lazy" src="./assets/circle-check-green.svg" style="color:transparent" width="20"/>
-         We sign NDA
-        </li>
+        
        </ul>
        <div class="HomeContact_homeCtEmail__hX64X d-flex align-items-center">
         <img alt="office-mail" data-nimg="1" decoding="async" height="50" loading="lazy" src="./assets/office-mail.svg" style="color:transparent" width="50"/>
@@ -2383,40 +1870,75 @@
        <p>
         Fill out the form and we will contact you
        </p>
-       <form class="">
-        <div class="row">
-         <div class="col-md-6">
-          <div class="form-group">
-           <input class="form-control" id="fullName" name="fullName" placeholder="Full Name*" type="text" value=""/>
-          </div>
-         </div>
-         <div class="col-md-6">
-          <div class="form-group">
-           <input class="form-control" id="email" name="email" placeholder="Email*" type="email" value=""/>
-          </div>
-         </div>
-         <div class="col-md-6">
-          <div class="form-group">
-           <input class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number*" type="tel" value=""/>
-          </div>
-         </div>
-         <div class="col-md-6">
-          <div class="form-group">
-           <input class="form-control" id="companyName" name="companyName" placeholder="Company Name" type="text" value=""/>
-          </div>
-         </div>
-         <div class="col-md-12">
-          <div class="form-group">
-           <textarea class="form-control" id="message" name="message" placeholder="Your Requirement*" rows="3"></textarea>
-          </div>
-         </div>
-         <div class="col-md-12">
-          <button class="btn-custom btn-line w-100 btn btn-primary" type="submit">
-           Book A Free Consultation
-          </button>
-         </div>
-        </div>
-       </form>
+                <form id="consultationForm" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control"
+                                       id="fullName"
+                                       name="FullName"
+                                       asp-for="FullName"
+                                       placeholder="Full Name*"
+                                       type="text" />
+                                <span asp-validation-for="FullName" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control"
+                                       id="phoneNumber"
+                                       name="PhoneNumber"
+                                       asp-for="PhoneNumber"
+                                       placeholder="Phone Number*"
+                                       type="tel" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="form-control"
+                                       id="email"
+                                       name="Email"
+                                       asp-for="Email"
+                                       placeholder="Email*"
+                                       type="email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- intentionally empty as per original design -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control"
+                                          id="message"
+                                          name="Message"
+                                          asp-for="Message"
+                                          placeholder="Your Requirement*"
+                                          rows="3"></textarea>
+                                <span asp-validation-for="Message" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <button class="btn-custom btn-line w-100 btn btn-primary" type="submit">
+                                Book A Free Consultation
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
       </div>
      </div>
     </div>
@@ -2536,144 +2058,51 @@
      </div>
     </div>
    </div>
-  
-  </div>
   <!--/$-->
   <div class="HomeSidebar_HomeSidebar__jjnPg">
    <div class="HomeSidebar_HomeSidebarBtn__63D4h">
-    <img alt="sidebar" class="HomeSidebar_sidebarsanta__p0Ltu" src="./assets/lets-talk/sidebarsanta.png"/>
-    <figure>
+    @* <img alt="sidebar" class="HomeSidebar_sidebarsanta__p0Ltu" src="./assets/lets-talk/"/> *@
+   @*  <figure>
      <img alt="sidebar" class="HomeSidebar_firssstside__EmleB" src="./assets/lets-talk/sidebaar51.png"/>
-    </figure>
+    </figure> *@
     <p>
      Unlock Savings — 50% Off On First Order
     </p>
     <img alt="sidebar" class="" src="./assets/lets-talk/sidebaar6.png"/>
    </div>
   </div>
-  <footer class="Footer_footer__NzM_y">
-   <div class="container">
-    <div class="Footer_FooterTop___oucz">
-     <div class="row">
-      <div class="col-lg-7 col-md-12">
-       <div class="Footer_FormSec__C43gt d-flex flex-wrap">
-          <div class="Footer_FormSec__C43gt d-flex flex-wrap">
- <ul class="Footer_CmsLink__HzwGS d-flex flex-wrap justify-content-center justify-content-lg-start list-group list-group-horizontal">
-        <li class="list-group-item">
-         <a href="terms-of-use.html">
-          Terms of Use
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="privacy-notice.html">
-          Privacy
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="terms-conditions.html">
-          Terms &amp; Conditions
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="shipping-policy.html">
-          Sitemap
-         </a>
-        </li>
-      </ul>
-</div>
-       
-       </div>
-      </div>
-      <div class="col-lg-5 col-md-12">
-       <div class="Footer_FootLink__VxCIT">
-        <ul class="Footer_FootNav__hrwf4 d-flex flex-wrap list-group list-group-horizontal">
-         <li class="list-group-item">
-          <a href="our-company.html" target="_self">
-           Our Company
-          </a>
-         </li>
-         <li class="list-group-item">
-          <a href="../careers.cohostweb.com/index.html" target="_blank">
-           Careers
-          </a>
-         </li>
-         <li class="list-group-item">
-          <a href="expertise.html" target="_self">
-           Expertise
-          </a>
-         </li>
-         <li class="list-group-item">
-          <a href="press-and-events.html" target="_self">
-           Blog
-          </a>
-         </li>
-         <li class="list-group-item">
-          <a href="contact.html" target="_self">
-           Contact us
-          </a>
-         </li>
-         <li class="list-group-item">
-          <a href="faqs.html" target="_self">
-           FAQ
-          </a>
-         </li>
-         <!-- <li class="list-group-item">
-          <a href="sitemaps.html" target="_self">
-           Sitemap
-          </a>
-         </li> -->
-         
-        </ul>
-       </div>
-      </div>
-     </div>
-    </div>
-  
-    <div class="Footer_FooterBottom__VZDQo">
-     <div class="row">
-      <!-- <div class="col-lg-5 col-md-12">
-       <ul class="Footer_CmsLink__HzwGS d-flex flex-wrap justify-content-center justify-content-lg-start list-group list-group-horizontal">
-        <li class="list-group-item">
-         <a href="terms-of-use.html">
-          Terms of Use
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="privacy-notice.html">
-          Privacy
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="terms-conditions.html">
-          Terms &amp; Conditions
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="shipping-policy.html">
-          Sitemap
-         </a>
-        </li>
-       </ul>
-       <p>
-        Registered in England &amp; Wales No.: 04381390 | VAT Reg. : 868 4569 51
-       </p>
-       <p>
-        cohostweb and the cohostweb logo are trademarks of cohostweb Ltd., with the UK Trademark number UK00003125636
-       </p>
-      </div> -->
-      
-      <div class="Footer_CopyrightText__TZcCh col-md-12">
-       <p>
-        © 20025 - 2026 Cohostweb Ltd. All rights reserved.
-       </p>
-      </div>
-     </div>
-    </div>
-   </div>
-  </footer>
-  
-  
- </body>
- <!-- Mirrored from www.cohostweb.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 17 Dec 2025 19:58:03 GMT -->
-</html>
 
+  @section Scripts{
+
+
+<script>
+    $("#consultationForm").submit(function (e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) return;
+
+        $.ajax({
+                url: '/home/BookConsultation',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function (data) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Thank You!',
+                    text: data.dis
+                });
+
+                $("#consultationForm")[0].reset();
+            },
+            error: function () {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Something went wrong. Try again.'
+                });
+            }
+        });
+    });
+</script>
+  }
+  

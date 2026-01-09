@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 55 55">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9a9a9a"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2479" data-name="Group 2479" transform="translate(-847 -3085)">
+    <circle id="Ellipse_18" data-name="Ellipse 18" cx="27.5" cy="27.5" r="27.5" transform="translate(847 3085)" fill="url(#linear-gradient)"/>
+    <g id="Icon_ionic-ios-code-working" data-name="Icon ionic-ios-code-working" transform="translate(851.916 3091.757)">
+      <path id="Path_3599" data-name="Path 3599" d="M34.658,20.328,23.914,10.074a.584.584,0,0,0-.386-.16.566.566,0,0,0-.386.16l-1.3,1.243a.548.548,0,0,0,0,.81l9.021,8.616-9.021,8.616a.548.548,0,0,0,0,.81l1.3,1.243a.566.566,0,0,0,.386.16.549.549,0,0,0,.386-.16L34.667,21.148a.557.557,0,0,0,.179-.4A.628.628,0,0,0,34.658,20.328Z" transform="translate(5.822 0)" fill="#fff"/>
+      <path id="Path_3600" data-name="Path 3600" d="M8.483,20.743,17.5,12.127a.548.548,0,0,0,0-.81l-1.3-1.243a.584.584,0,0,0-.386-.16.566.566,0,0,0-.386.16L4.679,20.338a.548.548,0,0,0,0,.81L15.432,31.411a.584.584,0,0,0,.386.16.549.549,0,0,0,.386-.16l1.3-1.243a.548.548,0,0,0,0-.81Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_3601" data-name="Path 3601" d="M20.6,18.525a2.072,2.072,0,1,1-2.072-2.072A2.072,2.072,0,0,1,20.6,18.525Z" transform="translate(4.054 2.218)" fill="#fff"/>
+      <path id="Path_3602" data-name="Path 3602" d="M16.1,18.525a2.072,2.072,0,1,1-2.072-2.072A2.072,2.072,0,0,1,16.1,18.525Z" transform="translate(2.528 2.218)" fill="#fff"/>
+      <path id="Path_3603" data-name="Path 3603" d="M25.1,18.525a2.072,2.072,0,1,1-2.072-2.072A2.072,2.072,0,0,1,25.1,18.525Z" transform="translate(5.581 2.218)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

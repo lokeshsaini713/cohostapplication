@@ -1,0 +1,26 @@
+<svg id="banner-main5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="ai-mi-algorithm-svgrepo-com" transform="translate(2.16 3.167)">
+    <circle id="Ellipse_84" data-name="Ellipse 84" cx="2.916" cy="2.916" r="2.916" transform="translate(19.041 5.61)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <circle id="Ellipse_85" data-name="Ellipse 85" cx="2.916" cy="2.916" r="2.916" transform="translate(28.618 15.717)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <circle id="Ellipse_86" data-name="Ellipse 86" cx="2.916" cy="2.916" r="2.916" transform="translate(19.041 25.223)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <circle id="Ellipse_87" data-name="Ellipse 87" cx="2.916" cy="2.916" r="2.916" transform="translate(9.34 20.944)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <circle id="Ellipse_88" data-name="Ellipse 88" cx="2.916" cy="2.916" r="2.916" transform="translate(9.34 9.539)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <circle id="Ellipse_89" data-name="Ellipse 89" cx="2.355" cy="2.355" r="2.355" transform="translate(19.598 15.111)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_29" data-name="Line 29" y1="1.689" x2="4.375" transform="translate(14.767 9.278)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_30" data-name="Line 30" x2="5.452" y2="5.978" transform="translate(24.002 10.611)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_31" data-name="Line 31" x1="5.713" y2="5.156" transform="translate(24.037 20.939)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_32" data-name="Line 32" x2="6.289" y2="10.964" transform="translate(13.86 14.89)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_33" data-name="Line 33" x2="4.204" y2="1.949" transform="translate(14.837 25.218)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_34" data-name="Line 34" y1="10.177" x2="7.031" transform="translate(13.349 10.977)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_35" data-name="Line 35" x2="4.921" y2="2.781" transform="translate(14.942 13.598)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_36" data-name="Line 36" x2="4.304" y2="0.326" transform="translate(24.313 17.732)" fill="none" stroke="#fff" stroke-width="1.5"/>
+    <line id="Line_37" data-name="Line 37" x2="0.005" y2="5.392" transform="translate(21.953 19.826)" fill="none" stroke="#fff" stroke-width="1.5"/>
+  </g>
+</svg>

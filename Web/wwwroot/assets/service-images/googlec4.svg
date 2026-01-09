@@ -1,0 +1,14 @@
+<svg id="globe-1-svgrepo-com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#feaa49"/>
+      <stop offset="1" stop-color="#f80"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_7554" data-name="Path 7554" d="M27.576,3.457A24.912,24.912,0,0,0,20.2,18.8H34.949A24.912,24.912,0,0,0,27.576,3.457Z" transform="translate(-7.576 -1.296)" fill="url(#linear-gradient)"/>
+  <path id="Path_7555" data-name="Path 7555" d="M38.812,0c3.842,4.6,7.592,11.169,8.115,17.5h7.627C53.553,9.5,46.937,2.422,38.812,0Z" transform="translate(-14.555)" fill="url(#linear-gradient)"/>
+  <path id="Path_7556" data-name="Path 7556" d="M20.2,36a24.912,24.912,0,0,0,7.373,15.339A24.912,24.912,0,0,0,34.949,36Z" transform="translate(-7.576 -13.5)" fill="url(#linear-gradient)"/>
+  <path id="Path_7557" data-name="Path 7557" d="M0,17.5H7.627C8.149,11.169,11.9,4.6,15.742,0,7.539,2.539,1,9.5,0,17.5Z" fill="url(#linear-gradient)"/>
+  <path id="Path_7558" data-name="Path 7558" d="M15.7,53.5C11.861,48.9,8.149,42.331,7.627,36H0C1,44,7.539,51.078,15.7,53.5Z" transform="translate(0 -13.5)" fill="url(#linear-gradient)"/>
+  <path id="Path_7559" data-name="Path 7559" d="M54.555,36H46.928c-.522,6.331-4.272,12.9-8.115,17.5C47.055,51.078,53.554,44,54.555,36Z" transform="translate(-14.555 -13.5)" fill="url(#linear-gradient)"/>
+</svg>

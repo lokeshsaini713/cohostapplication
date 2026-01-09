@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="176.999" height="50" viewBox="0 0 176.999 50">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_9338" data-name="Path 9338" d="M358.974,87.919l-21.5-12.2v50l8.591-4.95V106.7l6.488,3.729-.037-9.625-6.451-3.659V91.558L359,98.983Z" transform="translate(-337.47 -75.72)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6f00"/>
+      <stop offset="1" stop-color="#ffa800"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="Path_9339" data-name="Path 9339" d="M267.08,87.919l21.5-12.2v50l-8.591-4.95V91.558L267.05,98.983Z" transform="translate(-267.05 -75.72)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_3922" data-name="Rectangle 3922" width="50" height="50" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8743" data-name="Group 8743" transform="translate(-505 -1771)">
+    <g id="TensorFlow_logo" transform="translate(299.93 1695.28)">
+      <g id="Group_8735" data-name="Group 8735" transform="translate(290.516 75.72)" clip-path="url(#clip-path)">
+        <rect id="Rectangle_3920" data-name="Rectangle 3920" width="52.808" height="50.245" transform="translate(-25.422 -0.182)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Group_8736" data-name="Group 8736" transform="translate(267.05 75.72)" clip-path="url(#clip-path-2)">
+        <rect id="Rectangle_3921" data-name="Rectangle 3921" width="52.808" height="50.245" transform="translate(-2.313 -0.182)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_8737" data-name="Group 8737" transform="translate(-9287 540.085)">
+      <g id="Group_8738" data-name="Group 8738" transform="translate(9919 1230.915)">
+        <g id="Group_8737-2" data-name="Group 8737" transform="translate(0 0)" clip-path="url(#clip-path-3)">
+          <path id="Path_9340" data-name="Path 9340" d="M21.572,0H28.9c6.753,0,9.758.813,12.611,2.339a15.906,15.906,0,0,1,6.619,6.619c1.529,2.853,2.342,5.859,2.342,12.615V28.9c0,6.753-.813,9.758-2.339,12.611a15.906,15.906,0,0,1-6.619,6.619c-2.853,1.529-5.859,2.342-12.615,2.342H21.572c-6.753,0-9.758-.813-12.611-2.339A15.906,15.906,0,0,1,2.342,41.51C.813,38.657,0,35.651,0,28.9V21.572C0,14.82.813,11.814,2.339,8.961A15.906,15.906,0,0,1,8.958,2.342C11.811.813,14.816,0,21.572,0" transform="translate(-0.277 -0.191)" fill="#fffb00"/>
+          <path id="Path_9341" data-name="Path 9341" d="M98.7,268.518H96.039v-2.873l-3.1-6.2h2.847l1.592,3.678h.051l1.592-3.678h2.786l-3.1,6.2Zm8.267-9.228c2.8,0,4.57,1.8,4.57,4.7s-1.766,4.689-4.57,4.689-4.571-1.792-4.571-4.689,1.768-4.7,4.571-4.7m0,2.125c-1.114,0-1.855,1-1.855,2.571s.736,2.565,1.855,2.565,1.854-1,1.854-2.565-.742-2.57-1.854-2.57ZM118.8,266.4v2.118h-6.223v-9.075h2.665V266.4Zm5.356-7.11c2.8,0,4.57,1.8,4.57,4.7s-1.766,4.689-4.57,4.689-4.571-1.792-4.571-4.689,1.766-4.7,4.571-4.7m0,2.125c-1.114,0-1.855,1-1.855,2.571s.735,2.565,1.855,2.565,1.854-1,1.854-2.565-.742-2.57-1.854-2.57Z" transform="translate(-85.819 -238.84)"/>
+        </g>
+      </g>
+    </g>
+    <g id="PyTorch_logo_icon" transform="translate(504.275 703.3)">
+      <path id="Path_9337" data-name="Path 9337" d="M36.535,1082.323l-3.773,3.713a15.239,15.239,0,0,1,0,21.911,15.84,15.84,0,0,1-22.266,0,15.239,15.239,0,0,1,0-21.911h0l9.829-9.672,1.4-1.375h0V1067.7L6.909,1082.277a20.49,20.49,0,0,0,0,29.338,21.129,21.129,0,0,0,29.673,0A20.476,20.476,0,0,0,36.535,1082.323Z" transform="translate(0)" fill="#ee4c2c"/>
+      <ellipse id="Ellipse_65" data-name="Ellipse 65" cx="5.996" cy="5.9" rx="5.996" ry="5.9" transform="translate(21.816 1074.847)" fill="#ee4c2c"/>
+    </g>
+  </g>
+</svg>

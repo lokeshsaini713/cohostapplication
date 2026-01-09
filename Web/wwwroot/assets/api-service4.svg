@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f0f0f"/>
+      <stop offset="0.993" stop-color="#6a6a6a"/>
+      <stop offset="1" stop-color="#545454"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8509" data-name="Group 8509" transform="translate(-375 -3622)">
+    <circle id="Ellipse_93" data-name="Ellipse 93" cx="25" cy="25" r="25" transform="translate(375 3622)" fill="url(#linear-gradient)"/>
+    <path id="Icon_material-chat_bubble_outline" data-name="Icon material-chat_bubble_outline" d="M23.867,3H5.319A2.325,2.325,0,0,0,3,5.319V26.185l4.637-4.637h16.23a2.325,2.325,0,0,0,2.319-2.319V5.319A2.325,2.325,0,0,0,23.867,3Zm0,16.23H7.637L5.319,21.548V5.319H23.867Z" transform="translate(386.407 3633.907)" fill="#fff"/>
+  </g>
+</svg>

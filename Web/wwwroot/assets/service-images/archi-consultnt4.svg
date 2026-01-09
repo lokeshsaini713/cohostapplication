@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3616" data-name="Rectangle 3616" width="40" height="40" transform="translate(379 3253)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8048" data-name="Mask Group 8048" transform="translate(-379 -3253)" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(382.206 3257.206)">
+      <g id="invisible_box" data-name="invisible box">
+        <rect id="Rectangle_3700" data-name="Rectangle 3700" width="34" height="34" transform="translate(-0.206 -0.206)" fill="none"/>
+      </g>
+      <g id="icons_Q2" data-name="icons Q2" transform="translate(1.399 2.799)">
+        <path id="Path_9974" data-name="Path 9974" d="M2,15.2v7a1.4,1.4,0,0,0,1.4,1.4h12.6v3.079a3.289,3.289,0,0,0-1.819,1.819H5.639a1.4,1.4,0,0,0,0,2.8h8.537a3.5,3.5,0,0,0,6.438,0H29.29a1.4,1.4,0,1,0,0-2.8H20.613a3.569,3.569,0,0,0-1.819-1.819V23.593h12.6a1.4,1.4,0,0,0,1.4-1.4v-7Zm20.992,4.2a1.4,1.4,0,1,1,1.4-1.4A1.4,1.4,0,0,1,22.992,19.394Zm4.2,0a1.4,1.4,0,1,1,1.4-1.4A1.4,1.4,0,0,1,27.191,19.394ZM31.389,4H3.4A1.4,1.4,0,0,0,2,5.4v7H32.789v-7A1.4,1.4,0,0,0,31.389,4Zm-8.4,7a1.4,1.4,0,1,1,1.4-1.4A1.4,1.4,0,0,1,22.992,11Zm4.2,0a1.4,1.4,0,1,1,1.4-1.4A1.4,1.4,0,0,1,27.191,11Z" transform="translate(-2 -4)"/>
+      </g>
+    </g>
+  </g>
+</svg>

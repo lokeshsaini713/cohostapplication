@@ -1,0 +1,10 @@
+<svg id="banner-main5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <path id="search-svgrepo-com" d="M17.547,17.564l5.917,5.9M20.053,11.526A8.526,8.526,0,1,1,11.526,3,8.526,8.526,0,0,1,20.053,11.526Z" transform="translate(8.268 9.268)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

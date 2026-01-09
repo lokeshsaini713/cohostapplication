@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8338" data-name="Group 8338" transform="translate(-652 -4535)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(652 4535)" fill="#fff2e8"/>
+    <g id="MDI_play-network-outline" data-name="MDI / play-network-outline" transform="translate(668 4551)">
+      <g id="Boundary" fill="#f48120" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="29" height="27" stroke="none"/>
+        <rect x="0.5" y="0.5" width="28" height="26" fill="none"/>
+      </g>
+      <path id="Path_play-network-outline" data-name="Path / play-network-outline" d="M18.25,22.55A1.2,1.2,0,0,0,17,21.4H15.75V19.1h5a2.406,2.406,0,0,0,2.5-2.3V5.3A2.406,2.406,0,0,0,20.75,3H8.25a2.406,2.406,0,0,0-2.5,2.3V16.8a2.406,2.406,0,0,0,2.5,2.3h5v2.3H12a1.2,1.2,0,0,0-1.25,1.15H2v2.3h8.75A1.2,1.2,0,0,0,12,26h5a1.2,1.2,0,0,0,1.25-1.15H27v-2.3H18.25m-10-5.75V5.3h12.5V16.8H8.25M12,15.65V6.45l6.25,4.6Z" transform="translate(0 -1)" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

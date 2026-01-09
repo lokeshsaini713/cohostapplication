@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1226" data-name="Rectangle 1226" width="30" height="30" transform="translate(507 360)" fill="none" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_107" data-name="Mask Group 107" transform="translate(-507 -360)" clip-path="url(#clip-path)">
+    <path id="Icon_feather-shield" data-name="Icon feather-shield" d="M15.166,25.914s9.166-4.583,9.166-11.457V6.437L15.166,3,6,6.437v8.02C6,21.331,15.166,25.914,15.166,25.914Z" transform="translate(506.834 360.543)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0f0f0f"/>
+      <stop offset="0.993" stop-color="#6a6a6a"/>
+      <stop offset="1" stop-color="#545454"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8504" data-name="Group 8504" transform="translate(-375 -3622)">
+    <circle id="Ellipse_93" data-name="Ellipse 93" cx="25" cy="25" r="25" transform="translate(375 3622)" fill="url(#linear-gradient)"/>
+    <g id="plug-circle-svgrepo-com_4_" data-name="plug-circle-svgrepo-com (4)" transform="translate(384.75 3631.75)">
+      <path id="Path_7568" data-name="Path 7568" d="M12.773,28.493l-.2.967h0Zm7.918-1.95a.986.986,0,1,0,.868,1.771Zm-7.722.983A12.251,12.251,0,0,1,3.223,15.5H1.25A14.223,14.223,0,0,0,12.577,29.46ZM3.223,15.5A12.219,12.219,0,0,1,15.386,3.223V1.25A14.191,14.191,0,0,0,1.25,15.5ZM15.386,3.223A12.219,12.219,0,0,1,27.55,15.5h1.973A14.191,14.191,0,0,0,15.386,1.25ZM16.373,26.1v-6.63H14.4V26.1ZM27.55,15.5a12.284,12.284,0,0,1-6.859,11.048l.868,1.771A14.256,14.256,0,0,0,29.523,15.5ZM12.577,29.46a3.26,3.26,0,0,0,3.8-3.357H14.4a1.294,1.294,0,0,1-1.43,1.424Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_7569" data-name="Path 7569" d="M9.4,9.5h5.786a1.9,1.9,0,0,1,1.9,1.9v.263a4.793,4.793,0,1,1-9.586,0V11.4A1.9,1.9,0,0,1,9.4,9.5Zm2.893,5.26a3.1,3.1,0,0,0,3.1-3.1V11.4a.2.2,0,0,0-.2-.2H9.4a.2.2,0,0,0-.2.2v.263A3.1,3.1,0,0,0,12.293,14.76Z" transform="translate(3.093 3.723)" fill="#fff"/>
+      <path id="Path_7570" data-name="Path 7570" d="M12.848,11.826A.848.848,0,0,1,12,10.978V8.348a.848.848,0,1,1,1.7,0v2.63A.848.848,0,0,1,12.848,11.826Z" transform="translate(4.511 3.093)" fill="#fff"/>
+      <path id="Path_7571" data-name="Path 7571" d="M9.848,11.826A.848.848,0,0,1,9,10.978V8.348a.848.848,0,1,1,1.7,0v2.63A.848.848,0,0,1,9.848,11.826Z" transform="translate(3.566 3.093)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

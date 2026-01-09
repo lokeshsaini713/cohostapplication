@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3616" data-name="Rectangle 3616" width="40" height="40" transform="translate(379 3253)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8048" data-name="Mask Group 8048" transform="translate(-379 -3253)" clip-path="url(#clip-path)">
+    <path id="Icon_simple-microsoftazure" data-name="Icon simple-microsoftazure" d="M7.658,30.029H33.521L19.589,5.884,15.346,17.542,23.5,27.233ZM18.479,4.05,8.527,12.4,0,27.17H7.689v.02Z" transform="translate(382.239 3254.96)"/>
+  </g>
+</svg>

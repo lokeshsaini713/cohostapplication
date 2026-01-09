@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3617" data-name="Rectangle 3617" width="40" height="40" transform="translate(379 3253)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8049" data-name="Mask Group 8049" transform="translate(-379 -3253)" clip-path="url(#clip-path)">
+    <path id="Icon_metro-flow-parallel" data-name="Icon metro-flow-parallel" d="M16.712,8.3A4.294,4.294,0,1,0,10.628,12.2V25.883a4.292,4.292,0,1,0,3.578,0V12.2a4.286,4.286,0,0,0,2.5-3.893Zm-1.818,21.47A2.477,2.477,0,1,1,12.417,27.3,2.479,2.479,0,0,1,14.894,29.775ZM12.418,10.782A2.478,2.478,0,1,1,14.9,8.3a2.477,2.477,0,0,1-2.478,2.478Zm16.1,15.1V12.2a4.294,4.294,0,1,0-3.578,0V25.883a4.292,4.292,0,1,0,3.578,0ZM24.255,8.3a2.477,2.477,0,1,1,2.478,2.478A2.476,2.476,0,0,1,24.255,8.3Zm2.476,23.948a2.478,2.478,0,1,1,2.476-2.478,2.478,2.478,0,0,1-2.476,2.478Z" transform="translate(379.426 3253.959)"/>
+  </g>
+</svg>

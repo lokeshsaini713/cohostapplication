@@ -1,0 +1,15 @@
+<svg id="banner-main6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="plug-circle-svgrepo-com" transform="translate(8.754 7.753)">
+    <path id="Path_9099" data-name="Path 9099" d="M11.64,25.815l-.177.871h0Zm7.14-1.758a.889.889,0,1,0,.782,1.6Zm-6.962.887A11.046,11.046,0,0,1,3.029,14.095H1.25A12.825,12.825,0,0,0,11.463,26.686ZM3.029,14.095A11.017,11.017,0,0,1,14,3.029V1.25A12.8,12.8,0,0,0,1.25,14.095ZM14,3.029A11.017,11.017,0,0,1,24.964,14.095h1.779A12.8,12.8,0,0,0,14,1.25Zm.889,20.631V17.682H13.107V23.66Zm10.079-9.565a11.076,11.076,0,0,1-6.184,9.962l.782,1.6a12.854,12.854,0,0,0,7.181-11.559Zm-13.5,12.591a2.939,2.939,0,0,0,3.423-3.027H13.107a1.167,1.167,0,0,1-1.29,1.284Z" transform="translate(0)" fill="#fff"/>
+    <path id="Path_9100" data-name="Path 9100" d="M9,11.949A.949.949,0,0,1,9.949,11h5.217a.949.949,0,0,1,.949.949v.237a3.557,3.557,0,1,1-7.114,0Z" transform="translate(1.439 1.811)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="Path_9101" data-name="Path 9101" d="M13.5,11.371V9" transform="translate(2.275 1.439)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <path id="Path_9102" data-name="Path 9102" d="M10.5,11.371V9" transform="translate(1.718 1.439)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

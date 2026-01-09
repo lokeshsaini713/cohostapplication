@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_971" data-name="Rectangle 971" width="35" height="35" transform="translate(451 1020)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_86" data-name="Mask Group 86" transform="translate(-451 -1020)" clip-path="url(#clip-path)">
+    <g id="Icon_ionic-ios-cart" data-name="Icon ionic-ios-cart" transform="translate(449.288 1018.386)">
+      <path id="Path_3592" data-name="Path 3592" d="M13.217,29.952a1.827,1.827,0,1,1-1.827-1.827A1.827,1.827,0,0,1,13.217,29.952Z" transform="translate(0.512 1.956)"/>
+      <path id="Path_3593" data-name="Path 3593" d="M29,29.952a1.827,1.827,0,1,1-1.827-1.827A1.827,1.827,0,0,1,29,29.952Z" transform="translate(1.818 1.956)"/>
+      <path id="Path_3594" data-name="Path 3594" d="M35.031,9.693a.448.448,0,0,0-.4-.32l-24.8-2.4a.763.763,0,0,1-.571-.358A7.753,7.753,0,0,0,8.338,5.2c-.586-.716-1.69-.693-3.715-.708A1.109,1.109,0,0,0,3.382,5.566,1.088,1.088,0,0,0,4.57,6.64a10.115,10.115,0,0,1,1.979.145c.358.107.647.693.754,1.2a.028.028,0,0,0,.008.023c.015.091.152.777.152.784L10.508,24.9a5.921,5.921,0,0,0,1.1,2.718,3.038,3.038,0,0,0,2.5,1.233H32.13a1.082,1.082,0,0,0,1.1-1.02,1.061,1.061,0,0,0-1.066-1.112H14.1a.885.885,0,0,1-.632-.213,3.416,3.416,0,0,1-.876-1.979l-.327-1.8a.042.042,0,0,1,.03-.046L33.439,19.1a.445.445,0,0,0,.373-.4l1.218-8.816A.434.434,0,0,0,35.031,9.693Z" transform="translate(0)"/>
+    </g>
+  </g>
+</svg>

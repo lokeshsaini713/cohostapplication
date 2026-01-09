@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3670" data-name="Rectangle 3670" width="35" height="35" transform="translate(820 5428)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8022" data-name="Mask Group 8022" transform="translate(-820 -5428)" clip-path="url(#clip-path)">
+    <g id="server-minimalistic-svgrepo-com" transform="translate(823.099 5431.289)">
+      <path id="Path_9293" data-name="Path 9293" d="M16.281,22.141H5.57a5.938,5.938,0,0,1-2.1-.181,2.381,2.381,0,0,1-1.288-1.288A5.936,5.936,0,0,1,2,18.57a5.936,5.936,0,0,1,.181-2.1,2.381,2.381,0,0,1,1.288-1.288A5.938,5.938,0,0,1,5.57,15H22.232a5.938,5.938,0,0,1,2.1.181,2.381,2.381,0,0,1,1.288,1.288,5.938,5.938,0,0,1,.181,2.1,5.938,5.938,0,0,1-.181,2.1,2.381,2.381,0,0,1-1.288,1.288,5.938,5.938,0,0,1-2.1.181h-1.19" transform="translate(0 2.281)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+      <path id="Path_9294" data-name="Path 9294" d="M2,12.57a5.936,5.936,0,0,1,.181-2.1A2.38,2.38,0,0,1,3.469,9.181,5.936,5.936,0,0,1,5.57,9H22.232a5.936,5.936,0,0,1,2.1.181,2.381,2.381,0,0,1,1.288,1.288,5.938,5.938,0,0,1,.181,2.1,5.938,5.938,0,0,1-.181,2.1,2.381,2.381,0,0,1-1.288,1.288,5.938,5.938,0,0,1-2.1.181H5.57a5.938,5.938,0,0,1-2.1-.181,2.381,2.381,0,0,1-1.288-1.288A5.936,5.936,0,0,1,2,12.57Z" transform="translate(0 1.141)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_9295" data-name="Path 9295" d="M11.521,3H22.232a5.936,5.936,0,0,1,2.1.181,2.381,2.381,0,0,1,1.288,1.288,5.938,5.938,0,0,1,.181,2.1,5.938,5.938,0,0,1-.181,2.1,2.381,2.381,0,0,1-1.288,1.288,5.936,5.936,0,0,1-2.1.181H5.57a5.936,5.936,0,0,1-2.1-.181A2.38,2.38,0,0,1,2.181,8.671,5.936,5.936,0,0,1,2,6.57a5.936,5.936,0,0,1,.181-2.1A2.38,2.38,0,0,1,3.469,3.181,5.936,5.936,0,0,1,5.57,3H6.76" transform="translate(0)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+      <ellipse id="Ellipse_96" data-name="Ellipse 96" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(3.901 12.711)"/>
+      <ellipse id="Ellipse_97" data-name="Ellipse 97" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(3.901 5.711)"/>
+      <ellipse id="Ellipse_98" data-name="Ellipse 98" cx="1.5" cy="1" rx="1.5" ry="1" transform="translate(3.901 19.711)"/>
+    </g>
+  </g>
+</svg>

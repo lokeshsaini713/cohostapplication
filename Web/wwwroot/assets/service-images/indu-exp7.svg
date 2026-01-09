@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2780" data-name="Rectangle 2780" width="25" height="25" transform="translate(4155 3392)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8050" data-name="Mask Group 8050" transform="translate(-4155 -3392)" clip-path="url(#clip-path)">
+    <g id="vr-arrows-svgrepo-com_1_" data-name="vr-arrows-svgrepo-com (1)" transform="translate(4157.713 3394.725)">
+      <path id="Path_9507" data-name="Path 9507" d="M6.14,17.752a27.882,27.882,0,0,1,4.79-.392,27.882,27.882,0,0,1,4.79.392" transform="translate(-0.893 -2.943)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <line id="Line_47" data-name="Line 47" y1="7.994" transform="translate(18.824 8.826)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <line id="Line_48" data-name="Line 48" y1="7.994" transform="translate(1.25 8.826)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <path id="Path_9508" data-name="Path 9508" d="M1.25,17.979c0,.817,1.635,1.578,4,2.011V12.012c-2.4-.433-4-1.169-4-2.019,0-1.332,3.932-2.4,8.787-2.4s8.787,1.071,8.787,2.395c0,.817-1.594,1.586-4,2.019V19.99c2.4-.433,4-1.169,4-2.011" transform="translate(0 -1.159)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <path id="Path_9509" data-name="Path 9509" d="M19.33,1.24l1.994,2L19.33,5.237" transform="translate(-3.301)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <path id="Path_9510" data-name="Path 9510" d="M4.224,5.237,2.23,3.243l1.994-2" transform="translate(-0.179)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <line id="Line_49" data-name="Line 49" x2="1.594" transform="translate(4.446 3.234)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <line id="Line_50" data-name="Line 50" x2="1.594" transform="translate(7.642 3.234)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <line id="Line_51" data-name="Line 51" x2="1.594" transform="translate(10.838 3.234)" fill="none" stroke="#020202" stroke-width="1.5"/>
+      <line id="Line_52" data-name="Line 52" x2="1.594" transform="translate(14.034 3.234)" fill="none" stroke="#020202" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="110" viewBox="0 0 125 110">
+  <g id="Group_8466" data-name="Group 8466" transform="translate(-978.111 -3659.536)">
+    <path id="Path_7536" data-name="Path 7536" d="M89.1,0H35.9a9.3,9.3,0,0,0-8.047,4.615L1.245,50.385a9.177,9.177,0,0,0,0,9.229l26.6,45.771A9.3,9.3,0,0,0,35.9,110H89.1a9.3,9.3,0,0,0,8.047-4.614l26.6-45.771a9.175,9.175,0,0,0,0-9.229L97.151,4.615A9.3,9.3,0,0,0,89.1,0" transform="translate(978.11 3659.536)" fill="#001334"/>
+    <g id="Product_Icons" data-name="Product Icons" transform="translate(1018.577 3689.096)">
+      <g id="Group_8458" data-name="Group 8458">
+        <path id="Path_7530" data-name="Path 7530" d="M15.282,13.06l11.575,6.691v2.519L14.29,15.019Z" transform="translate(13.796 15.077)" fill="#4285f4" fill-rule="evenodd"/>
+        <path id="Path_7531" data-name="Path 7531" d="M18.518,14.777,5.264,22.435,4.45,20.4,17.374,12.92Z" transform="translate(-1.397 14.86)" fill="#669df6" fill-rule="evenodd"/>
+        <rect id="Rectangle_3592" data-name="Rectangle 3592" width="2.188" height="14.704" transform="translate(21.115 3.282)" fill="#aecbfa"/>
+        <path id="Path_7532" data-name="Path 7532" d="M3.25,14.72V40.16L25.51,52.88,47.745,40.16V14.72L25.51,2ZM43.013,37.336l-17.5,9.9-17.5-9.9V17.544l17.5-9.9,17.477,9.9V37.336Z" transform="translate(-3.25 -2)" fill="#aecbfa" fill-rule="evenodd"/>
+        <path id="Path_7533" data-name="Path 7533" d="M18.11,18.587l10.125-5.826L18.11,6.91,8.01,12.761Z" transform="translate(4.099 5.581)" fill="#aecbfa" fill-rule="evenodd"/>
+        <path id="Path_7534" data-name="Path 7534" d="M17.48,15.836,7.66,10.01V21.687l9.82,5.826Z" transform="translate(3.559 10.367)" fill="#669df6" fill-rule="evenodd"/>
+        <path id="Path_7535" data-name="Path 7535" d="M12.48,15.836V27.513l9.82-5.826V10.01Z" transform="translate(11.001 10.367)" fill="#4285f4" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

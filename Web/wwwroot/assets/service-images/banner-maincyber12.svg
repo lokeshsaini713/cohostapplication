@@ -1,0 +1,10 @@
+<svg id="banner-main2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <path id="lock-alt-svgrepo-com" d="M12.883,15.77v2.221M7.331,10.8c.523-.032,1.169-.032,2-.032h7.107c.83,0,1.475,0,2,.032m-11.1,0a3.749,3.749,0,0,0-1.512.331,3.331,3.331,0,0,0-1.456,1.456C4,13.3,4,14.237,4,16.1v1.555c0,1.866,0,2.8.363,3.511a3.331,3.331,0,0,0,1.456,1.456c.713.363,1.645.363,3.511.363h7.107c1.866,0,2.8,0,3.511-.363A3.331,3.331,0,0,0,21.4,21.169c.363-.713.363-1.645.363-3.511V16.1c0-1.866,0-2.8-.363-3.511a3.331,3.331,0,0,0-1.456-1.456,3.75,3.75,0,0,0-1.512-.331m-11.1,0V8.552a5.552,5.552,0,0,1,11.1,0V10.8" transform="translate(9.5 8.513)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="51" viewBox="0 0 51 51">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9a9a9a"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2476" data-name="Group 2476" transform="translate(-1296 -2971)">
+    <circle id="Ellipse_15" data-name="Ellipse 15" cx="25.5" cy="25.5" r="25.5" transform="translate(1296 2971)" fill="url(#linear-gradient)"/>
+    <path id="Icon_open-dashboard" data-name="Icon open-dashboard" d="M15.319,0A15.319,15.319,0,1,0,30.638,15.319,15.364,15.364,0,0,0,15.319,0Zm0,3.83A11.489,11.489,0,1,1,3.83,15.319,11.474,11.474,0,0,1,15.319,3.83Zm0,3.83a1.915,1.915,0,1,0,1.915,1.915A1.9,1.9,0,0,0,15.319,7.659Zm-6.357,3.83a1.915,1.915,0,0,0-.728,3.217l3.485,3.485a3.889,3.889,0,0,0-.23.957,3.83,3.83,0,1,0,3.83-3.83,3.889,3.889,0,0,0-.957.23l-3.485-3.485a1.915,1.915,0,0,0-1.685-.613,1.915,1.915,0,0,0-.23,0Zm12.1,0A1.915,1.915,0,1,0,22.978,13.4,1.9,1.9,0,0,0,21.063,11.489Z" transform="translate(1306.281 2980.681)" fill="#fff"/>
+  </g>
+</svg>

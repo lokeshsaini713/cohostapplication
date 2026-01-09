@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240" height="153" viewBox="0 0 240 153">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_58" data-name="Rectangle 58" width="240" height="153" rx="8" transform="translate(449.529 3702.806)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.976" y1="0.161" x2="-0.06" y2="0.419" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fbc394"/>
+      <stop offset="1" stop-color="#fff9ee"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#000306"/>
+      <stop offset="1" stop-color="#404040"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f58526"/>
+      <stop offset="1" stop-color="#febb82"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_5" data-name="Mask Group 5" transform="translate(-449.529 -3702.806)" clip-path="url(#clip-path)">
+    <g id="Group_2" data-name="Group 2" transform="translate(450 3702.691)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="238.507" height="152.751" transform="translate(0.529 0.135)" opacity="0.62" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="215.52" height="124.555" rx="8" transform="translate(11.529 19.294)" fill="#fff"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="241.507" height="12.267" fill="url(#linear-gradient-2)"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="1.878" cy="1.878" r="1.878" transform="translate(6.719 4.369)" fill="#fff"/>
+      <circle id="Ellipse_4" data-name="Ellipse 4" cx="1.878" cy="1.878" r="1.878" transform="translate(13.848 4.369)" fill="#fff"/>
+      <circle id="Ellipse_5" data-name="Ellipse 5" cx="1.878" cy="1.878" r="1.878" transform="translate(20.976 4.369)" fill="#fff"/>
+      <path id="Path_37" data-name="Path 37" d="M274.484,192.205,259.61,206.894l14.874,14.688,3.347-3.347-11.247-11.249,11.341-11.341Z" transform="translate(-227.441 -155.453)" fill="url(#linear-gradient-3)"/>
+      <path id="Path_38" data-name="Path 38" d="M323.608,192.205l14.874,14.689-14.874,14.688-3.347-3.347,11.248-11.249-11.342-11.342Z" transform="translate(-264.377 -155.453)" fill="url(#linear-gradient-3)"/>
+      <path id="Path_65" data-name="Path 65" d="M448.888,201.655c-1.217,0-2.2.7-2.2,1.563s.986,1.563,2.2,1.563h103.84c1.217,0,2.2-.7,2.2-1.563s-.986-1.563-2.2-1.563Z" transform="translate(-341.545 -161.217)" fill="#e6e6e6"/>
+      <path id="Path_78" data-name="Path 78" d="M437.687,365.726H263c-1.786,0-3.233-1.031-3.235-2.3V332.593c0-1.27,1.449-2.3,3.235-2.3H437.687c1.786,0,3.233,1.031,3.235,2.3v30.831C440.92,364.695,439.472,365.724,437.687,365.726ZM263,331.212c-1.072,0-1.94.619-1.941,1.381v30.831c0,.762.869,1.38,1.941,1.381H437.687c1.072,0,1.94-.619,1.941-1.381v-30.83c0-.762-.869-1.38-1.941-1.381Z" transform="translate(-227.537 -239.678)" fill="#e6e6e6"/>
+      <circle id="Ellipse_13" data-name="Ellipse 13" cx="7.815" cy="7.815" r="7.815" transform="translate(45.639 100.503)" fill="#e6e6e6"/>
+      <path id="Path_79" data-name="Path 79" d="M368.241,359.655a1.563,1.563,0,0,0,0,3.125h73.671a1.563,1.563,0,1,0,0-3.125Z" transform="translate(-292.745 -257.588)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_80" data-name="Path 80" d="M368.241,383.692a1.563,1.563,0,0,0,0,3.125h31.7a1.563,1.563,0,1,0,0-3.125Z" transform="translate(-292.745 -272.249)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_81" data-name="Path 81" d="M448.134,225.655a1.568,1.568,0,0,0,0,3.125h68.054a1.568,1.568,0,0,0,0-3.125Z" transform="translate(-341.55 -175.856)" fill="#e6e6e6"/>
+      <path id="Path_82" data-name="Path 82" d="M448.577,249.655a1.591,1.591,0,1,0,0,3.125h89.207a1.591,1.591,0,1,0,0-3.125Z" transform="translate(-341.545 -190.494)" fill="#e6e6e6"/>
+    </g>
+  </g>
+</svg>

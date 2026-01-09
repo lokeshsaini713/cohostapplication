@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8335" data-name="Group 8335" transform="translate(-994 -4291)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(994 4291)"/>
+    <g id="MDI_archive-clock-outline" data-name="MDI / archive-clock-outline" transform="translate(1010 4308)">
+      <g id="Boundary" fill="#f48120" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_archive-clock-outline" data-name="Path / archive-clock-outline" d="M23.429,2H2V9.143H23.429V2M21.048,6.762H4.381V4.381H21.048V6.762m-2.381,3.571a8.294,8.294,0,0,0-4.274,1.19H9.738a.589.589,0,0,0-.6.6V13.9h2.69a8.261,8.261,0,0,0-1.5,4.762,8.652,8.652,0,0,0,.345,2.381H5.571V10.333H3.19v13.1h8.643a8.331,8.331,0,1,0,6.833-13.1m0,14.286a5.952,5.952,0,1,1,5.952-5.952,5.955,5.955,0,0,1-5.952,5.952m.6-5.655,3.4,2.012-.893,1.452-4.3-2.571V13.9h1.786Z" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

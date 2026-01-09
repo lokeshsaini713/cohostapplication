@@ -1,0 +1,13 @@
+<svg id="banner-main2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="check-circle-svgrepo-com" transform="translate(9.71 8.71)">
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="11" cy="11" r="11" transform="translate(2.29 2.29)" fill="none" stroke="#fff" stroke-width="2"/>
+    <path id="Path_7200" data-name="Path 7200" d="M8.5,12.887l2.258,2.258L16.4,9.5" transform="translate(0.838 0.967)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="110" viewBox="0 0 125 110">
+  <g id="Group_8465" data-name="Group 8465" transform="translate(-978.038 -3659.536)">
+    <path id="Path_7536" data-name="Path 7536" d="M89.1,0H35.9a9.3,9.3,0,0,0-8.047,4.615L1.245,50.385a9.177,9.177,0,0,0,0,9.229l26.6,45.771A9.3,9.3,0,0,0,35.9,110H89.1a9.3,9.3,0,0,0,8.047-4.614l26.6-45.771a9.175,9.175,0,0,0,0-9.229L97.151,4.615A9.3,9.3,0,0,0,89.1,0" transform="translate(978.038 3659.536)" fill="#001334"/>
+    <g id="Group_8462" data-name="Group 8462" transform="translate(1012.503 3686.476)">
+      <path id="Path_7520" data-name="Path 7520" d="M6.73,10.83v7.116a13.285,13.285,0,0,0,4.627,4.708V10.83Z" transform="translate(6.068 13.062)" fill="#aecbfa" fill-rule="evenodd"/>
+      <path id="Path_7521" data-name="Path 7521" d="M9.89,8.41V28.784a20.618,20.618,0,0,0,3,.162,21.646,21.646,0,0,0,2.706,0V8.41Z" transform="translate(11.459 8.934)" fill="#669df6" fill-rule="evenodd"/>
+      <path id="Path_7522" data-name="Path 7522" d="M13.64,11.86v8.9a13.529,13.529,0,0,0,4.6-4.924V11.86Z" transform="translate(17.855 14.819)" fill="#aecbfa" fill-rule="evenodd"/>
+      <path id="Path_7523" data-name="Path 7523" d="M20.377,16.535l-3.842,3.842a1.136,1.136,0,0,0,0,1.623l9.578,9.578a1.136,1.136,0,0,0,1.6,0l3.869-3.869a1.136,1.136,0,0,0,0-1.6L22,16.535a1.136,1.136,0,0,0-1.623,0" transform="translate(22.212 22.212)" fill="#4285f4" fill-rule="evenodd"/>
+      <path id="Path_7524" data-name="Path 7524" d="M26.352,2A24.352,24.352,0,1,0,50.7,26.352,24.352,24.352,0,0,0,26.352,2m0,42.454A18.075,18.075,0,1,1,39.16,39.16a18.075,18.075,0,0,1-12.808,5.294" transform="translate(-2 -2)" fill="#aecbfa" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8331" data-name="Group 8331" transform="translate(-994 -3949)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(994 3949)"/>
+    <g id="MDI_calendar-check" data-name="MDI / calendar-check" transform="translate(1011 3965)">
+      <g id="Boundary" fill="#f48120" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_calendar-check" data-name="Path / calendar-check" d="M22.556,22.6H5.444V9.4H22.556m0-6H21.333V1H18.889V3.4H9.111V1H6.667V3.4H5.444A2.422,2.422,0,0,0,3,5.8V22.6A2.423,2.423,0,0,0,5.444,25H22.556A2.423,2.423,0,0,0,25,22.6V5.8a2.423,2.423,0,0,0-2.444-2.4m-3.019,9.672-1.3-1.272-5.964,5.856L9.686,15.112l-1.3,1.272L12.277,20.2Z" transform="translate(0 1)" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

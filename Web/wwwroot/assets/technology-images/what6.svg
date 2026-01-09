@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 55 55">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9a9a9a"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2477" data-name="Group 2477" transform="translate(-1296 -3082)">
+    <circle id="Ellipse_16" data-name="Ellipse 16" cx="27.5" cy="27.5" r="27.5" transform="translate(1296 3082)" fill="url(#linear-gradient)"/>
+    <g id="_-Product-Icons" data-name="🔍-Product-Icons" transform="translate(1307.4 3093.762)">
+      <g id="ic_fluent_payment_24_regular" transform="translate(2.011 5.021)">
+        <path id="_-Color" data-name="🎨-Color" d="M27.153,5.021A4.014,4.014,0,0,1,31.159,8.79l.007.244V21.446A4.014,4.014,0,0,1,27.4,25.452l-.244.007H6.024a4.014,4.014,0,0,1-4.006-3.769l-.007-.244V9.034A4.014,4.014,0,0,1,5.78,5.028l.244-.007Zm1.823,8.718H4.2v7.707a1.824,1.824,0,0,0,1.638,1.815l.187.009H27.153a1.824,1.824,0,0,0,1.815-1.638l.009-.187Zm-3.262,5.116a1.095,1.095,0,0,1,.149,2.179l-.149.01H22.066a1.095,1.095,0,0,1-.149-2.179l.149-.01ZM27.153,7.21H6.024A1.824,1.824,0,0,0,4.21,8.848L4.2,9.034V11.55H28.976V9.034A1.825,1.825,0,0,0,27.34,7.219Z" transform="translate(-2.011 -5.021)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

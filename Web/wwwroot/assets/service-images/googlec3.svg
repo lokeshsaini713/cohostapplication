@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#feaa49"/>
+      <stop offset="1" stop-color="#f80"/>
+    </linearGradient>
+  </defs>
+  <path id="graph-up-svgrepo-com_2_" data-name="graph-up-svgrepo-com (2)" d="M4.929,4.929C2,7.858,2,12.572,2,22S2,36.142,4.929,39.071,12.572,42,22,42s14.142,0,17.071-2.929S42,31.428,42,22,42,7.858,39.071,4.929,31.428,2,22,2,7.858,2,4.929,4.929ZM25.5,18A1.5,1.5,0,0,0,27,19.5h1.379l-4.025,4.025a.5.5,0,0,1-.707,0l-3.172-3.172a3.5,3.5,0,0,0-4.95,0l-4.586,4.586a1.5,1.5,0,0,0,2.121,2.121l4.586-4.586a.5.5,0,0,1,.707,0l3.172,3.172a3.5,3.5,0,0,0,4.95,0L30.5,21.621V23a1.5,1.5,0,0,0,3,0V18A1.5,1.5,0,0,0,32,16.5H27A1.5,1.5,0,0,0,25.5,18Z" transform="translate(-2 -2)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+</svg>

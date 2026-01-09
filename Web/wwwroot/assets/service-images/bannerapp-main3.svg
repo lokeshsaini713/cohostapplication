@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <g id="banner-main3" transform="translate(0 -0.5)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" transform="translate(0 0.5)" fill="url(#linear-gradient)"/>
+    <path id="figma-svgrepo-com_1_" data-name="figma-svgrepo-com (1)" d="M9.061,1.25A4.478,4.478,0,0,0,6.474,9.383a4.478,4.478,0,0,0,0,7.31,4.478,4.478,0,1,0,7.064,3.655V16.505a4.478,4.478,0,1,0,5.42-7.123A4.478,4.478,0,0,0,16.371,1.25Zm2.833,14.62H9.061a2.833,2.833,0,1,1,0-5.665h2.833V15.87ZM9.061,8.56h2.833V2.895H9.061a2.833,2.833,0,0,0,0,5.665ZM19.2,5.728a2.833,2.833,0,0,1-2.83,2.833H13.539V2.895h2.833A2.833,2.833,0,0,1,19.2,5.728Zm-5.665,7.307a2.833,2.833,0,0,1,2.829-2.829h.006a2.833,2.833,0,1,1-2.835,2.836ZM9.061,17.515a2.833,2.833,0,1,0,2.833,2.833V17.515Z" transform="translate(9.417 10.25)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

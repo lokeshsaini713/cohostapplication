@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8363" data-name="Group 8363" transform="translate(-375 -383)">
+    <g id="banner-main" transform="translate(375 382.5)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" transform="translate(0 0.5)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="online-learning-svgrepo-com" transform="translate(349.42 394.361)">
+      <path id="Path_9084" data-name="Path 9084" d="M56.189,0H41.51a.741.741,0,0,0-.741.741V21.536a.741.741,0,0,0,.741.741H56.189a.741.741,0,0,0,.741-.741V.741A.741.741,0,0,0,56.189,0ZM44.7,1.483h2.187v3.99L46.2,5.018a.741.741,0,0,0-.822,0l-.682.455Zm-1.483,0V6.857a.741.741,0,0,0,1.153.617l1.424-.949,1.424.949a.741.741,0,0,0,1.152-.617V1.483h7.08V17.125h-13.2V1.483Zm-.964,19.312V18.608h13.2v2.187Z" transform="translate(0)" fill="#fff"/>
+      <path id="Path_9085" data-name="Path 9085" d="M139.354,253.019a.742.742,0,1,0,.524.217A.747.747,0,0,0,139.354,253.019Z" transform="translate(-90.505 -234.041)" fill="#fff"/>
+      <path id="Path_9086" data-name="Path 9086" d="M171.973,83.022h2.446a.741.741,0,1,0,0-1.483h-2.446a.741.741,0,0,0,0,1.483Z" transform="translate(-120.677 -75.423)" fill="#fff"/>
+      <path id="Path_9087" data-name="Path 9087" d="M74.127,115.637h9.786a.741.741,0,1,0,0-1.483H74.127a.741.741,0,0,0,0,1.483Z" transform="translate(-30.17 -105.592)" fill="#fff"/>
+      <path id="Path_9088" data-name="Path 9088" d="M74.127,148.253h9.786a.741.741,0,1,0,0-1.483H74.127a.741.741,0,0,0,0,1.483Z" transform="translate(-30.17 -135.761)" fill="#fff"/>
+      <path id="Path_9089" data-name="Path 9089" d="M74.127,180.868h9.786a.741.741,0,0,0,0-1.483H74.127a.741.741,0,0,0,0,1.483Z" transform="translate(-30.17 -165.93)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

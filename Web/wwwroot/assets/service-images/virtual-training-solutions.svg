@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <g id="virtual-training-solutions" transform="translate(0 -0.5)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" transform="translate(0 0.5)" fill="url(#linear-gradient)"/>
+    <g id="online-class-svgrepo-com" transform="translate(0.44 0.04)">
+      <path id="Path_9095" data-name="Path 9095" d="M32.243,20.11v11.5a.969.969,0,0,1-.969.969H10.529a.969.969,0,0,1-.969-.969V17.079a.969.969,0,0,1,.969-.969H24.884" transform="translate(0 -2.06)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_47" data-name="Line 47" x2="22.683" transform="translate(9.56 26.907)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9096" data-name="Path 9096" d="M22.23,49.5A3.186,3.186,0,0,0,23.9,45.68" transform="translate(-5.612 -15.158)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9097" data-name="Path 9097" d="M36.918,49.5a3.192,3.192,0,0,1-1.7-3.821" transform="translate(-11.304 -15.158)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_48" data-name="Line 48" x2="13.893" transform="translate(13.955 34.343)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <circle id="Ellipse_108" data-name="Ellipse 108" cx="1.966" cy="1.966" r="1.966" transform="translate(14.596 17.153)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9098" data-name="Path 9098" d="M22.955,36.027a3.983,3.983,0,0,0-3.983-3.977h0A3.977,3.977,0,0,0,15,36.027Z" transform="translate(-2.41 -9.121)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9099" data-name="Path 9099" d="M46.267,18.05H41.588l-2.83,2a.05.05,0,0,1-.078-.039V18.05H37.549a.485.485,0,0,1-.479-.479V11.939a.479.479,0,0,1,.479-.479h8.718a.479.479,0,0,1,.479.479v5.632A.485.485,0,0,1,46.267,18.05Z" transform="translate(-12.186)" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

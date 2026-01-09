@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="103" viewBox="0 0 103 103">
+  <defs>
+    <filter id="Ellipse_109" x="0" y="0" width="103" height="103" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_8423" data-name="Group 8423" transform="translate(-384 -2761)">
+    <g transform="matrix(1, 0, 0, 1, 384, 2761)" filter="url(#Ellipse_109)">
+      <circle id="Ellipse_109-2" data-name="Ellipse 109" cx="42.5" cy="42.5" r="42.5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="unity-svgrepo-com" d="M37.337,36.057,29.5,22.856,37.337,9.649l3.786,13.2-3.787,13.2ZM19.861,34.789,10,25H25.676l7.839,13.2L19.86,34.792Zm0-23.87L33.516,7.507l-7.838,13.2H10ZM44.7,18.362,39.922,1,22.072,5.656l-2.64,4.534-5.362-.039L1.005,22.856,14.071,35.562l5.359-.042,2.648,4.534L39.921,44.7,44.7,27.354l-2.716-4.5Z" transform="translate(409.141 2786.646)"/>
+  </g>
+</svg>

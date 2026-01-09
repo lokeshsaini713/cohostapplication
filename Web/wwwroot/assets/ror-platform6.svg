@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1228" data-name="Rectangle 1228" width="30" height="30" transform="translate(507 360)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_109" data-name="Mask Group 109" transform="translate(-507 -360)" clip-path="url(#clip-path)">
+    <g id="Icon_ionic-ios-barcode" data-name="Icon ionic-ios-barcode" transform="translate(505.683 358.294)">
+      <path id="Path_6243" data-name="Path 6243" d="M7.955,24.919H5.416a.25.25,0,0,1-.249-.249V8.741a.25.25,0,0,1,.249-.249h2.52a.916.916,0,0,0,.915-.871A.818.818,0,0,0,8.6,7a1.112,1.112,0,0,0-.74-.249H4.5a1.016,1.016,0,0,0-1.12,1v17.92a.964.964,0,0,0,1.058,1h3.5a.838.838,0,0,0,.66-1.437A.922.922,0,0,0,7.955,24.919Z" fill="#fff"/>
+      <path id="Path_6244" data-name="Path 6244" d="M30.855,6.75h-3.5a.872.872,0,0,0-.871,1.139.674.674,0,0,0,.05.118.881.881,0,0,0,.8.485h2.539a.25.25,0,0,1,.249.249V24.664a.25.25,0,0,1-.249.249h-2.52a.907.907,0,0,0-.915.865.872.872,0,0,0,.255.647.857.857,0,0,0,.641.236h3.522a.97.97,0,0,0,1.058-1.02V7.746A.964.964,0,0,0,30.855,6.75Z" transform="translate(-2.653)" fill="#fff"/>
+      <path id="Path_6245" data-name="Path 6245" d="M8.5,12.375a.872.872,0,0,0-.871.865v8.22a.871.871,0,0,0,1.742,0V13.24A.872.872,0,0,0,8.5,12.375Z" transform="translate(-0.489 -0.647)" fill="#fff"/>
+      <path id="Path_6246" data-name="Path 6246" d="M27.273,22.331a.872.872,0,0,0,.871-.865V13.24a.871.871,0,0,0-1.742,0v8.22A.874.874,0,0,0,27.273,22.331Z" transform="translate(-2.649 -0.647)" fill="#fff"/>
+      <path id="Path_6247" data-name="Path 6247" d="M22.844,10.125a.887.887,0,0,0-.871.9v12.14a.871.871,0,1,0,1.742,0V11.021A.887.887,0,0,0,22.844,10.125Z" transform="translate(-2.14 -0.388)" fill="#fff"/>
+      <path id="Path_6248" data-name="Path 6248" d="M12.93,10.125a.887.887,0,0,0-.871.9v12.14a.871.871,0,1,0,1.742,0V11.021A.883.883,0,0,0,12.93,10.125Z" transform="translate(-0.999 -0.388)" fill="#fff"/>
+      <path id="Path_6249" data-name="Path 6249" d="M17.887,11.25a.88.88,0,0,0-.871.884V22.307a.871.871,0,1,0,1.742,0V12.134A.88.88,0,0,0,17.887,11.25Z" transform="translate(-1.569 -0.518)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

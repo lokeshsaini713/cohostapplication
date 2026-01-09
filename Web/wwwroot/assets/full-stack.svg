@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8325" data-name="Group 8325" transform="translate(-829 -2554)">
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="30" cy="30" r="30" transform="translate(829 2554)" fill="#f48120"/>
+    <g id="MDI_cart-variant" data-name="MDI / cart-variant" transform="translate(845 2573)">
+      <g id="Boundary" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_cart-variant" data-name="Path / cart-variant" d="M22.6,23.6a2.4,2.4,0,1,1-2.4-2.4,2.392,2.392,0,0,1,2.4,2.4M8.2,21.2a2.4,2.4,0,1,0,2.4,2.4,2.392,2.392,0,0,0-2.4-2.4m.24-4.044L8.4,17.3a.3.3,0,0,0,.3.3H22.6V20H8.2a2.4,2.4,0,0,1-2.4-2.4,2.446,2.446,0,0,1,.288-1.152l1.632-2.94L3.4,4.4H1V2H4.924L6.052,4.4H23.8A1.2,1.2,0,0,1,25,5.6a1.518,1.518,0,0,1-.144.6l-4.3,7.764a2.413,2.413,0,0,1-2.1,1.236H9.52L8.44,17.156M10,12.8h1.8V10.4H8.872L10,12.8m3-2.4v2.4h3.6V10.4H13m3.6-1.2V6.8H13V9.2h3.6m3.732,1.2H17.8v2.4H19l1.332-2.4m2-3.6H17.8V9.2H21l1.332-2.4M7.168,6.8,8.3,9.2h3.5V6.8Z" transform="translate(1)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

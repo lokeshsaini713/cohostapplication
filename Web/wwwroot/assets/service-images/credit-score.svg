@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_122" data-name="Group 122" transform="translate(-1006 -459)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(1006 459)" fill="#fff2e8"/>
+    <g id="credit-svgrepo-com" transform="translate(1016.394 470.596)">
+      <path id="Path_9359" data-name="Path 9359" d="M36.5,6.4H3.658A2.052,2.052,0,0,0,1.606,8.456V28.98a2.051,2.051,0,0,0,2.052,2.052H36.5a2.051,2.051,0,0,0,2.052-2.052V8.456A2.052,2.052,0,0,0,36.5,6.4ZM2.974,11.877H37.18v2.737H2.974V11.877ZM37.18,28.98a.685.685,0,0,1-.684.684H3.658a.685.685,0,0,1-.684-.684v-13H37.18v13ZM2.974,10.508V8.456a.685.685,0,0,1,.684-.684H36.5a.685.685,0,0,1,.684.684v2.052H2.974Z" transform="translate(0 0)" fill="#f48120"/>
+      <path id="Path_9360" data-name="Path 9360" d="M4.8,21.331H18.486V22.7H4.8Z" transform="translate(0.906 4.228)" fill="#f48120"/>
+      <path id="Path_9361" data-name="Path 9361" d="M4.8,18.133h8.21V19.5H4.805V18.133Z" transform="translate(0.906 3.322)" fill="#f48120"/>
+      <path id="Path_9362" data-name="Path 9362" d="M24.279,23h2.778A1.337,1.337,0,0,0,28.4,21.675v-.082a1.338,1.338,0,0,0-1.347-1.328H24.279a1.339,1.339,0,0,0-1.349,1.328v.082A1.337,1.337,0,0,0,24.279,23Z" transform="translate(6.04 3.926)" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3617" data-name="Rectangle 3617" width="40" height="40" transform="translate(379 3253)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8049" data-name="Mask Group 8049" transform="translate(-379 -3253)" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(382.194 3255.194)">
+      <g id="invisible_box" data-name="invisible box" transform="translate(-0.077 -0.077)">
+        <rect id="Rectangle_3663" data-name="Rectangle 3663" width="36" height="36" transform="translate(-0.117 -0.117)" fill="none"/>
+      </g>
+      <path id="Icon_awesome-shield-alt" data-name="Icon awesome-shield-alt" d="M28.532,5.092,16.851.225a2.929,2.929,0,0,0-2.245,0L2.926,5.092a2.917,2.917,0,0,0-1.8,2.7c0,12.076,6.966,20.423,13.475,23.136a2.929,2.929,0,0,0,2.245,0c5.214-2.172,13.481-9.673,13.481-23.136A2.921,2.921,0,0,0,28.532,5.092Zm-12.8,22.059L15.726,3.973l10.7,4.459c-.2,9.211-4.995,15.884-10.695,18.719Z" transform="translate(1.08 1.658)"/>
+    </g>
+  </g>
+</svg>

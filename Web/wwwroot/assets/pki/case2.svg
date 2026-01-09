@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1127" data-name="Rectangle 1127" width="22" height="22" transform="translate(901 6159)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_119" data-name="Mask Group 119" transform="translate(-901 -6159)" clip-path="url(#clip-path)">
+    <path id="Icon_material-lightbulb-outline" data-name="Icon material-lightbulb-outline" d="M11.49,21.951a1,1,0,0,0,1,1h3.99a1,1,0,0,0,1-1v-1H11.49ZM14.482,3a6.979,6.979,0,0,0-3.99,12.707v2.254a1,1,0,0,0,1,1h5.985a1,1,0,0,0,1-1V15.707A6.979,6.979,0,0,0,14.482,3Zm2.843,11.072-.848.6v2.294h-3.99V14.67l-.848-.6a4.987,4.987,0,1,1,5.685,0Z" transform="translate(897.518 6157.025)" fill="#fff"/>
+  </g>
+</svg>

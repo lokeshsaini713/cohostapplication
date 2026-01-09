@@ -1,0 +1,16 @@
+<svg id="banner-main1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="iot-platform-svgrepo-com" transform="translate(9.976 8.976)">
+    <path id="Path_9199" data-name="Path 9199" d="M24.793,15.838H21.537V12.582H19.909v7.326H6.884V6.884H14.21V5.256H10.954V2H9.326V5.256H6.884A1.63,1.63,0,0,0,5.256,6.884V9.326H2v1.628H5.256v4.884H2v1.628H5.256v2.442a1.63,1.63,0,0,0,1.628,1.628H9.326v3.256h1.628V21.537h4.884v3.256h1.628V21.537h2.442a1.63,1.63,0,0,0,1.628-1.628V17.466h3.256Z" transform="translate(-0.372 -0.372)" fill="#fff"/>
+    <path id="Path_9200" data-name="Path 9200" d="M19.14,19.14H11V11h8.14Zm-6.512-1.628h4.884V12.628H12.628Z" transform="translate(-2.046 -2.046)" fill="#fff"/>
+    <path id="Path_9201" data-name="Path 9201" d="M28.768,10.768H27.14A8.15,8.15,0,0,0,19,2.628V1a9.779,9.779,0,0,1,9.768,9.768Z" transform="translate(-3.534 -0.186)" fill="#fff"/>
+    <path id="Path_9202" data-name="Path 9202" d="M24.7,11.7H23.07A4.075,4.075,0,0,0,19,7.628V6a5.705,5.705,0,0,1,5.7,5.7Z" transform="translate(-3.534 -1.116)" fill="#fff"/>
+    <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="26" height="26" transform="translate(0.024 0.024)" fill="none"/>
+  </g>
+</svg>

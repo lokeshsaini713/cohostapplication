@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8485" data-name="Group 8485" transform="translate(-652 -4401)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(652 4401)" fill="#fff2e8"/>
+    <g id="search-globe" transform="translate(663.334 4411.514)">
+      <path id="Path_9085" data-name="Path 9085" d="M34.7,18.169A16.349,16.349,0,1,0,18.349,34.518" transform="translate(0 0)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_9086" data-name="Path 9086" d="M2,11.82H34.7" transform="translate(0 6.349)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_9087" data-name="Path 9087" d="M14.222,34.518c-3.155,0-5.722-7.324-5.722-16.349S11.067,1.82,14.222,1.82s5.722,7.324,5.722,16.349" transform="translate(4.127 0)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_9088" data-name="Path 9088" d="M20.591,26.134a5.722,5.722,0,1,0-5.722-5.722A5.722,5.722,0,0,0,20.591,26.134Z" transform="translate(8.17 8.171)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_9089" data-name="Path 9089" d="M24.371,24.185,20.84,20.67" transform="translate(11.961 11.968)" fill="none" stroke="#f48120" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

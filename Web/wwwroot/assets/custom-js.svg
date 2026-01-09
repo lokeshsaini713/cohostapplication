@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8322" data-name="Group 8322" transform="translate(-447 -2092)">
+    <g id="Group_8315" data-name="Group 8315">
+      <g id="Group_8316" data-name="Group 8316">
+        <g id="Group_8317" data-name="Group 8317">
+          <g id="Group_8321" data-name="Group 8321">
+            <g id="Group_8320" data-name="Group 8320">
+              <g id="Group_8319" data-name="Group 8319">
+                <circle id="Ellipse_30" data-name="Ellipse 30" cx="30" cy="30" r="30" transform="translate(447 2092)" fill="#f48120"/>
+                <g id="Boundary" transform="translate(463 2109)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+                  <rect width="27" height="27" stroke="none"/>
+                  <rect x="0.5" y="0.5" width="26" height="26" fill="none"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="Path_notebook-outline" data-name="Path / notebook-outline" d="M18.75,4.25V11L16.5,8.75,14.25,11V4.25H9.75v18H21v-18H18.75M3,7.625V5.375H5.25V4.25A2.249,2.249,0,0,1,7.5,2H21a2.334,2.334,0,0,1,2.25,2.25v18A2.334,2.334,0,0,1,21,24.5H7.5a2.334,2.334,0,0,1-2.25-2.25V21.125H3v-2.25H5.25v-4.5H3v-2.25H5.25v-4.5H3m2.25-2.25v2.25H7.5V5.375H5.25m0,15.75H7.5v-2.25H5.25v2.25m0-6.75H7.5v-2.25H5.25Z" transform="translate(463.875 2108.25)" fill="#fff"/>
+  </g>
+</svg>

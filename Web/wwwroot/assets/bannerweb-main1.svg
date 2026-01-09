@@ -1,0 +1,23 @@
+<svg id="banner-main1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="Group_7852" data-name="Group 7852" transform="translate(3063.307 -427.773)">
+    <g id="Rectangle_1574" data-name="Rectangle 1574" transform="translate(-3052.307 440.773)" fill="none" stroke="#fff" stroke-width="2">
+      <rect width="23" height="17" rx="2" stroke="none"/>
+      <rect x="-1" y="-1" width="25" height="19" rx="3" fill="none"/>
+    </g>
+    <path id="Ellipse_67" data-name="Ellipse 67" d="M.571,0A.571.571,0,1,1,0,.571.571.571,0,0,1,.571,0Z" transform="translate(-3050.479 442.451)" fill="#fff"/>
+    <path id="Ellipse_68" data-name="Ellipse 68" d="M.571,0A.571.571,0,1,1,0,.571.571.571,0,0,1,.571,0Z" transform="translate(-3048.766 442.451)" fill="#fff"/>
+    <path id="Ellipse_69" data-name="Ellipse 69" d="M.571,0A.571.571,0,1,1,0,.571.571.571,0,0,1,.571,0Z" transform="translate(-3047.053 442.451)" fill="#fff"/>
+    <g id="Group_7852-2" data-name="Group 7852" transform="translate(-3047.222 445.601)">
+      <path id="Path_9004" data-name="Path 9004" d="M-3043.39,447.814l-2.808,2.808,3.025,3.025" transform="translate(3046.198 -446.54)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_9005" data-name="Path 9005" d="M-3045.981,447.814l2.808,2.808-3.025,3.025" transform="translate(3056.436 -446.54)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_9006" data-name="Path 9006" d="M-3040.38,446.643l-1.494,8.49" transform="translate(3047.759 -446.643)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

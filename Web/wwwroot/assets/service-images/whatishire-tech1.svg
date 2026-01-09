@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="103" viewBox="0 0 103 103">
+  <defs>
+    <filter id="Ellipse_109" x="0" y="0" width="103" height="103" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.13" y1="0.12" x2="0.796" y2="0.782" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#387eb8"/>
+      <stop offset="1" stop-color="#366994"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.191" y1="0.206" x2="0.907" y2="0.884" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffe052"/>
+      <stop offset="1" stop-color="#ffc331"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8410" data-name="Group 8410" transform="translate(-384 -2761)">
+    <g transform="matrix(1, 0, 0, 1, 384, 2761)" filter="url(#Ellipse_109)">
+      <circle id="Ellipse_109-2" data-name="Ellipse 109" cx="42.5" cy="42.5" r="42.5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="python-svgrepo-com_1_" data-name="python-svgrepo-com (1)" transform="translate(413.694 2787.807)">
+      <path id="Path_953" data-name="Path 953" d="M21.793.072c-11.071,0-10.38,4.8-10.38,4.8l.012,4.977H21.991v1.488H7.229s-7.084-.8-7.084,10.37S6.329,32.484,6.329,32.484H10.02V27.3s-.2-6.183,6.085-6.183H26.583s5.887.1,5.887-5.69V5.861S33.364.074,21.793.074ZM15.968,3.417a1.9,1.9,0,1,1-1.9,1.9A1.9,1.9,0,0,1,15.968,3.417Z" transform="translate(-0.145 -0.072)" fill="url(#linear-gradient)"/>
+      <path id="Path_954" data-name="Path 954" d="M76.837,96.735c11.072,0,10.38-4.8,10.38-4.8l-.012-4.977H76.64V85.469H91.4s7.084.8,7.084-10.368S92.3,64.326,92.3,64.326H88.612v5.184s.2,6.183-6.085,6.183H72.048s-5.887-.1-5.887,5.69v9.566S65.267,96.735,76.837,96.735Zm5.826-3.345a1.9,1.9,0,1,1,1.9-1.9A1.9,1.9,0,0,1,82.663,93.39Z" transform="translate(-54.874 -53.349)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

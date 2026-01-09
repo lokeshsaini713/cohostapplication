@@ -1,0 +1,397 @@
+﻿@{
+    ViewData["Title"] = "Ecommerce Development";
+    Layout = "_Layout";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+    .hero {
+        background: linear-gradient(rgba(13,110,253,.85), rgba(13,110,253,.85)), url("https://images.unsplash.com/photo-1515165562835-c3b8c5a6f7b3") center/cover;
+        padding: 100px 0;
+        color: #fff;
+    }
+
+        .hero h1 {
+            font-size: 44px;
+            font-weight: 700;
+        }
+
+    .section-pad {
+        padding: 80px 0;
+    }
+
+    .info-card {
+        border: none;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(0,0,0,.08);
+        margin-bottom: 25px;
+    }
+
+    .section-title {
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+
+    .arrow-list li {
+        list-style: none;
+        position: relative;
+        padding-left: 28px;
+        margin-bottom: 10px;
+    }
+
+        .arrow-list li::before {
+            content: "➜";
+            position: absolute;
+            left: 0;
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+    .img-box img {
+        border-radius: 16px;
+        box-shadow: 0 12px 25px rgba(0,0,0,.12);
+    }
+</style>
+<style>
+    .hero {
+        background: linear-gradient(rgba(13,110,253,.85), rgba(13,110,253,.85)), url("https://images.unsplash.com/photo-1511707171634-5f897ff02aa9") center/cover;
+        padding: 100px 0;
+        color: #fff;
+    }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+    .section-pad {
+        padding: 70px 0;
+    }
+
+    .info-card {
+        border: none;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(0,0,0,.08);
+        margin-bottom: 25px;
+    }
+
+    .arrow-list li {
+        list-style: none;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+
+        .arrow-list li::before {
+            content: "➜";
+            position: absolute;
+            left: 0;
+            color: #0d6efd;
+            font-weight: bold;
+        }
+
+    .section-title {
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+
+    .img-box img {
+        border-radius: 16px;
+        box-shadow: 0 12px 25px rgba(0,0,0,.12);
+    }
+
+    .InnerBanner_innerBannerCard__rBFXp {
+        background: #000 url(../../../assets/appdevicebanner.jpg) no-repeat 50%;
+        background-size: cover;
+        position: relative;
+        padding-top: 50px;
+        margin-bottom: 34px;
+        min-height: 250px;
+    }
+    
+
+    .Footer_FormSec__C43gt .Footer_CmsLink__HzwGS li a {
+        color: #fff;
+        line-height: 1;
+        display: block;
+        padding-right: 10px;
+        text-decoration: none;
+    }
+
+    .Footer_FooterTop___oucz .Footer_FootLink__VxCIT .Footer_FootNav__hrwf4 li a {
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+<div>
+
+    <div class="InnerBanner_innerBannerCard__rBFXp">
+        <div class="InnerBanner_positionContainer__XB_db small-container container">
+            <div class="align-items-center row">
+                <div class="col-md-12">
+                    <div class="InnerBannerInfo_innerBannerInfoCard__xSxY9">
+                        <span class="InnerBannerInfo_spanHeading__tE2eh">E-Commerce Development Solutions </span>
+                        <h1>E-Commerce Development Solutions</h1>
+                        <p style="color:white">
+                            Construct a Strong Web Store with Cohostweb
+                        </p>
+                        @*  <ul class="InnerBannerInfo_bannerList__P_vpC d-flex flex-wrap">
+                                <li><i><img src="assets/service-images/bannersoftware-main1.svg" alt="bannerweb-main" class="" /></i><span>Agile Development Methodology  </span></li>
+                                <li><i><img src="assets/service-images/bannersoftware-main2.svg" alt="bannerweb-main" class="" /></i><span>CMMI Dev/3 Appraised Development Centres  </span></li>
+                                <li><i><img src="assets/service-images/bannersoftware-main3.svg" alt="bannerweb-main" class="" /></i><span>Scalable and Future-Proof Solutions  </span></li>
+                                <li><i><img src="assets/service-images/bannersoftware-main4.svg" alt="bannerweb-main" class="" /></i><span>Transparent Pricing Models  </span></li>
+                                <li><i><img src="assets/service-images/bannersoftware-main5.svg" alt="bannerweb-main" class="" /></i><span>Global Delivery Capabilities  </span></li>
+                                <li><i><img src="assets/service-images/bannersoftware-main6.svg" alt="bannerweb-main" class="" /></i><span>Continuous Support &amp; Maintenance</span></li>
+                            </ul> *@
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+   
+        
+       
+
+        <!-- INTRO -->
+        <section class="section-pad bg-light">
+            <div class="container">
+
+                <div class="card info-card p-4">
+                    <p>Online shopping has become one of the most rapidly developing methods of how people purchases are made today. It is convenient, quick and easy hence liked by people.</p>
+                </div>
+
+                <div class="card info-card p-4">
+                    <p>There is no use in selling any goods, services or being a digital product seller unless you have a professional online store.</p>
+                </div>
+
+                <div class="card info-card p-4">
+                    <p>We have cohostweb.com where we assist business establishments to create secure, user-friendly, and high-speed online stores that convert visitors into regular customers.</p>
+                </div>
+
+                <div class="row align-items-center g-4 mt-4">
+                    <div class="col-lg-6">
+                        <div class="card info-card p-4">
+                            <p>This paper discusses what an online store building is, why it is important and how Cohostweb can be used to build your business.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 img-box">
+                        <img src="./assets/watch.jpg" class="img-fluid" alt="E-commerce development solutions of online stores">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WHAT IS ECOMMERCE -->
+        <section class="section-pad">
+            <div class="container">
+                <h2 class="section-title text-center">What Is Development Of E-Commerce?</h2>
+
+                <div class="card info-card p-4">
+                    <p>Development of e-commerce implies the construction and organization of online stores where clients can view goods, place them into a cart and pay electronically on the internet.</p>
+                </div>
+
+                <div class="card info-card p-4">
+                    <ul class="arrow-list">
+                        <li>Smooth shopping experience</li>
+                        <li>Fast loading</li>
+                        <li>Secure payments</li>
+                        <li>Mobile-friendly design</li>
+                        <li>Convenient product and order management</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- IMPORTANCE -->
+        <section class="section-pad bg-light">
+            <div class="container">
+                <h2 class="section-title text-center">E-Commerce Development: Importance to Businesses</h2>
+
+                <div class="card info-card p-4">
+                    <ul class="arrow-list">
+                        <li>More sales and money</li>
+                        <li>Broader customer reach</li>
+                        <li>Lower running costs</li>
+                        <li>Easy stock control</li>
+                        <li>Better customer experience</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section-pad">
+            <div class="container">
+                <h2 class="section-title text-center">E-Commerce Development Services at Cohostweb</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card info-card p-4">
+                            <h5>Custom E-Commerce Development</h5>
+                            <ul class="arrow-list">
+                                <li>Individual e-commerce development</li>
+                                <li>Online shop development</li>
+                                <li>E-commerce web design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card info-card p-4">
+                            <h5>Platform-Based Development</h5>
+                            <ul class="arrow-list">
+                                <li>WooCommerce</li>
+                                <li>Shopify</li>
+                                <li>Magento</li>
+                                <li>OpenCart</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center g-4 mt-4">
+                    <div class="col-lg-6 img-box">
+                    <img src="./assets/appbglaptop.jpg" class="img-fluid" alt="WooCommerce and Shopify e-commerce platforms">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card info-card p-4">
+                            <p>The platform selected is one that suits your business, budget and growth needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MOBILE & PAYMENTS -->
+        <section class="section-pad bg-light">
+            <div class="container">
+                <h2 class="section-title text-center">Mobile-Friendly Design & Secure Payments</h2>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card info-card p-4">
+                            <h6>Mobile-Friendly & Responsive Design</h6>
+                            <ul class="arrow-list">
+                                <li>Mobile-friendly e-commerce site</li>
+                                <li>Responsive online store design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card info-card p-4">
+                            <h6>Secure Payment Gateway</h6>
+                            <ul class="arrow-list">
+                                <li>UPI</li>
+                                <li>Credit & Debit Cards</li>
+                                <li>Net Banking</li>
+                                <li>PayPal</li>
+                                <li>Razorpay</li>
+                                <li>Stripe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEO -->
+        <section class="section-pad">
+            <div class="container">
+                <h2 class="section-title text-center">SEO-Friendly E-Commerce Development</h2>
+
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <div class="card info-card p-4">
+                            <ul class="arrow-list">
+                                <li>Clear URL structure</li>
+                                <li>Optimized product pages</li>
+                                <li>SEO-friendly categories</li>
+                                <li>Fast loading</li>
+                                <li>Schema and meta tags</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 img-box">
+                        <img src="./assets/ai-powered.webp" class="img-fluid" alt="SEO optimized ecommerce growth">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WHY COHOSTWEB -->
+        <section class="section-pad bg-light">
+            <div class="container">
+                <h2 class="section-title text-center">Why Choose Cohostweb</h2>
+
+                <div class="card info-card p-4">
+                    <ul class="arrow-list">
+                        <li>Skilled online store developers</li>
+                        <li>Affordable pricing</li>
+                        <li>SEO-optimized solutions</li>
+                        <li>Fast delivery</li>
+                        <li>Ongoing support</li>
+                        <li>Scalable, future-ready sites</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INDUSTRIES -->
+        <section class="section-pad">
+            <div class="container">
+                <h2 class="section-title text-center">Industries We Serve</h2>
+
+                <div class="card info-card p-4">
+                    <ul class="arrow-list">
+                        <li>Retail & fashion stores</li>
+                        <li>Electronics & gadgets</li>
+                        <li>Grocery & food delivery</li>
+                        <li>Travel & booking services</li>
+                        <li>Digital products</li>
+                        <li>B2B e-commerce</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONCLUSION -->
+        <section class="section-pad bg-light">
+            <div class="container">
+                <div class="card info-card p-5 text-center">
+                    <h3>Conclusion</h3>
+                    <p>A professionally built, secure and SEO-optimized e-commerce website attracts customers, boosts sales and builds your brand. Cohostweb delivers complete online store solutions so you can focus on business growth.</p>
+                </div>
+            </div>
+        </section>
+
+  
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

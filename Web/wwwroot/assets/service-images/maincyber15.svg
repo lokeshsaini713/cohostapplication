@@ -1,0 +1,14 @@
+<svg id="banner-main5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="Page-1" transform="translate(-32.125 -31.935)">
+    <g id="Shape" transform="translate(42.667 42.667)">
+      <path id="Path_7215" data-name="Path 7215" d="M10.388,0a10.37,10.37,0,0,1,8.2,16.747l4.961,4.586-1.836,1.836-4.961-4.586A10.382,10.382,0,1,1,10.388,0Zm0,9.065L8.12,14.608H3.841a7.786,7.786,0,0,0,13.093,0H12.656Zm0-6.468A7.793,7.793,0,0,0,2.935,12.66H6.812l3.576-8.74,3.575,8.74h3.878A7.793,7.793,0,0,0,10.388,2.6Z" transform="translate(0 0)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

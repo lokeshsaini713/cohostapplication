@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 55 55">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9a9a9a"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2474" data-name="Group 2474" transform="translate(-847 -2965)">
+    <circle id="Ellipse_13" data-name="Ellipse 13" cx="27.5" cy="27.5" r="27.5" transform="translate(847 2965)" fill="url(#linear-gradient)"/>
+    <g id="Icon_feather-shopping-cart" data-name="Icon feather-shopping-cart" transform="translate(859.835 2979.638)">
+      <path id="Path_3583" data-name="Path 3583" d="M14.212,31.106A1.106,1.106,0,1,1,13.106,30,1.106,1.106,0,0,1,14.212,31.106Z" transform="translate(-2.759 -7.488)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_3584" data-name="Path 3584" d="M30.712,31.106A1.106,1.106,0,1,1,29.606,30,1.106,1.106,0,0,1,30.712,31.106Z" transform="translate(-7.094 -7.488)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_3585" data-name="Path 3585" d="M1.5,1.5H5.924L8.887,16.308a2.212,2.212,0,0,0,2.212,1.78H21.848a2.212,2.212,0,0,0,2.212-1.78L25.83,7.029H7.029" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="banner-main2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <path id="building-check-svgrepo-com" d="M7.512,11.136H8.683m4.683,0h1.171m-1.171,3.512h1.171m-7.024,0H8.683m0,9.365V20.5a2.341,2.341,0,0,1,4.1-1.549m5.268-1.963V6.873a2.908,2.908,0,0,0-.128-1.234,1.171,1.171,0,0,0-.512-.512A2.908,2.908,0,0,0,16.175,5H5.873a2.908,2.908,0,0,0-1.234.128,1.171,1.171,0,0,0-.512.512A2.908,2.908,0,0,0,4,6.873v17.14h8.78m4.1-2.341,2.341,2.341L23.9,19.331" transform="translate(9.614 7.808)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

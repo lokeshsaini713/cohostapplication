@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#7d7d7d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1706" data-name="Group 1706" transform="translate(-982 -912)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="24" cy="24" r="24" transform="translate(982 912)" fill="url(#linear-gradient)"/>
+    <path id="Icon_feather-phone-call" data-name="Icon feather-phone-call" d="M17,5.775A5.344,5.344,0,0,1,21.219,10M17,1.5a9.62,9.62,0,0,1,8.5,8.487m-1.069,8.53v3.207a2.138,2.138,0,0,1-2.33,2.138,21.153,21.153,0,0,1-9.224-3.281,20.843,20.843,0,0,1-6.413-6.413A21.153,21.153,0,0,1,3.176,4.9,2.138,2.138,0,0,1,5.3,2.569H8.51a2.138,2.138,0,0,1,2.138,1.838,13.724,13.724,0,0,0,.748,3,2.138,2.138,0,0,1-.481,2.255L9.558,11.024a17.1,17.1,0,0,0,6.413,6.413l1.357-1.357a2.138,2.138,0,0,1,2.255-.481,13.724,13.724,0,0,0,3,.748A2.138,2.138,0,0,1,24.425,18.516Z" transform="translate(991.198 924.143)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -160,3 +160,78 @@
   color: #6d6d6d;
   font-size: 12px;
 }
+.navbar-nav .dropdown-menu {
+    margin-top: 31px !important;
+}
+/* Hide by default (desktop & tablet) */
+.SingleNav.nav-item.dropdown {
+    display: none;
+}
+
+/* Show only on mobile screens */
+@media (max-width: 767px) {
+    .SingleNav.nav-item.dropdown {
+        display: block; /* or flex if needed */
+    }
+}
+
+/* Styles for the new hover effect */
+.HomeSidebar_HomeSidebar__jjnPg.gift-card {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .HomeSidebar_HomeSidebar__jjnPg.gift-card:hover {
+        transform: scale(1.06);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+/* Content hidden by default — shown on hover */
+.HomeSidebar_HomeSidebar__jjnPg .gift-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.HomeSidebar_HomeSidebar__jjnPg:hover .gift-content {
+    opacity: 1;
+}
+
+/* Icon style */
+.HomeSidebar_HomeSidebar__jjnPg .gift-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.HomeSidebar_HomeSidebar__jjnPg:hover .gift-icon {
+    transform: scale(1.15);
+}
+
+/* Unlock text */
+.HomeSidebar_HomeSidebar__jjnPg .gift-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #3a3a3a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.sub-hd {
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #1badea9e;
+    margin-bottom: 10px;
+}

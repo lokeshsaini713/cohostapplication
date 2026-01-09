@@ -1,0 +1,14 @@
+<svg id="banner-main5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="Icon_feather-globe" data-name="Icon feather-globe" transform="translate(8.361 8.062)">
+    <path id="Path_9020" data-name="Path 9020" d="M25.877,14.438A11.438,11.438,0,1,1,14.438,3,11.438,11.438,0,0,1,25.877,14.438Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_9021" data-name="Path 9021" d="M3,18H25.877" transform="translate(0 -3.562)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_9022" data-name="Path 9022" d="M16.575,3a17.5,17.5,0,0,1,4.575,11.438,17.5,17.5,0,0,1-4.575,11.438A17.5,17.5,0,0,1,12,14.438,17.5,17.5,0,0,1,16.575,3Z" transform="translate(-2.137)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

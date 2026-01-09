@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3618" data-name="Rectangle 3618" width="40" height="40" transform="translate(379 3253)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8050" data-name="Mask Group 8050" transform="translate(-379 -3253)" clip-path="url(#clip-path)">
+    <g id="Page-1" transform="translate(383 3257)">
+      <g id="Icon-Set-Filled" transform="translate(-518 -153)">
+        <path id="Icon_metro-flow-tree" data-name="Icon metro-flow-tree" d="M32.435,26.124V22.259a5.821,5.821,0,0,0-5.821-5.821H23.287a2.5,2.5,0,0,1-2.495-2.495V10.078a3.992,3.992,0,1,0-3.326,0v3.865a2.5,2.5,0,0,1-2.495,2.495H11.646a5.821,5.821,0,0,0-5.821,5.821v3.865a3.992,3.992,0,1,0,3.326,0V22.259a2.5,2.5,0,0,1,2.495-2.495h3.326a5.76,5.76,0,0,0,2.495-.582v6.942a3.992,3.992,0,1,0,3.326,0V19.182a5.76,5.76,0,0,0,2.495.582h3.326a2.5,2.5,0,0,1,2.495,2.495v3.865a3.992,3.992,0,1,0,3.326,0ZM19.13,4.156a2.3,2.3,0,1,1-2.3,2.3,2.3,2.3,0,0,1,2.3-2.3ZM7.488,32.047a2.3,2.3,0,1,1,2.3-2.3,2.3,2.3,0,0,1-2.3,2.3Zm11.642,0a2.3,2.3,0,1,1,2.3-2.3,2.3,2.3,0,0,1-2.3,2.3Zm11.642,0a2.3,2.3,0,1,1,2.3-2.3,2.3,2.3,0,0,1-2.3,2.3Z" transform="translate(514.87 150.899)"/>
+      </g>
+    </g>
+  </g>
+</svg>

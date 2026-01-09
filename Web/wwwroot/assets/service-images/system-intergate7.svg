@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3670" data-name="Rectangle 3670" width="35" height="35" transform="translate(820 5428)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8022" data-name="Mask Group 8022" transform="translate(-820 -5428)" clip-path="url(#clip-path)">
+    <g id="backup-svgrepo-com" transform="translate(821 5429)">
+      <rect id="Rectangle_3847" data-name="Rectangle 3847" width="22" height="1" transform="translate(5 20)"/>
+      <path id="Path_9274" data-name="Path 9274" d="M27.636,13.218A1.724,1.724,0,0,0,25.938,12H23.822a2.667,2.667,0,0,1-.124,1.778h2.258c.933,2.613,2.462,6.8,2.711,7.538V28H3.778V21.315c.249-.738,2.711-7.538,2.711-7.538H8.738A2.667,2.667,0,0,1,8.613,12H6.507a1.707,1.707,0,0,0-1.689,1.173C2,20.889,2,20.978,2,21.182V28a1.778,1.778,0,0,0,1.778,1.778H28.667A1.778,1.778,0,0,0,30.444,28V21.182C30.444,20.978,30.444,20.889,27.636,13.218Z" transform="translate(-0.222 -1.333)" stroke="#000" stroke-width="1"/>
+      <path id="Path_9275" data-name="Path 9275" d="M17.255,17.969l5.671-5.644A.889.889,0,1,0,21.7,11.071l-3.556,3.484V3.889a.889.889,0,0,0-1.778,0V14.556L12.81,11.044a.889.889,0,1,0-1.253,1.262Z" transform="translate(-1.255 -0.333)" stroke="#000" stroke-width="1"/>
+      <rect id="Rectangle_3848" data-name="Rectangle 3848" width="32" height="32" fill="rgba(0,0,0,0)"/>
+    </g>
+  </g>
+</svg>

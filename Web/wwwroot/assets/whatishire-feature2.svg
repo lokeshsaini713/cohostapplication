@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2685" data-name="Rectangle 2685" width="50" height="50" transform="translate(403 1364)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8041" data-name="Mask Group 8041" transform="translate(-403 -1364)" clip-path="url(#clip-path)">
+    <g id="model-builder-reference-svgrepo-com" transform="translate(406.997 1366.997)">
+      <path id="Path_9460" data-name="Path 9460" d="M4.748,20v2.748h6.3L2,31.8l1.943,1.943,9.05-9.05v6.3h2.748V20Z" transform="translate(0.764 7.5)" fill="#f48120"/>
+      <path id="Path_9461" data-name="Path 9461" d="M29.484,4V8.123H12.994V4H2V14.994H12.994V10.871h9.651a6.8,6.8,0,0,0-1.406,4.123V36.981h2.748V14.994a4.12,4.12,0,0,1,4.119-4.123h1.378v4.123H40.477V4ZM10.245,12.245h-5.5v-5.5h5.5Zm27.484,0h-5.5v-5.5h5.5Z" transform="translate(0.764 1.513)" fill="#f48120"/>
+      <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="44" height="44" transform="translate(0.003 0.003)" fill="none"/>
+    </g>
+  </g>
+</svg>

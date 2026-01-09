@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8330" data-name="Group 8330" transform="translate(-434 -3952)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(434 3952)"/>
+    <g id="MDI_semantic-web" data-name="MDI / semantic-web" transform="translate(450 3968)">
+      <g id="Boundary" fill="#f48120" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_semantic-web" data-name="Path / semantic-web" d="M15.106,4.664C22.28,7.808,23.843,2,23.843,2S22.477,9.284,16.2,12.26c-1.28.612-2.08.936-2.08.936L3.822,8.3l10.3-4.116s-.246-.072.984.48M12.916,26,3.33,20.936V10.484l9.586,4.764V26m2.166,0,9.6-5.064V10.484l-9.6,4.764Z" transform="translate(-0.33)" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

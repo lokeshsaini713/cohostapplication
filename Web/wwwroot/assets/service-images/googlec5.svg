@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#feaa49"/>
+      <stop offset="1" stop-color="#f80"/>
+    </linearGradient>
+  </defs>
+  <path id="plug-circle-svgrepo-com_3_" data-name="plug-circle-svgrepo-com (3)" d="M22,2a20.029,20.029,0,0,0-1.5,40V29.877A7.01,7.01,0,0,1,15,23.029v-1a2,2,0,0,1,2-2h.5V16.019a1.5,1.5,0,1,1,3,0v4.006h3V16.019a1.5,1.5,0,1,1,3,0v4.006H27a2,2,0,0,1,2,2v1a7.01,7.01,0,0,1-5.5,6.848V42A20.029,20.029,0,0,0,22,2Z" transform="translate(-2 -2)" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_6" data-name="Group 6" transform="translate(0 -0.5)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" transform="translate(0 0.5)" fill="url(#linear-gradient)"/>
+    <g id="graph-up-svgrepo-com_1_" data-name="graph-up-svgrepo-com (1)" transform="translate(7.841 7.976)">
+      <path id="Path_9018" data-name="Path 9018" d="M24.547,24.047H10.942A5.442,5.442,0,0,1,5.5,18.605V5" transform="translate(0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_9019" data-name="Path 9019" d="M18.5,7.25a1.02,1.02,0,0,0,0,2.041Zm5.28,2.041a1.02,1.02,0,0,0,0-2.041ZM24.8,8.27a1.02,1.02,0,1,0-2.041,0Zm-2.041,4.907a1.02,1.02,0,1,0,2.041,0Zm1.8-4.255A1.02,1.02,0,0,0,23,7.618ZM18.342,14.81l.685.756a1.027,1.027,0,0,0,.1-.1Zm-2.135.083-.632.8.007.006Zm-1.427-1.127.632-.8-.005,0Zm-2.288.249-.786-.651-.029.037Zm-.174.207.728.715.015-.016Zm-4.41,3.039a1.02,1.02,0,0,0,1.457,1.429ZM18.5,9.291h5.28V7.25H18.5Zm4.26-1.02v4.907H24.8V8.27ZM23,7.618l-5.442,6.54,1.569,1.305,5.442-6.54Zm-5.343,6.437a.642.642,0,0,1-.825.032L15.583,15.7a2.683,2.683,0,0,0,3.445-.134Zm-.817.038-1.427-1.127-1.264,1.6,1.427,1.127Zm-1.432-1.131a2.674,2.674,0,0,0-3.7.4l1.571,1.3a.633.633,0,0,1,.876-.1Zm-3.73.44a1.474,1.474,0,0,1-.1.122l1.488,1.4a3.548,3.548,0,0,0,.245-.291Zm-.088.106L7.908,17.262l1.457,1.429,3.682-3.754Z" transform="translate(0.763 0.811)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

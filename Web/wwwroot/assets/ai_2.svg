@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8340" data-name="Group 8340" transform="translate(-652 -4654)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(652 4654)" fill="#fff2e8"/>
+    <g id="MDI_chair-school" data-name="MDI / chair-school" transform="translate(670 4672)">
+      <g id="Boundary" fill="#f48120" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="24" height="24" stroke="none"/>
+        <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+      </g>
+      <path id="Path_chair-school" data-name="Path / chair-school" d="M22,5V7H17l-3.47,5H16v2H14.46l3.71,8h-2.2l-.93-2H6.38L5.35,22H3.1l4.13-8H7a1.015,1.015,0,0,1-.96-.7L2.87,3.84l.95-.34a1.02,1.02,0,0,1,1.26.65L7.72,12H12.1l3.47-5H12V5H22M9.5,14,7.42,18h6.69l-1.85-4Z" transform="translate(-0.87 -0.456)" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

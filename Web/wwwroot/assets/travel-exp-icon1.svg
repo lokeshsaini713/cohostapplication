@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8520" data-name="Group 8520" transform="translate(-420 -2018)">
+    <g id="Group_531" data-name="Group 531" transform="translate(-258 -3682)">
+      <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(678 5700)" fill="#fff2e8"/>
+    </g>
+    <g id="book-opened-book-guide-volume" transform="translate(421.5 2012.292)">
+      <rect id="Rectangle_2805" data-name="Rectangle 2805" width="12.537" height="1.708" transform="translate(11.752 28.977)" fill="#f48120"/>
+      <rect id="Rectangle_2806" data-name="Rectangle 2806" width="12.537" height="1.708" transform="translate(11.752 34.247)" fill="#f48120"/>
+      <rect id="Rectangle_2807" data-name="Rectangle 2807" width="12.537" height="1.708" transform="translate(11.752 39.516)" fill="#f48120"/>
+      <rect id="Rectangle_2808" data-name="Rectangle 2808" width="12.537" height="1.708" transform="translate(31.92 28.977)" fill="#f48120"/>
+      <rect id="Rectangle_2809" data-name="Rectangle 2809" width="12.537" height="1.708" transform="translate(31.92 34.247)" fill="#f48120"/>
+      <rect id="Rectangle_2810" data-name="Rectangle 2810" width="12.537" height="1.708" transform="translate(31.92 39.516)" fill="#f48120"/>
+      <path id="Path_9247" data-name="Path 9247" d="M48.6,22.4H31.484a4.266,4.266,0,0,0-3.416,1.708A4.266,4.266,0,0,0,24.652,22.4H7.5v.836h0V47.184h0v.836H9.826v3.416H24a.393.393,0,0,1,.4.254,3.394,3.394,0,0,0,3.2,2.326h.872A3.476,3.476,0,0,0,31.7,51.69a.409.409,0,0,1,.4-.254H46.347V48.019H48.6V22.4ZM9.353,24.144H24.616a2.59,2.59,0,0,1,2.58,2.58V47.256a4.327,4.327,0,0,0-2.58-.872H9.353ZM32.1,49.8a2.073,2.073,0,0,0-2,1.417,1.761,1.761,0,0,1-1.635,1.163H27.6a1.761,1.761,0,0,1-1.635-1.163,2.106,2.106,0,0,0-2-1.417H11.679V48.056H24.616a2.59,2.59,0,0,1,2.58,2.58.872.872,0,0,0,1.744,0,2.59,2.59,0,0,1,2.58-2.58H44.53v1.708ZM46.71,46.384H31.448a4.1,4.1,0,0,0-2.58.872V26.688a2.59,2.59,0,0,1,2.58-2.58H46.71Z" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

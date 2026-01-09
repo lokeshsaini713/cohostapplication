@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_523" data-name="Group 523" transform="translate(-652 -4270)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(652 4270)" fill="#fff2e8"/>
+    <g id="Money_Flow" data-name="Money Flow" transform="translate(659.667 4275)">
+      <path id="Path_9273" data-name="Path 9273" d="M41,11H22.333a.667.667,0,0,0-.667.667v4.667h-12A.667.667,0,0,0,9,17v8.88H3.667A.667.667,0,0,0,3,26.547V38.333A.667.667,0,0,0,3.667,39H22.333A.667.667,0,0,0,23,38.333V33.667H35A.667.667,0,0,0,35.667,33V24.12H41a.667.667,0,0,0,.667-.667V11.667A.667.667,0,0,0,41,11ZM21.667,37.667H4.333V27.213H9V33a.667.667,0,0,0,.667.667h12ZM34.333,29.06a4,4,0,0,0-3.273,3.273H10.333V20.94a4,4,0,0,0,3.273-3.273H34.333Zm6-6.273H35.667V17A.667.667,0,0,0,35,16.333H23v-4H40.333Z" fill="#f48120"/>
+      <circle id="Ellipse_154" data-name="Ellipse 154" cx="5" cy="5" r="5" transform="translate(17.333 20)" fill="#f48120"/>
+      <path id="Path_9274" data-name="Path 9274" d="M37.42,15.97h2.913V14.637H37.42V13.91L35,15.3,37.42,16.7Z" transform="translate(-10.667 -0.97)" fill="#f48120"/>
+      <path id="Path_9275" data-name="Path 9275" d="M23.913,48.7l2.42-1.393-2.42-1.393v.727H21V47.97h2.913Z" transform="translate(-6 -11.637)" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

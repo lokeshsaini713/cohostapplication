@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8332" data-name="Group 8332" transform="translate(-434 -4119)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(434 4119)"/>
+    <g id="MDI_laptop" data-name="MDI / laptop" transform="translate(450 4135)">
+      <g id="Boundary" fill="#f48120" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_laptop" data-name="Path / laptop" d="M4.667,6.5H23.333V19H4.667m18.667,2.5A2.421,2.421,0,0,0,25.667,19V6.5A2.42,2.42,0,0,0,23.333,4H4.667A2.413,2.413,0,0,0,2.333,6.5V19a2.421,2.421,0,0,0,2.333,2.5H0V24H28V21.5Z" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

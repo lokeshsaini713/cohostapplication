@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1450" data-name="Rectangle 1450" width="25" height="25" transform="translate(1238 4221)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_276" data-name="Mask Group 276" transform="translate(-1238 -4221)" clip-path="url(#clip-path)">
+    <g id="Page-1" transform="translate(1238.625 4221)">
+      <g id="Dribbble-Light-Preview">
+        <g id="icons">
+          <path id="windows-_174_" data-name="windows-[#174]" d="M15.318,7292.033c.006,2.5.014,6.751.02,10.052,4.472.612,8.945,1.237,13.41,1.915,0-3.939,0-7.865,0-11.615-4.476,0-8.951-.352-13.429-.352M4,7292.046v8.477c3.373.469,6.746.9,10.113,1.4.006-3.275,0-6.562,0-9.837-3.371,0-6.74-.053-10.111-.04m0-9.5v8.463c3.373.013,6.746-.039,10.12-.039q0-4.913-.006-9.824c-3.376.43-6.751.885-10.113,1.4m24.75,8.288c-4.47.026-8.94.084-13.412.1,0-3.333,0-6.653,0-9.98q6.7-1.025,13.41-1.96c0,3.952,0,7.884,0,11.835" transform="translate(-4 -7279)" fill="#fff" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

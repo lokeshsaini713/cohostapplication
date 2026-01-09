@@ -1,0 +1,20 @@
+<svg id="banner-main6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="api-integration-connection-svgrepo-com" transform="translate(8.445 8.444)">
+    <path id="Ellipse_106" data-name="Ellipse 106" d="M3.929-1A4.929,4.929,0,1,1-1,3.929,4.935,4.935,0,0,1,3.929-1Zm0,7.394A2.465,2.465,0,1,0,1.465,3.929,2.467,2.467,0,0,0,3.929,6.394Z" transform="translate(10.626 10.626)" fill="#fff"/>
+    <path id="Ellipse_107" data-name="Ellipse 107" d="M2.7-1A3.7,3.7,0,1,1-1,2.7,3.7,3.7,0,0,1,2.7-1Zm0,4.929A1.232,1.232,0,1,0,1.465,2.7,1.234,1.234,0,0,0,2.7,3.929Z" transform="translate(11.859 2)" fill="#fff"/>
+    <path id="Ellipse_108" data-name="Ellipse 108" d="M2.7-1A3.7,3.7,0,1,1-1,2.7,3.7,3.7,0,0,1,2.7-1Zm0,4.929A1.232,1.232,0,1,0,1.465,2.7,1.234,1.234,0,0,0,2.7,3.929Z" transform="translate(21.717 11.859)" fill="#fff"/>
+    <path id="Ellipse_109" data-name="Ellipse 109" d="M2.7-1A3.7,3.7,0,1,1-1,2.7,3.7,3.7,0,0,1,2.7-1Zm0,4.929A1.232,1.232,0,1,0,1.465,2.7,1.234,1.234,0,0,0,2.7,3.929Z" transform="translate(2 11.859)" fill="#fff"/>
+    <path id="Ellipse_110" data-name="Ellipse 110" d="M2.7-1A3.7,3.7,0,1,1-1,2.7,3.7,3.7,0,0,1,2.7-1Zm0,4.929A1.232,1.232,0,1,0,1.465,2.7,1.234,1.234,0,0,0,2.7,3.929Z" transform="translate(11.859 21.717)" fill="#fff"/>
+    <path id="Path_9425" data-name="Path 9425" d="M12.232,11.162A1.232,1.232,0,0,1,11,9.929v-3.7a1.232,1.232,0,1,1,2.465,0v3.7A1.232,1.232,0,0,1,12.232,11.162Z" transform="translate(2.323 0.929)" fill="#fff"/>
+    <path id="Path_9426" data-name="Path 9426" d="M18.929,13.465h-3.7a1.232,1.232,0,0,1,0-2.465h3.7a1.232,1.232,0,0,1,0,2.465Z" transform="translate(3.02 2.323)" fill="#fff"/>
+    <path id="Path_9427" data-name="Path 9427" d="M12.232,20.162A1.232,1.232,0,0,1,11,18.929v-3.7a1.232,1.232,0,0,1,2.465,0v3.7A1.232,1.232,0,0,1,12.232,20.162Z" transform="translate(2.323 3.02)" fill="#fff"/>
+    <path id="Path_9428" data-name="Path 9428" d="M9.929,13.465h-3.7a1.232,1.232,0,1,1,0-2.465h3.7a1.232,1.232,0,0,1,0,2.465Z" transform="translate(0.929 2.323)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74" height="74" viewBox="0 0 74 74">
+  <g id="Group_8131" data-name="Group 8131" transform="translate(-740 -5694)">
+    <circle id="Ellipse_90" data-name="Ellipse 90" cx="37" cy="37" r="37" transform="translate(740 5694)" fill="#fff"/>
+    <g id="windows-app" transform="translate(754 5705.156)">
+      <path id="Path_9212" data-name="Path 9212" d="M23.064,23.066H6V6H23.064ZM7.6,21.466H21.464V7.6H7.6Z"/>
+      <path id="Path_9213" data-name="Path 9213" d="M42,23.066H24.938V6H42Zm-15.464-1.6H40.4V7.6H26.538Z"/>
+      <path id="Path_9214" data-name="Path 9214" d="M23.064,42H6V24.937H23.064ZM7.6,40.4H21.464V26.537H7.6Z"/>
+      <path id="Path_9215" data-name="Path 9215" d="M42,42H24.938V24.937H42ZM26.538,40.4H40.4V26.537H26.538Z"/>
+    </g>
+  </g>
+</svg>

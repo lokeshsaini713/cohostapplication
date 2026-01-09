@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8334" data-name="Group 8334" transform="translate(-434 -4289)">
+    <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(434 4289)"/>
+    <g id="MDI_micro-sd" data-name="MDI / micro-sd" transform="translate(449 4305)">
+      <g id="Boundary" fill="#f48120" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <path id="Path_micro-sd" data-name="Path / micro-sd" d="M9,2A2.452,2.452,0,0,0,6.5,4.4v8.4L4,15.2v8.4A2.452,2.452,0,0,0,6.5,26h15A2.452,2.452,0,0,0,24,23.6V4.4A2.452,2.452,0,0,0,21.5,2H9m1.25,2.4h2.5V9.2h-2.5V4.4M14,4.4h2.5V9.2H14V4.4m3.75,0h2.5V9.2h-2.5Z" fill="#f48120"/>
+    </g>
+  </g>
+</svg>

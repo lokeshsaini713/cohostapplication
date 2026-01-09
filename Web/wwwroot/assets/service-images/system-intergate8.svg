@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3670" data-name="Rectangle 3670" width="35" height="35" transform="translate(820 5428)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8022" data-name="Mask Group 8022" transform="translate(-820 -5428)" clip-path="url(#clip-path)">
+    <g id="judge-svgrepo-com" transform="translate(822.928 5430.601)">
+      <path id="Path_9286" data-name="Path 9286" d="M21.717,20.217,15.06,13.56" transform="translate(4.504 3.857)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9287" data-name="Path 9287" d="M18.92,17.417,14.16,22.178a2.7,2.7,0,0,1-3.806,0l-5.7-5.7a2.7,2.7,0,0,1,0-3.806L14.16,3.162a2.7,2.7,0,0,1,3.806,0l5.7,5.7a2.7,2.7,0,0,1,0,3.806Z" transform="translate(0.643)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9288" data-name="Path 9288" d="M2,21h8.069" transform="translate(0 6.423)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9289" data-name="Path 9289" d="M6.56,7.92l9.508,9.508" transform="translate(1.572 1.912)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

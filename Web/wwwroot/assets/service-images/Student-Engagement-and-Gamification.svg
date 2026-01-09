@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8364" data-name="Group 8364" transform="translate(-1511 802)">
+    <g id="banner-main6" transform="translate(1511 -802)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="student-head-svgrepo-com" transform="translate(1512.629 -800.84)">
+      <path id="Path_9100" data-name="Path 9100" d="M31.886,28.846a6.123,6.123,0,0,1-6.242,6.123,6.263,6.263,0,0,1-6.014-6.33v-8.53a.052.052,0,0,1,.041-.052,46.806,46.806,0,0,1,6.253-.518,42.7,42.7,0,0,1,5.989.518.047.047,0,0,1,.036.052Z" transform="translate(-5.155 -5.152)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9101" data-name="Path 9101" d="M14.475,17.732l-5.5-2.862a.052.052,0,0,1,0-.093L20.613,8.86h.047l11.6,5.854a.052.052,0,0,1,0,.093l-5.471,2.924" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9102" data-name="Path 9102" d="M17.281,32.19h-1s-1.522,0-1.522,2.34c0,2.158,1.517,2.158,1.517,2.158l1.3-.026" transform="translate(-2.806 -11.255)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9103" data-name="Path 9103" d="M42.986,32.7h1s1.553,0,1.553,2.345c0,2.158-1.522,2.158-1.522,2.158H42.65" transform="translate(-16.26 -11.501)" fill="none" stroke="#fff" stroke-width="2"/>
+      <line id="Line_47" data-name="Line 47" y1="12.427" transform="translate(31.602 15.159)" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle id="Ellipse_106" data-name="Ellipse 106" cx="1.196" cy="1.196" r="1.196" transform="translate(30.406 27.592)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9104" data-name="Path 9104" d="M32.034,47.53v3.944H25.89V47.747" transform="translate(-8.175 -18.655)" fill="none" stroke="#fff" stroke-width="2"/>
+      <path id="Path_9105" data-name="Path 9105" d="M31.949,29.642a32.608,32.608,0,0,0-6.009-.518,31.185,31.185,0,0,0-6.309.518" transform="translate(-5.155 -9.773)" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

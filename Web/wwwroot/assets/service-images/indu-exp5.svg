@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2778" data-name="Rectangle 2778" width="25" height="25" transform="translate(409 3430)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8048" data-name="Mask Group 8048" transform="translate(-409 -3430)" clip-path="url(#clip-path)">
+    <path id="Icon_open-dashboard" data-name="Icon open-dashboard" d="M10.921,0A10.921,10.921,0,1,0,21.843,10.921,10.953,10.953,0,0,0,10.921,0Zm0,2.73A8.191,8.191,0,1,1,2.73,10.921,8.18,8.18,0,0,1,10.921,2.73Zm0,2.73a1.365,1.365,0,1,0,1.365,1.365A1.352,1.352,0,0,0,10.921,5.461ZM6.389,8.191a1.365,1.365,0,0,0-.519,2.293l2.485,2.485a2.772,2.772,0,0,0-.164.683,2.73,2.73,0,1,0,2.73-2.73,2.772,2.772,0,0,0-.683.164L7.754,8.6a1.365,1.365,0,0,0-1.2-.437,1.365,1.365,0,0,0-.164,0Zm8.628,0a1.365,1.365,0,1,0,1.365,1.365A1.352,1.352,0,0,0,15.017,8.191Z" transform="translate(410.579 3431.579)"/>
+  </g>
+</svg>

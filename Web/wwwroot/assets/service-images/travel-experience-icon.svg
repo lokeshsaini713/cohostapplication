@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8493" data-name="Group 8493" transform="translate(-370 -559)">
+    <g id="banner-main5" transform="translate(370 559)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="book-opened-book-guide-volume" transform="translate(371.833 549.933)">
+      <rect id="Rectangle_2805" data-name="Rectangle 2805" width="8.063" height="1.098" transform="translate(10.235 26.63)" fill="#fff"/>
+      <rect id="Rectangle_2806" data-name="Rectangle 2806" width="8.063" height="1.098" transform="translate(10.235 30.019)" fill="#fff"/>
+      <rect id="Rectangle_2807" data-name="Rectangle 2807" width="8.063" height="1.098" transform="translate(10.235 33.408)" fill="#fff"/>
+      <rect id="Rectangle_2808" data-name="Rectangle 2808" width="8.063" height="1.098" transform="translate(23.206 26.63)" fill="#fff"/>
+      <rect id="Rectangle_2809" data-name="Rectangle 2809" width="8.063" height="1.098" transform="translate(23.206 30.019)" fill="#fff"/>
+      <rect id="Rectangle_2810" data-name="Rectangle 2810" width="8.063" height="1.098" transform="translate(23.206 33.408)" fill="#fff"/>
+      <path id="Path_9247" data-name="Path 9247" d="M33.934,22.4H22.926a2.744,2.744,0,0,0-2.2,1.1,2.744,2.744,0,0,0-2.2-1.1H7.5v.538h0v15.4h0v.538H9v2.2h9.115a.253.253,0,0,1,.257.164,2.183,2.183,0,0,0,2.057,1.5h.561a2.235,2.235,0,0,0,2.08-1.5.263.263,0,0,1,.257-.164h9.162v-2.2h1.449ZM8.692,23.522h9.816a1.666,1.666,0,0,1,1.659,1.659V38.387a2.783,2.783,0,0,0-1.659-.561H8.692Zm14.631,16.5a1.333,1.333,0,0,0-1.285.912,1.133,1.133,0,0,1-1.052.748h-.561a1.133,1.133,0,0,1-1.052-.748,1.355,1.355,0,0,0-1.285-.912h-7.9V38.9h8.32a1.666,1.666,0,0,1,1.659,1.659.561.561,0,0,0,1.122,0A1.666,1.666,0,0,1,22.949,38.9h8.367V40Zm9.4-2.2H22.9a2.637,2.637,0,0,0-1.659.561V25.158A1.666,1.666,0,0,1,22.9,23.5h9.816Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg id="banner-main6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="certification-diploma-proof-svgrepo-com" transform="translate(7.667 5.595)">
+    <path id="Path_9123" data-name="Path 9123" d="M26.761,5H3.9A1.9,1.9,0,0,0,2,6.9v16.19A1.9,1.9,0,0,0,3.9,25H17.238v2.857a.94.94,0,0,0,1.457.79l2.352-1.552,2.333,1.552a.952.952,0,0,0,1.476-.79V25h1.9a1.9,1.9,0,0,0,1.9-1.9V6.9A1.9,1.9,0,0,0,26.761,5ZM21.609,21.133a2.857,2.857,0,1,1,2.238-2.238A2.857,2.857,0,0,1,21.609,21.133Zm1.343,4.943-1.381-.952a.952.952,0,0,0-1.048,0l-1.381.952V22.695a4.762,4.762,0,0,0,3.809,0Zm3.809-2.981h-1.9v-1.9h0a4.7,4.7,0,0,0,.838-3.9,4.762,4.762,0,0,0-9.409,1.048,4.7,4.7,0,0,0,.952,2.857h0v1.9H3.9V6.9H26.761Z" transform="translate(0 0)" fill="#fff"/>
+    <path id="Path_9124" data-name="Path 9124" d="M6.952,11.9H24.095a.952.952,0,1,0,0-1.9H6.952a.952.952,0,1,0,0,1.9Z" transform="translate(-0.191 -0.238)" fill="#fff"/>
+    <path id="Path_9125" data-name="Path 9125" d="M6.952,15.9h7.619a.952.952,0,0,0,0-1.9H6.952a.952.952,0,0,0,0,1.9Z" transform="translate(-0.191 -0.429)" fill="#fff"/>
+    <path id="Path_9126" data-name="Path 9126" d="M6.952,19.9h7.619a.952.952,0,0,0,0-1.9H6.952a.952.952,0,0,0,0,1.9Z" transform="translate(-0.191 -0.619)" fill="#fff"/>
+  </g>
+</svg>

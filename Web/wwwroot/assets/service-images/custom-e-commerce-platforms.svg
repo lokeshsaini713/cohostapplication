@@ -1,0 +1,19 @@
+<svg id="custom-e-commerce-platforms" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="online-shopping-settings-svgrepo-com" transform="translate(11.001 10.053)">
+    <g id="Group_8315" data-name="Group 8315" transform="translate(-0.001 0.947)">
+      <g id="Group_8314" data-name="Group 8314" transform="translate(0 0)">
+        <path id="Path_9093" data-name="Path 9093" d="M69.592,9.5l-1.386,1.384,1.147,1.149,1.387-1.387a4.213,4.213,0,0,0,1.579.652v1.962h1.624V11.295a4.234,4.234,0,0,0,1.581-.651l1.385,1.386,1.146-1.149L76.672,9.5a4.26,4.26,0,0,0,.652-1.583h1.962V6.292H77.325a4.2,4.2,0,0,0-.651-1.583l1.383-1.382-1.148-1.15L75.524,3.561a4.257,4.257,0,0,0-1.581-.651V.947H72.319V2.909a4.275,4.275,0,0,0-1.581.653L69.352,2.176l-1.147,1.15,1.386,1.384a4.2,4.2,0,0,0-.652,1.581H66.973V7.915h1.966A4.233,4.233,0,0,0,69.592,9.5Zm3.541-4a1.606,1.606,0,1,1-1.606,1.6A1.605,1.605,0,0,1,73.132,5.5Z" transform="translate(-63.771 -0.947)" fill="#fff"/>
+        <path id="Path_9094" data-name="Path 9094" d="M23.942,24.3a.85.85,0,0,0-1.1-.5l-4.47,1.688a.857.857,0,0,0-.513.545L14.607,36.48H3.945c-.307-1.061-2.273-7.907-2.273-7.907a.853.853,0,0,0-1.639.472l2.451,8.521a.853.853,0,0,0,.817.619H14.1c-.233.8-.533,1.842-.678,2.343H3.194a.852.852,0,0,0,0,1.7H14.059a.857.857,0,0,0,.822-.613l1.172-4.049s0-.007,0-.01c.085-.272,3.086-9.894,3.314-10.622l4.081-1.54A.857.857,0,0,0,24,24.6.9.9,0,0,0,23.942,24.3Z" transform="translate(0.001 -22.659)" fill="#fff"/>
+        <circle id="Ellipse_106" data-name="Ellipse 106" cx="1.882" cy="1.882" r="1.882" transform="translate(12.031 20.145)" fill="#fff"/>
+        <circle id="Ellipse_107" data-name="Ellipse 107" cx="1.882" cy="1.882" r="1.882" transform="translate(1.765 20.145)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

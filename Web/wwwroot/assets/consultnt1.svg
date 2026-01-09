@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3618" data-name="Rectangle 3618" width="40" height="40" transform="translate(379 3253)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8050" data-name="Mask Group 8050" transform="translate(-379 -3253)" clip-path="url(#clip-path)">
+    <g id="Page-1" transform="translate(383 3257)">
+      <g id="Icon-Set-Filled" transform="translate(-518 -153)">
+        <path id="pie-chart" d="M533,153v17.3l15.947,4.784A14.708,14.708,0,0,0,550,169.571c0-9.152-8.547-16.571-17-16.571Zm-2,3a14.857,14.857,0,0,0-13,14.5,14.495,14.495,0,0,0,27.729,5.918L531,172V156Z" fill="#141414" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

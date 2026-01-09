@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_8512" data-name="Group 8512" transform="translate(-416 -7484)">
+    <g id="Group_524" data-name="Group 524" transform="translate(416 7483.882)">
+      <circle id="Ellipse_14" data-name="Ellipse 14" cx="30" cy="30" r="30" transform="translate(0 0.118)" fill="#fff2e8"/>
+    </g>
+    <g id="style_stroke" data-name="style=stroke" transform="translate(421.25 7490.25)">
+      <g id="gps" transform="translate(1.25 1.25)">
+        <path id="vector_Stroke_" data-name="vector (Stroke)" d="M21.593,6.994a14.6,14.6,0,1,0,14.6,14.6A14.6,14.6,0,0,0,21.593,6.994ZM3.75,21.593A17.843,17.843,0,1,1,21.593,39.436,17.843,17.843,0,0,1,3.75,21.593Z" transform="translate(1.657 1.657)" fill="#f48120" fill-rule="evenodd"/>
+        <path id="vector_Stroke__2" data-name="vector (Stroke)_2" d="M15.779,11.994a3.785,3.785,0,1,0,3.785,3.785A3.785,3.785,0,0,0,15.779,11.994ZM8.75,15.779a7.029,7.029,0,1,1,7.029,7.029A7.029,7.029,0,0,1,8.75,15.779Z" transform="translate(7.471 7.471)" fill="#f48120" fill-rule="evenodd"/>
+        <path id="vector_Stroke__3" data-name="vector (Stroke)_3" d="M12.872,1.25a1.622,1.622,0,0,1,1.622,1.622v8.651a1.622,1.622,0,1,1-3.244,0V2.872A1.622,1.622,0,0,1,12.872,1.25Z" transform="translate(10.378 -1.25)" fill="#f48120" fill-rule="evenodd"/>
+        <path id="vector_Stroke__4" data-name="vector (Stroke)_4" d="M1.25,12.872A1.622,1.622,0,0,1,2.872,11.25h8.651a1.622,1.622,0,1,1,0,3.244H2.872A1.622,1.622,0,0,1,1.25,12.872Z" transform="translate(-1.25 10.378)" fill="#f48120" fill-rule="evenodd"/>
+        <path id="vector_Stroke__5" data-name="vector (Stroke)_5" d="M12.872,17.25a1.622,1.622,0,0,1,1.622,1.622v8.651a1.622,1.622,0,0,1-3.244,0V18.872A1.622,1.622,0,0,1,12.872,17.25Z" transform="translate(10.378 17.355)" fill="#f48120" fill-rule="evenodd"/>
+        <path id="vector_Stroke__6" data-name="vector (Stroke)_6" d="M17.25,12.872a1.622,1.622,0,0,1,1.622-1.622h8.651a1.622,1.622,0,0,1,0,3.244H18.872A1.622,1.622,0,0,1,17.25,12.872Z" transform="translate(17.355 10.378)" fill="#f48120" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

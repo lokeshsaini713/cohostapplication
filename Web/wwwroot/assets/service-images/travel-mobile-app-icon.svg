@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_8492" data-name="Group 8492" transform="translate(-630 -493)">
+    <g id="banner-main6" transform="translate(630 493)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="mobile" transform="translate(628.648 497.5)">
+      <path id="Path_9212" data-name="Path 9212" d="M30.749,4H16.641A3.141,3.141,0,0,0,13.5,7.141V29.859A3.142,3.142,0,0,0,16.641,33H30.749a3.141,3.141,0,0,0,3.141-3.141h0V7.141A3.142,3.142,0,0,0,30.749,4ZM15.312,8.984H32.078V26.2H15.312Zm1.329-3.172H30.749a1.329,1.329,0,0,1,1.329,1.329h0v.937H15.312V7.141A1.329,1.329,0,0,1,16.641,5.812ZM30.749,31.188H16.641a1.329,1.329,0,0,1-1.329-1.329v-2.75H32.078v2.75A1.329,1.329,0,0,1,30.749,31.188Z" transform="translate(0)" fill="#fff"/>
+      <path id="Path_9213" data-name="Path 9213" d="M35.52,57h-.227a.793.793,0,0,0-.793.793v.227a.793.793,0,0,0,.793.793h.227a.793.793,0,0,0,.793-.793v-.227A.793.793,0,0,0,35.52,57Z" transform="translate(-11.485 -28.985)" fill="#fff"/>
+      <path id="Path_9214" data-name="Path 9214" d="M40.246,30.021a.451.451,0,0,0-.578.277l-.123.35a.453.453,0,0,0,.277.578.444.444,0,0,0,.15.026.452.452,0,0,0,.427-.3l.123-.35A.452.452,0,0,0,40.246,30.021Z" transform="translate(-14.23 -14.216)" fill="#fff"/>
+      <path id="Path_9215" data-name="Path 9215" d="M37.6,33.575a.452.452,0,0,0-.578.277l-1.285,3.659a.452.452,0,0,0,.277.577.447.447,0,0,0,.15.026.451.451,0,0,0,.427-.3l1.285-3.659A.453.453,0,0,0,37.6,33.575Z" transform="translate(-12.145 -16.16)" fill="#fff"/>
+      <path id="Path_9216" data-name="Path 9216" d="M34.136,22.3a.451.451,0,0,0-.577.277L31.68,27.928a.452.452,0,0,0,.277.577.452.452,0,0,0,.577-.277l1.879-5.352A.453.453,0,0,0,34.136,22.3Z" transform="translate(-9.928 -9.993)" fill="#fff"/>
+      <path id="Path_9217" data-name="Path 9217" d="M30.587,37.915a.452.452,0,0,0-.577.277l-.276.786a.453.453,0,0,0,.277.578.447.447,0,0,0,.15.026.451.451,0,0,0,.427-.3l.276-.786A.453.453,0,0,0,30.587,37.915Z" transform="translate(-8.863 -18.533)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

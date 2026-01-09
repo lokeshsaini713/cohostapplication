@@ -1,0 +1,15 @@
+<svg id="banner-main2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.156" y2="0.791" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="1" stop-color="#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="22.5" cy="22.5" r="22.5" fill="url(#linear-gradient)"/>
+  <g id="compile-compiler-script-code-config-svgrepo-com" transform="translate(7.85 7.218)">
+    <path id="Path_7203" data-name="Path 7203" d="M27.118,12.452a3.749,3.749,0,0,1-3.769-1.885,3.7,3.7,0,0,1,.283-4.146,12.837,12.837,0,0,0-4.9-2.827,3.757,3.757,0,0,1-3.487,2.262A3.7,3.7,0,0,1,11.758,3.5a11.576,11.576,0,0,0-4.9,2.827,3.884,3.884,0,0,1-3.581,6.125A14.548,14.548,0,0,0,2.9,15.279a9.317,9.317,0,0,0,.377,2.827,3.749,3.749,0,0,1,3.769,1.885,3.7,3.7,0,0,1-.283,4.146,12.837,12.837,0,0,0,4.9,2.827,3.839,3.839,0,0,1,3.487-2.356,3.7,3.7,0,0,1,3.487,2.356,11.576,11.576,0,0,0,4.9-2.827,3.875,3.875,0,0,1-.283-4.146,3.828,3.828,0,0,1,3.769-1.885,14.548,14.548,0,0,0,.377-2.827A7.07,7.07,0,0,0,27.118,12.452Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_7204" data-name="Path 7204" d="M10.827,13,8,15.827l2.827,2.827" transform="translate(-0.294 -0.548)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_7205" data-name="Path 7205" d="M21,13l2.827,2.827L21,18.654" transform="translate(-1.043 -0.548)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_8" data-name="Line 8" x1="3.769" y2="7.539" transform="translate(13.36 11.51)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

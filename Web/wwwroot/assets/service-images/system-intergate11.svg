@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3670" data-name="Rectangle 3670" width="35" height="35" transform="translate(820 5428)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8022" data-name="Mask Group 8022" transform="translate(-820 -5428)" clip-path="url(#clip-path)">
+    <g id="shield-keyhole-svgrepo-com" transform="translate(822.672 5430.414)">
+      <path id="Path_9296" data-name="Path 9296" d="M12.147,18.069h1.259a1.259,1.259,0,0,0,1.259-1.259V15.047a3.776,3.776,0,1,0-3.776,0V16.81A1.259,1.259,0,0,0,12.147,18.069Z" transform="translate(1.552 1.552)" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_9297" data-name="Path 9297" d="M3,12.594c0-4.025,0-6.037.475-6.714S5.842,4.555,9.627,3.26l.721-.247A12.951,12.951,0,0,1,14.328,2a12.951,12.951,0,0,1,3.98,1.013l.721.247c3.784,1.3,5.676,1.943,6.151,2.62s.475,2.689.475,6.714v1.982a11.7,11.7,0,0,1-2.517,7.442M3.243,17.1c1.079,5.41,5.517,8.2,8.44,9.474a5.279,5.279,0,0,0,2.645.595,5.279,5.279,0,0,0,2.645-.595,18.8,18.8,0,0,0,2.39-1.252" transform="translate(0)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

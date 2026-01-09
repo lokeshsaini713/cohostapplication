@@ -1,0 +1,1874 @@
+﻿@{
+    ViewData["Title"] = "Web Development";
+    Layout = "_Layout";
+}
+
+@* <style>
+
+ :root {
+      --cohost-primary: #2563eb;
+      --cohost-secondary: #1e40af;
+      --cohost-light: #eef2ff;
+      --cohost-bg: #ffffff;
+      --cohost-text: #1f2937;
+      --cohost-muted: #6b7280;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--cohost-bg);
+      color: var(--cohost-text);
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      color: var(--cohost-secondary);
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      color: var(--cohost-text);
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .sec-pad {
+      padding: 70px 0;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-up {
+      opacity: 0;
+      animation: fadeUp 0.9s ease forwards;
+    }
+
+    .slide-left {
+      opacity: 0;
+      animation: slideLeft 0.9s ease forwards;
+    }
+
+    .slide-right {
+      opacity: 0;
+      animation: slideRight 0.9s ease forwards;
+    }
+
+    @@keyframes fadeUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @@keyframes slideLeft {
+      from { transform: translateX(-40px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @@keyframes slideRight {
+      from { transform: translateX(40px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    /* ===== SECTIONS ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--cohost-primary), var(--cohost-secondary));
+      color: #fff;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      color: #fff;
+      font-size: 36px;
+    }
+
+    .hero p {
+      color: #e0e7ff;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .feature-box {
+      background: var(--cohost-light);
+      border-left: 5px solid var(--cohost-primary);
+      padding: 30px;
+      border-radius: 12px;
+      margin: 50px 0;
+    }
+
+    .row {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .col-6 {
+      flex: 1 1 45%;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .check-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--cohost-primary);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 14px;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: var(--cohost-primary);
+      color: #fff;
+      text-align: center;
+      padding: 60px 30px;
+      border-radius: 16px;
+      margin-top: 60px;
+      animation: pulse 2.5s infinite;
+    }
+
+    .cta h2 {
+      color: #fff;
+    }
+
+    @@keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.6); }
+      70% { box-shadow: 0 0 0 20px rgba(255,255,255,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @@media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+      .hero h1 {
+        font-size: 28px;
+      }
+    }
+
+    /* ============================= */
+/* COHOSTWEB ANIMATION THEME */
+/* ============================= */
+
+:root {
+  --cohost-primary: #2563eb;
+  --cohost-secondary: #1e40af;
+  --cohost-light: #eef2ff;
+}
+
+/* Smooth transition globally */
+.sec-pad * {
+  transition: all 0.4s ease;
+}
+
+/* Fade + slide animation on load */
+.sec-pad {
+  animation: pageFade 0.8s ease-in-out;
+}
+
+@@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Headings animation */
+.sec-pad h2,
+.sec-pad h3 {
+  animation: fadeUp 0.9s ease both;
+}
+
+@@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Paragraph animation */
+.sec-pad p {
+  animation: fadeText 1s ease both;
+}
+
+@@keyframes fadeText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Image animation */
+.sec-pad img {
+  animation: zoomIn 1s ease both;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+@@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* List animation */
+.sec-pad ul li {
+  animation: listFade 0.8s ease both;
+}
+
+@@keyframes listFade {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Section hover effect */
+.sec-pad .mb-5:hover {
+  transform: translateY(-3px);
+}
+
+/* CTA animation */
+.sec-pad .bg-primary {
+  animation: pulseGlow 2.8s infinite;
+}
+
+@@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+/* Hover effects */
+.sec-pad img:hover {
+  transform: scale(1.03);
+}
+
+.sec-pad h3:hover {
+  color: var(--cohost-primary);
+}
+
+/* Mobile safe */
+@@media (max-width: 768px) {
+  .sec-pad img {
+    margin-top: 20px;
+  }
+}
+
+/* ========================= */
+/* ATTRACTIVE BULLET HEADINGS */
+/* ========================= */
+
+.sec-pad .bullet-heading {
+  display: flex;
+  align-items: center;
+  background: var(--cohost-light);
+  border-left: 5px solid var(--cohost-primary);
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--cohost-secondary);
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: default;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.sec-pad .bullet-heading i {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 18px;
+  color: var(--cohost-primary);
+}
+
+/* Hover Effect */
+.sec-pad .bullet-heading:hover {
+  background: rgba(37, 99, 235, 0.1);
+  transform: translateX(5px);
+}
+
+/* Reuse fadeUp animation */
+@@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+
+  </style> *@
+<div>
+
+
+
+
+
+   <div class="InnerBanner_innerBannerCard__rBFXp">
+        <div class="InnerBanner_positionContainer__XB_db small-container container">
+            <div class="align-items-center row">
+                <div class="col-md-12">
+                    <div class="InnerBannerInfo_innerBannerInfoCard__xSxY9">
+                        <span class="InnerBannerInfo_spanHeading__tE2eh">
+                            WEB DEVELOPMENT SOLUTION
+                        </span>
+
+                        <h1>
+                            Smart Digital Solutions for Modern Businesses
+                        </h1>
+                        <span style="color:white">
+                            Web development is the foundation of a strong online presence. Whether you need a simple website, a business platform, or a custom web application, CohostWeb helps you build fast, secure, and scalable digital solutions.
+
+At CohostWeb, we make web development simple and accessible for startups, small businesses, and professionals by combining modern technologies with reliable hosting and expert support.
+
+
+                        </span>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <ul class="InnerBannerInfo_bannerList__P_vpC d-flex flex-wrap">
+                            <li>
+                                <i>
+                                    <img alt="bannerweb-main" class="" src="/assets/service-images/bannerweb-main1.svg" />
+                                </i>
+                                <span>
+                                    Front-end, Backend & Full-Stack Web Development
+                                </span>
+                            </li>
+
+                            <li>
+                                <i>
+                                    <img alt="bannerweb-main" class="" src="/assets/service-images/bannerweb-main2.svg" />
+                                </i>
+                                <span>
+                                    HTML, CSS & JavaScript Based Interactive Design
+                                </span>
+                            </li>
+
+                            <li>
+                                <i>
+                                    <img alt="bannerweb-main" class="" src="/assets/service-images/bannerweb-main3.svg" />
+                                </i>
+                                <span>
+                                    Responsive Websites for Mobile, Tablet & Desktop
+                                </span>
+                            </li>
+
+                            <li>
+                                <i>
+                                    <img alt="bannerweb-main" class="" src="/assets/service-images/bannerweb-main4.svg" />
+                                </i>
+                                <span>
+                                    Backend Integration with Databases & Servers
+                                </span>
+                            </li>
+
+                            <li>
+                                <i>
+                                    <img alt="bannerweb-main" class="" src="/assets/service-images/bannerweb-main5.svg" />
+                                </i>
+                                <span>
+                                    Secure Hosting & Reliable Web Infrastructure
+                                </span>
+                            </li>
+
+                            <li>
+                                <i>
+                                    <img alt="bannerweb-main" class="" src="/assets/service-images/bannerweb-main6.svg" />
+                                </i>
+                                <span>
+                                    Support for Beginners & Small Businesses
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+
+          
+
+   </div>
+   
+
+
+   </div>
+   <section class="">
+  <div class="">
+
+    <!-- INTRO -->
+    <div class="mb-5">
+     
+
+      <img
+        src="/assets/webdev.jpg"
+        alt="Web Development Services"
+        class="img-fluid rounded mt-4"
+      />
+    </div>
+    <div class="WhyChooseUs_WhyChooseSec__a17MD  sec-pad">
+            <div class="container">
+                <div class="headingBlock mb-3 mb-md-5 text-center ">
+                    <div class="sub-hd">WHY CHOOSE US</div>
+                    <h2 class=""><span>The Advantages of Working with Cohost for Web Development</span></h2>
+                    <p class="">We don't just build websites - we craft solutions that transform your business. Here's what sets us apart:</p>
+                </div>
+                <div class="WhyChooseUs_WhyServiceListing__Ww4uP">
+                    <div class="WhyCard_ChooseBox__B8WHh ">
+                        <figure><img src="assets/clear-communication.webp" alt="Competitive Rates" class="" /></figure>
+                        <p class="WhyCard_ChooseHead__SAnLF">What is Web Development?</p>
+                        <p class="WhyCard_ChoosePara__7c4JC"> 
+        Web development is the process of creating and maintaining websites. It
+        involves designing user interfaces, building interactive features, and
+        developing backend systems that manage data, performance, and security.
+      </p>
+       <ul style="color:white" class="list-style-disc pl-4">
+        <li>Front-end development</li>
+        <li>Backend development</li>
+        <li>Full-stack development</li>
+      </ul>
+                    </div>
+                       <div class="WhyCard_ChooseBox__B8WHh ">
+                        <figure><img src="assets/solutions-built.webp" alt="Timely Delivery" class="" /></figure>
+                        <p class="WhyCard_ChooseHead__SAnLF">Frontend Development  </p>
+                        <p class="WhyCard_ChoosePara__7c4JC">
+          Frontend development focuses on the visual and interactive part of a
+          website. It ensures your website looks professional, works smoothly,
+          and adapts perfectly to all screen sizes.
+        </p>
+
+        <ul style="color:white" class="list-style-disc pl-4">
+          <li><strong>HTML</strong> – Page structure</li>
+          <li><strong>CSS</strong> – Layout and styling</li>
+          <li><strong>JavaScript</strong> – Interactivity and animations</li>
+        </ul>
+                    </div>
+                    <div class="WhyCard_ChooseBox__B8WHh ">
+                        <figure><img src="assets/on-time-delivery.webp" alt="Expert Team" class="" /></figure>
+                        <p class="WhyCard_ChooseHead__SAnLF">Quality </p>
+                        <p class="WhyCard_ChoosePara__7c4JC"> We take pride in delivering exceptional results. Our CMMI level 3 appraisal and membership in the Agile Alliance demonstrate our commitment to strong processes and quality control. This ensures you get a polished, high-quality product every single time.</p>
+
+                    </div>
+                  <div class="WhyCard_ChooseBox__B8WHh ">
+                        <figure><img src="assets/flexible-engagement-models.webp" alt="Custom Solutions" class="" /></figure>
+                        <p class="WhyCard_ChooseHead__SAnLF">Backend Development  </p>
+                        <p class="WhyCard_ChoosePara__7c4JC">
+          Backend development works behind the scenes to handle data storage,
+          authentication, and communication between servers and users.
+        </p>
+
+        <ul style="color:white" class="list-style-disc pl-4">
+          <li class="list-group-item"> PHP, Python, Node.js</li>
+          <li>MySQL & MongoDB databases</li>
+          <li>Secure hosting environments</li>
+        </ul>
+                    </div>
+                    <div class="WhyCard_ChooseBox__B8WHh ">
+                        <figure><img src="assets/direct-collaboration.webp" alt="Quality Assurance" class="" /></figure>
+                        <p class="WhyCard_ChooseHead__SAnLF">Full-Stack Development  .</p>
+                        <p class="WhyCard_ChoosePara__7c4JC">
+        Full-stack development combines both frontend and backend expertise.
+        This approach allows complete website development with better
+        performance, flexibility, and scalability.
+      </p>
+                    </div>
+                    <div class="WhyCard_ChooseBox__B8WHh ">
+                        <figure><img src="assets/direct-collaboration.webp" alt="Quality Assurance" class="" /></figure>
+                        <p class="WhyCard_ChooseHead__SAnLF">Security &amp; Confidentiality  .</p>
+                        <p class="WhyCard_ChoosePara__7c4JC">Unlike many offshore companies, security is our top priority. Your data and intellectual property remain completely confidential, and all source code rights belong to you, always</p>
+                    </div>
+                    <div class="WhyCard_ChooseBox__B8WHh ">
+                        <figure><img src="assets/elevated-user-experience.webp" alt="Dedicated Support" class="" /></figure>
+                        <p class="WhyCard_ChooseHead__SAnLF">On-Time Delivery  </p>
+                        <p class="WhyCard_ChoosePara__7c4JC">We use cutting-edge project management tools and agile development practices to keep your project on track. This means you&#x27;ll get high-quality products delivered exactly when you expect them.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    <!-- WHAT IS WEB DEVELOPMENT -->
+  <div class="HireUs_HireUsSec__qv88S">
+            <div class="HireUs_Hirecontainer__JVhsA container">
+                <div class="headingBlock mb-3 mb-md-5 text-center ">
+                    <div class="sub-hd">AS PER YOUR REQUIREMENT</div>
+                    <h2 class=""><span>Core Web Development Technologies</span></h2>
+                    <p class="">HTML – Structuring web pages CSS – Design and layout JavaScript – Dynamic functionality Web Hosting – Making your website live Domain Name – Online identity.</p>                
+                    <p class="">CohostWeb brings all these services together, offering domain registration, secure hosting, and professional web development under one platform.</p>                </div>
+                <div class="HireUs_TechnoBusinessFlex__77xzI">
+                    <div class="HireUsCard_TechnoBusinessBox__qfEkX ">
+                        <img src="assets/busines1.webp" alt="busines1" class="" />
+                        <div class="HireUsCard_BusinesTitle__3rLQj">
+                            <img src="assets/busines1.svg" alt="busines1" class="" /> <!-- -->Importance of Responsive
+                        </div>
+                        <p class="HireUsCard_BusinessPara__osqzi">Importance of Responsive Web Design.</p>
+                        <ul class="HireUsCard_BusinesListing__BgcyX list-group">
+                            <li class="list-group-item">Responsive design ensures your website works seamlessly across mobile phones, tablets, and desktops. This improves usability, performance, and search engine rankings.</li>
+                            <li class="list-group-item">Better user experience.</li>
+                            <li class="list-group-item">Faster loading time.</li>
+                            <li class="list-group-item">Improved SEO.</li>
+                        </ul>
+                        <p class="HireUsCard_BusinessPara__osqzi">It&#x27;s a convenient and efficient way to manage your website needs on schedule.</p>
+                        <a href="contact.html" class="HireUsCard_ExploreMore____gP1">Explore more<img src="assets/business4.svg" alt="It&#x27;s a convenient and efficient way to manage your developer needs on your schedule." class="ms-2" /></a>
+                    </div>
+                    <div class="HireUsCard_TechnoBusinessBox__qfEkX ">
+                        <img src="assets/business3.svg" alt="busines3" class="HireUsCard_offprice__uUTey" /><img src="assets/busines2.webp" alt="busines2" class="" />
+                        <div class="HireUsCard_BusinesTitle__3rLQj">
+                            <img src="assets/busines2.svg" alt="busines2" class="" /> <!-- -->Why Choose CohostWeb?
+ 
+                        </div>
+                        <p class="HireUsCard_BusinessPara__osqzi">CohostWeb is built to support beginners, startups, and small businesses with easy-to-use tools and reliable services..</p>
+                        <ul class="HireUsCard_BusinesListing__BgcyX list-group">
+                            <li class="list-group-item">The developer will work only on your project for a set amount of time.</li>
+                            <li class="list-group-item">Affordable and secure hosting.</li>
+                            <li class="list-group-item">Quick domain registration.</li>
+                            <li class="list-group-item">Reliable support and maintenance.</li>
+                            <li class="list-group-item">Professional web development.</li>
+                            <li class="list-group-item">Improved SEO.</li>
+                        </ul>
+                        <p class="HireUsCard_BusinessPara__osqzi">Whether you need help for a short time or a longer period, our dedicated hiring option ensures your project gets the attention it deserves.</p>
+                        <a href="contact.html" class="HireUsCard_ExploreMore____gP1">Explore more<img src="assets/business4.svg" alt="Whether you need help for a short time or a longer period, our dedicated hiring option ensures your project gets the attention it deserves." class="ms-2" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- CTA -->
+    <div class="text-center bg-primary text-white rounded p-5">
+      <h3 class="mb-3">Start Your Web Development Journey with CohostWeb</h3>
+      <p class="mb-0">
+        Whether you are a student, freelancer, or business owner, CohostWeb
+        helps you build a professional online presence with confidence.
+      </p>
+    </div>
+
+  </div>
+</section>
+   <div class="sec-pad bg-white">
+    <div class="small-container container">
+     <div class="headingBlock mb-3 mb-md-5 text-center">
+      <div class="sub-hd">
+       SERVICES
+      </div>
+      <h2 class="">
+       <span>
+        Customized Web Development Services for Your Success
+       </span>
+      </h2>
+     </div>
+     <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-6">
+       <div class="ServicesListCard_ServicesInfoCard__pnINS">
+        <div class="ServicesListCard_ServicesInfoHead__eelcz">
+         <span class="ServicesListCard_craftHead__mPiD2">
+          Website Design &amp; Development
+         </span>
+         <p>
+          We don't just build websites; we create user experiences that engage and convert. Our designers and developers will collaborate to bring your vision to life with a stunning, functional website.
+         </p>
+        </div>
+        <div class="ServicesListCard_ServicesInfoContent__UQYGX">
+         <span class="ServicesListCard_craftList__f1EtW">
+          Custom Design
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Responsive Layout
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          SEO Friendly
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          User-Centric
+         </span>
+        </div>
+        <a class="ServicesListCard_moreLinks__dNQdZ" href="/contact">
+         <img alt="service-craft" class="" src="/assets/service-images/service-craft.svg"/>
+        </a>
+       </div>
+      </div>
+      
+      <div class="col-xl-4 col-lg-4 col-md-6">
+       <div class="ServicesListCard_ServicesInfoCard__pnINS">
+        <div class="ServicesListCard_ServicesInfoHead__eelcz">
+         <span class="ServicesListCard_craftHead__mPiD2">
+          API Development &amp; Integration
+         </span>
+         <p>
+          Connect your web application to external data sources and services with our expert API development and integration. This allows for a more powerful and dynamic user experience.
+         </p>
+        </div>
+        <div class="ServicesListCard_ServicesInfoContent__UQYGX">
+         <span class="ServicesListCard_craftList__f1EtW">
+          Custom API Solutions
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Third-Party Integration
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Secure and Reliable
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Real-Time Data Access
+         </span>
+        </div>
+        <a class="ServicesListCard_moreLinks__dNQdZ" href="/contact">
+         <img alt="service-craft" class="" src="/assets/service-images/service-craft.svg"/>
+        </a>
+       </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6">
+       <div class="ServicesListCard_ServicesInfoCard__pnINS">
+        <div class="ServicesListCard_ServicesInfoHead__eelcz">
+         <span class="ServicesListCard_craftHead__mPiD2">
+          Web 3.0 Development
+         </span>
+         <p>
+          Be at the forefront of the next generation of the web with our Web 3.0 development expertise. Build applications that prioritise user data ownership, enhanced privacy, and a more open and connected web.
+         </p>
+        </div>
+        <div class="ServicesListCard_ServicesInfoContent__UQYGX">
+         <span class="ServicesListCard_craftList__f1EtW">
+          NFT Development
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Smart Contracts
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Data Privacy
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Interoperability
+         </span>
+        </div>
+        <a class="ServicesListCard_moreLinks__dNQdZ" href="/contact">
+         <img alt="service-craft" class="" src="/assets/service-images/service-craft.svg"/>
+        </a>
+       </div>
+      </div>
+      
+      <div class="col-xl-4 col-lg-4 col-md-6">
+       <div class="ServicesListCard_ServicesInfoCard__pnINS">
+        <div class="ServicesListCard_ServicesInfoHead__eelcz">
+         <span class="ServicesListCard_craftHead__mPiD2">
+          Bespoke Web Development
+         </span>
+         <p>
+          Have a unique vision for your web project? We can build it from the ground up. Our team can handle everything from custom web development to legacy system migration and front-end functionality improvements.
+         </p>
+        </div>
+        <div class="ServicesListCard_ServicesInfoContent__UQYGX">
+         <span class="ServicesListCard_craftList__f1EtW">
+          Requirement Analysis
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Tailored Solutions
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Agile Methodology
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Post-Launch support
+         </span>
+        </div>
+        <a class="ServicesListCard_moreLinks__dNQdZ" href="/contact">
+         <img alt="service-craft" class="" src="/assets/service-images/service-craft.svg"/>
+        </a>
+       </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6">
+       <div class="ServicesListCard_ServicesInfoCard__pnINS">
+        <div class="ServicesListCard_ServicesInfoHead__eelcz">
+         <span class="ServicesListCard_craftHead__mPiD2">
+          Headless Development
+         </span>
+         <p>
+          Craft exceptional user experiences with the freedom and flexibility of headless development. Our headless development services empower you to build dynamic and future-proof web applications.
+         </p>
+        </div>
+        <div class="ServicesListCard_ServicesInfoContent__UQYGX">
+         <span class="ServicesListCard_craftList__f1EtW">
+          Rapid Development
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          API-Driven
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Enhanced Security
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Seamless Integration
+         </span>
+        </div>
+        <a class="ServicesListCard_moreLinks__dNQdZ" href="/contact">
+         <img alt="service-craft" class="" src="/assets/service-images/service-craft.svg"/>
+        </a>
+       </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6">
+       <div class="ServicesListCard_ServicesInfoCard__pnINS">
+        <div class="ServicesListCard_ServicesInfoHead__eelcz">
+         <span class="ServicesListCard_craftHead__mPiD2">
+          Upgrade &amp; Migration
+         </span>
+         <p>
+          Need to upgrade your existing website or migrate to a new platform? We handle the entire process smoothly and efficiently, minimising downtime and disruption.
+         </p>
+        </div>
+        <div class="ServicesListCard_ServicesInfoContent__UQYGX">
+         <span class="ServicesListCard_craftList__f1EtW">
+          Data Integrity Assurance
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Platform Migration
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Identify and mitigate risks
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Performance Optimization
+         </span>
+        </div>
+        <a class="ServicesListCard_moreLinks__dNQdZ" href="/contact">
+         <img alt="service-craft" class="" src="/assets/service-images/service-craft.svg"/>
+        </a>
+       </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6">
+       <div class="ServicesListCard_ServicesInfoCard__pnINS">
+        <div class="ServicesListCard_ServicesInfoHead__eelcz">
+         <span class="ServicesListCard_craftHead__mPiD2">
+          Maintenance &amp; Support
+         </span>
+         <p>
+          We don't just build it; we maintain it. Our ongoing support ensures your web application continues to run smoothly and securely and delivers optimal performance. We'll handle bug fixes, updates, security patches, and server monitoring.
+         </p>
+        </div>
+        <div class="ServicesListCard_ServicesInfoContent__UQYGX">
+         <span class="ServicesListCard_craftList__f1EtW">
+          Proactive Maintenance
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Backup and Recovery
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Bug Fixes and Updates
+         </span>
+         <span class="ServicesListCard_craftList__f1EtW">
+          Continuous optimisation
+         </span>
+        </div>
+        <a class="ServicesListCard_moreLinks__dNQdZ" href="/contact">
+         <img alt="service-craft" class="" src="/assets/service-images/service-craft.svg"/>
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  @* 
+   <div class="WeAreTheExperts_weAreTheExpertsBlock__85LuB sec-pad">
+    <div class="small-container container">
+     <div class="headingBlock mb-3 mb-md-5 text-center">
+      <div class="sub-hd">
+       WE ARE THE EXPERTS
+      </div>
+      <h2 class="">
+       <span>
+        We Go Beyond the Basics
+       </span>
+      </h2>
+     </div>
+     <div class="WeAreTheExperts_weAreTheExpertsTab__dlqrz">
+      <ul class="WeAreTheExperts_expertsTabBlock__7tYe_ nav nav-tabs" id="weAreTheExpertsTabs" role="tablist">
+       <li class="nav-item" role="presentation">
+        <button aria-controls="weAreTheExpertsTabs-tabpane-SEO Optimisation" aria-selected="true" class="nav-link active" data-rr-ui-event-key="SEO Optimisation" id="weAreTheExpertsTabs-tab-SEO Optimisation" role="tab" type="button">
+         <i>
+          <img alt="icon" class="" src="/assets/service-images/expert3.svg"/>
+         </i>
+         <span>
+          SEO Optimisation
+         </span>
+        </button>
+       </li>
+       <li class="nav-item" role="presentation">
+        <button aria-controls="weAreTheExpertsTabs-tabpane-Security" aria-selected="false" class="nav-link" data-rr-ui-event-key="Security" id="weAreTheExpertsTabs-tab-Security" role="tab" tabindex="-1" type="button">
+         <i>
+          <img alt="icon" class="" src="/assets/service-images/expert1.svg"/>
+         </i>
+         <span>
+          Security
+         </span>
+        </button>
+       </li>
+       <li class="nav-item" role="presentation">
+        <button aria-controls="weAreTheExpertsTabs-tabpane-E-Commerce Integration" aria-selected="false" class="nav-link" data-rr-ui-event-key="E-Commerce Integration" id="weAreTheExpertsTabs-tab-E-Commerce Integration" role="tab" tabindex="-1" type="button">
+         <i>
+          <img alt="icon" class="" src="/assets/service-images/expert2.svg"/>
+         </i>
+         <span>
+          E-Commerce Integration
+         </span>
+        </button>
+       </li>
+       <li class="nav-item" role="presentation">
+        <button aria-controls="weAreTheExpertsTabs-tabpane-Conversion Rate Optimisation" aria-selected="false" class="nav-link" data-rr-ui-event-key="Conversion Rate Optimisation" id="weAreTheExpertsTabs-tab-Conversion Rate Optimisation" role="tab" tabindex="-1" type="button">
+         <i>
+          <img alt="icon" class="" src="/assets/service-images/expert4.svg"/>
+         </i>
+         <span>
+          Conversion Rate Optimisation
+         </span>
+        </button>
+       </li>
+      </ul>
+      <div class="tab-content">
+       <div aria-labelledby="weAreTheExpertsTabs-tab-SEO Optimisation" class="fade tab-pane active show" id="weAreTheExpertsTabs-tabpane-SEO Optimisation" role="tabpanel">
+        <div class="WeAreTheExperts_tabInfoCard__KZjsD d-md-flex justify-content-between align-items-start">
+         <div class="WeAreTheExperts_tabInfoCardInfo__kVfx_">
+          <span class="WeAreTheExperts_subHdSmall__9TUUG">
+           TAILORED EXCELLENCE
+          </span>
+          <span class="WeAreTheExperts_expertHead__Hjqh0">
+           SEO Optimisation
+          </span>
+          <p>
+           We ensure that your website is optimised for search engines right from the start. We optimise meta tags, headers, content, and images to improve search engine visibility and enhance website speed and mobile responsiveness for better search rankings.
+          </p>
+          <ul class="WeAreTheExperts_expertFeature__pndSZ d-flex flex-wrap justify-content-between">
+           <li>
+            Keyword Research
+           </li>
+           <li>
+            On-Page SEO
+           </li>
+           <li>
+            Technical SEO
+           </li>
+           <li>
+            Page Speed Optimsation
+           </li>
+          </ul>
+         </div>
+         <div class="WeAreTheExperts_tabInfoCardInfoImg__prq4w">
+          <img alt="SEO Optimisation" class="" src="/assets/service-images/expert4.webp"/>
+         </div>
+        </div>
+       </div>
+       <div aria-labelledby="weAreTheExpertsTabs-tab-Security" class="fade tab-pane" id="weAreTheExpertsTabs-tabpane-Security" role="tabpanel">
+        <div class="WeAreTheExperts_tabInfoCard__KZjsD d-md-flex justify-content-between align-items-start">
+         <div class="WeAreTheExperts_tabInfoCardInfo__kVfx_">
+          <span class="WeAreTheExperts_subHdSmall__9TUUG">
+           TAILORED EXCELLENCE
+          </span>
+          <span class="WeAreTheExperts_expertHead__Hjqh0">
+           Security
+          </span>
+          <p>
+           Protecting your website and user data is our top priority. We implement SSL certificates to encrypt data transmitted between your website and users, ensuring privacy and security. Our team conducts regular security audits to identify and fix vulnerabilities.
+          </p>
+          <ul class="WeAreTheExperts_expertFeature__pndSZ d-flex flex-wrap justify-content-between">
+           <li>
+            SSL Certificates
+           </li>
+           <li>
+            Secure Coding Practices
+           </li>
+           <li>
+            Firewalls &amp; DDoS Protection
+           </li>
+           <li>
+            Regular Security Audits
+           </li>
+          </ul>
+         </div>
+         <div class="WeAreTheExperts_tabInfoCardInfoImg__prq4w">
+          <img alt="Security" class="" src="/assets/service-images/expert3.webp"/>
+         </div>
+        </div>
+       </div>
+       <div aria-labelledby="weAreTheExpertsTabs-tab-E-Commerce Integration" class="fade tab-pane" id="weAreTheExpertsTabs-tabpane-E-Commerce Integration" role="tabpanel">
+        <div class="WeAreTheExperts_tabInfoCard__KZjsD d-md-flex justify-content-between align-items-start">
+         <div class="WeAreTheExperts_tabInfoCardInfo__kVfx_">
+          <span class="WeAreTheExperts_subHdSmall__9TUUG">
+           TAILORED EXCELLENCE
+          </span>
+          <span class="WeAreTheExperts_expertHead__Hjqh0">
+           E-Commerce Integration
+          </span>
+          <p>
+           We specialise in creating robust e-commerce platforms that drive sales and enhance user experience. We design user-friendly shopping experiences with intuitive product pages, shopping carts, and checkout processes.
+          </p>
+          <ul class="WeAreTheExperts_expertFeature__pndSZ d-flex flex-wrap justify-content-between">
+           <li>
+            Secure Payment Gateways
+           </li>
+           <li>
+            Inventory Management
+           </li>
+           <li>
+            User-Friendly Shopping Experience
+           </li>
+           <li>
+            Analytics and Reporting
+           </li>
+          </ul>
+         </div>
+         <div class="WeAreTheExperts_tabInfoCardInfoImg__prq4w">
+          <img alt="E-Commerce Integration" class="" src="/assets/service-images/expert2.webp"/>
+         </div>
+        </div>
+       </div>
+       <div aria-labelledby="weAreTheExpertsTabs-tab-Conversion Rate Optimisation" class="fade tab-pane" id="weAreTheExpertsTabs-tabpane-Conversion Rate Optimisation" role="tabpanel">
+        <div class="WeAreTheExperts_tabInfoCard__KZjsD d-md-flex justify-content-between align-items-start">
+         <div class="WeAreTheExperts_tabInfoCardInfo__kVfx_">
+          <span class="WeAreTheExperts_subHdSmall__9TUUG">
+           TAILORED EXCELLENCE
+          </span>
+          <span class="WeAreTheExperts_expertHead__Hjqh0">
+           Conversion Rate Optimisation
+          </span>
+          <p>
+           At our core, we are dedicated to maximising your website`s conversion rates through meticulous analysis and proven testing methodologies.
+          </p>
+          <ul class="WeAreTheExperts_expertFeature__pndSZ d-flex flex-wrap justify-content-between">
+           <li>
+            A/B Testing
+           </li>
+           <li>
+            UX Design
+           </li>
+           <li>
+            Conversion Funnel Analysis
+           </li>
+           <li>
+            Performance Metrics Tracking
+           </li>
+          </ul>
+         </div>
+         <div class="WeAreTheExperts_tabInfoCardInfoImg__prq4w">
+          <img alt="Conversion Rate Optimisation" class="" src="/assets/service-images/expert1.webp"/>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div> *@
+
+
+   @* <div class="Portfolio_PortfolioSec__Ou2GG sec-pad">
+    <div class="container">
+     <div class="headingBlock mb-3 mb-md-5 text-center">
+      <div class="sub-hd">
+       Portfolio
+      </div>
+      <h2 class="">
+       <span>
+        What we have done
+       </span>
+      </h2>
+      <p class="">
+       Explore some of our PHP web development projects demonstrating our expertise in harnessing PHP to create robust and scalable solutions.
+      </p>
+     </div>
+     <div class="slick-slider Portfolio_PortfolioMSlider__jLM_F portfoliom-slick-option slick-initialized" dir="ltr">
+      <button class="slick-arrow slick-prev" data-role="none" style="display:block" type="button">
+       <!-- -->
+       Previous
+      </button>
+      <div class="slick-list">
+       <div class="slick-track" style="width:900%;left:-100%">
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-2" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://bigtalks.com.au/" target="_blank">
+              <img alt="" class="" src="/assets/service-images/case7.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://bigtalks.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Bigtalks
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Ever wonder how current events connect to your classroom studies? Bigtalks Weekly tackles this by tailoring today's "must-know" news to the HSIE syllabus (Humanities and Social Inquiry Subjects). Their articles skillfully weave together theory and real-world applications, making learning about social issues engaging and relevant.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                PHP
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-1" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="#" target="_blank">
+              <img alt="" class="" src="/assets/service-images/case8.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="#">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Manduka
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              "Yoga is for Everyone" - that's the philosophy driving Manduka. They offer a complete yoga experience, providing everything you need to practice, from high-quality yoga mats (including kid-sized options!) and comfortable leggings and bras to yoga towels and even access to live yoga classes. With Manduka, you can find everything you need to comfortably embrace your yoga journey, regardless of your experience level.  TECHNOLOGY Shopify  Region Amsterdam
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                Shopify
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Amsterdam
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="false" class="slick-slide slick-active slick-current" data-index="0" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://wildernesswear.com.au/" target="_blank">
+              <img alt="E-commerce Platform" class="" src="/assets/service-images/case1.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://wildernesswear.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Wilderness Wear
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Wilderness Wear stands out from the competition by offering premium, self-manufactured outdoor clothing designed and produced in Australia. They cater to discerning customers who value internationally recognised standards and quality.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="false" class="slick-slide slick-active" data-index="1" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://mithree.com.au/" target="_blank">
+              <img alt="Healthcare App" class="" src="/assets/case2.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://mithree.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Mithree Trading
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Mithree Trading is a one-stop shop for restaurants and grocery stores looking for authentic Thai food supplies. They specialise in a wide range of ingredients, including coconut milk, rice and flour, sauces and pastes, dried foods, oils, and frozen and fresh options. Additionally, they provide packaging and cleaning supplies, ensuring a convenient experience for their customers.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide" data-index="2" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://3peaks.com.au/" target="_blank">
+              <img alt="Financial Dashboard" class="" src="/assets/service-images/case3.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://3peaks.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Peaks
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              3 Peaks, an Australian company with over 15 years of experience, focuses on offering performance clothing and accessories at accessible prices. Their products cater to outdoor enthusiasts and those seeking comfortable, functional clothing for everyday wear.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide" data-index="3" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://wolfprop.com/" target="_blank">
+              <img alt="Educational Platform" class="" src="/assets/service-images/case4.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://wolfprop.com/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Wolf Properties
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Wolf Properties is a leading real estate and rental marketplace dedicated to serving the Brooklyn community. They offer expert services to assist with buying, selling, or renting property in the area. Their focus on the local community suggests a commitment to providing personalised and knowledgeable assistance.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                USA
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide" data-index="4" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://www.cycologygear.com/" target="_blank">
+              <img alt="Social Network" class="" src="/assets/service-images/case5.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://www.cycologygear.com/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Cycology Gear
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              This project tackles the creation of an online store catering specifically to cyclists. They offer a broad selection of cycling apparel and accessories for both men and women, making it a one-stop shop for cyclists of all levels.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                Shopify
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide" data-index="5" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://www.tutormate.org.uk/" target="_blank">
+              <img alt="Travel Booking System" class="" src="/assets/service-images/case6.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://www.tutormate.org.uk/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Tutormate
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Tutormate is an e-learning platform built using CakePHP, a popular web development framework. Their mission is to provide students with high-quality tutoring at accessible prices. They connect students with friendly and approachable tutors who can answer their questions, help them develop study plans, and guide them towards achieving their academic goals.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                CakePHP
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                UK
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide" data-index="6" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://bigtalks.com.au/" target="_blank">
+              <img alt="" class="" src="/assets/service-images/case7.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://bigtalks.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Bigtalks
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Ever wonder how current events connect to your classroom studies? Bigtalks Weekly tackles this by tailoring today's "must-know" news to the HSIE syllabus (Humanities and Social Inquiry Subjects). Their articles skillfully weave together theory and real-world applications, making learning about social issues engaging and relevant.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                PHP
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide" data-index="7" style="outline:none;width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="#" target="_blank">
+              <img alt="" class="" src="/assets/service-images/case8.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="#">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Manduka
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              "Yoga is for Everyone" - that's the philosophy driving Manduka. They offer a complete yoga experience, providing everything you need to practice, from high-quality yoga mats (including kid-sized options!) and comfortable leggings and bras to yoga towels and even access to live yoga classes. With Manduka, you can find everything you need to comfortably embrace your yoga journey, regardless of your experience level.  TECHNOLOGY Shopify  Region Amsterdam
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                Shopify
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Amsterdam
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="8" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://wildernesswear.com.au/" target="_blank">
+              <img alt="E-commerce Platform" class="" src="/assets/service-images/case1.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://wildernesswear.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Wilderness Wear
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Wilderness Wear stands out from the competition by offering premium, self-manufactured outdoor clothing designed and produced in Australia. They cater to discerning customers who value internationally recognised standards and quality.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="9" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://mithree.com.au/" target="_blank">
+              <img alt="Healthcare App" class="" src="/assets/case2.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://mithree.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Mithree Trading
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Mithree Trading is a one-stop shop for restaurants and grocery stores looking for authentic Thai food supplies. They specialise in a wide range of ingredients, including coconut milk, rice and flour, sauces and pastes, dried foods, oils, and frozen and fresh options. Additionally, they provide packaging and cleaning supplies, ensuring a convenient experience for their customers.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="10" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://3peaks.com.au/" target="_blank">
+              <img alt="Financial Dashboard" class="" src="/assets/service-images/case3.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://3peaks.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Peaks
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              3 Peaks, an Australian company with over 15 years of experience, focuses on offering performance clothing and accessories at accessible prices. Their products cater to outdoor enthusiasts and those seeking comfortable, functional clothing for everyday wear.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="11" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://wolfprop.com/" target="_blank">
+              <img alt="Educational Platform" class="" src="/assets/service-images/case4.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://wolfprop.com/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Wolf Properties
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Wolf Properties is a leading real estate and rental marketplace dedicated to serving the Brooklyn community. They offer expert services to assist with buying, selling, or renting property in the area. Their focus on the local community suggests a commitment to providing personalised and knowledgeable assistance.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                WordPress
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                USA
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="12" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://www.cycologygear.com/" target="_blank">
+              <img alt="Social Network" class="" src="/assets/service-images/case5.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://www.cycologygear.com/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Cycology Gear
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              This project tackles the creation of an online store catering specifically to cyclists. They offer a broad selection of cycling apparel and accessories for both men and women, making it a one-stop shop for cyclists of all levels.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                Shopify
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="13" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://www.tutormate.org.uk/" target="_blank">
+              <img alt="Travel Booking System" class="" src="/assets/service-images/case6.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://www.tutormate.org.uk/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Tutormate
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Tutormate is an e-learning platform built using CakePHP, a popular web development framework. Their mission is to provide students with high-quality tutoring at accessible prices. They connect students with friendly and approachable tutors who can answer their questions, help them develop study plans, and guide them towards achieving their academic goals.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                CakePHP
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                UK
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="14" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="https://bigtalks.com.au/" target="_blank">
+              <img alt="" class="" src="/assets/service-images/case7.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="https://bigtalks.com.au/">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Bigtalks
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              Ever wonder how current events connect to your classroom studies? Bigtalks Weekly tackles this by tailoring today's "must-know" news to the HSIE syllabus (Humanities and Social Inquiry Subjects). Their articles skillfully weave together theory and real-world applications, making learning about social issues engaging and relevant.
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                PHP
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Australia
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="15" style="width:5.555555555555555%" tabindex="-1">
+         <div>
+          <div class="Portfolio_item__pToL9" style="width:100%;display:inline-block" tabindex="-1">
+           <div class="PortfolioCard_CaseBox__zj_Gt">
+            <div class="PortfolioCard_CaseLeftServ__bDixt">
+             <a href="#" target="_blank">
+              <img alt="" class="" src="/assets/service-images/case8.webp"/>
+             </a>
+            </div>
+            <div class="PortfolioCard_CaseRightServ__LNZjv">
+             <p class="PortfolioCard_ServeCategory__Qt_Of">
+              Web Development
+             </p>
+             <a href="#">
+              <p class="PortfolioCard_ServeHead__O6byg">
+               Manduka
+              </p>
+             </a>
+             <p class="PortfolioCard_ServePara__SjI_5">
+              "Yoga is for Everyone" - that's the philosophy driving Manduka. They offer a complete yoga experience, providing everything you need to practice, from high-quality yoga mats (including kid-sized options!) and comfortable leggings and bras to yoga towels and even access to live yoga classes. With Manduka, you can find everything you need to comfortably embrace your yoga journey, regardless of your experience level.  TECHNOLOGY Shopify  Region Amsterdam
+             </p>
+             <div class="PortfolioCard_DownloadFlex__0u6qD">
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                TECHNOLOGY
+               </span>
+               <p>
+                Shopify
+               </p>
+              </div>
+              <div class="PortfolioCard_list__SUOIi">
+               <span>
+                REGION
+               </span>
+               <p>
+                Amsterdam
+               </p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div> *@
+      <button class="slick-arrow slick-next" data-role="none" style="display:block" type="button">
+       <!-- -->
+       Next
+      </button>
+      <ul class="slick-dots" style="display:block">
+       <li class="slick-active">
+        <button>
+         1
+        </button>
+       </li>
+       <li class="">
+        <button>
+         2
+        </button>
+       </li>
+       <li class="">
+        <button>
+         3
+        </button>
+       </li>
+       <li class="">
+        <button>
+         4
+        </button>
+       </li>
+       <li class="">
+        <button>
+         5
+        </button>
+       </li>
+       <li class="">
+        <button>
+         6
+        </button>
+       </li>
+       <li class="">
+        <button>
+         7
+        </button>
+       </li>
+       <li class="">
+        <button>
+         8
+        </button>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  
+ 
+   
+   
+
+  
+   
+  
