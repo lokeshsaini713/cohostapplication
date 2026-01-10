@@ -2074,35 +2074,10 @@
 
   @section Scripts{
 
+    
 
-<script>
-    $("#consultationForm").submit(function (e) {
-        e.preventDefault();
-
-        if (!$(this).valid()) return;
-
-        $.ajax({
-                url: '/home/BookConsultation',
-            type: 'POST',
-            data: $(this).serialize(),
-            success: function (data) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Thank You!',
-                    text: data.dis
-                });
-
-                $("#consultationForm")[0].reset();
-            },
-            error: function () {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'Something went wrong. Try again.'
-                });
-            }
-        });
-    });
+<script >
+    
 </script>
   }
   

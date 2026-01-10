@@ -1,0 +1,73 @@
+﻿@model Article
+@{
+    ViewData["Title"] = "Edit Article";
+}
+
+<h2>Edit Article</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="Slug" />
+    <input type="hidden" asp-for="ImagePath" />
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input asp-for="Title" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Short Description</label>
+        <textarea asp-for="ShortDescription" class="form-control" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Content</label>
+        <textarea id="editor" asp-for="Content"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Category</label>
+        <select asp-for="Category" class="form-select">
+            <option value="Tech">Tech</option>
+            <option value="Press">Press</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Current Image</label><br />
+        @if (!string.IsNullOrEmpty(Model.ImagePath))
+        {
+            <img src="@Model.ImagePath" width="150" class="mb-2 rounded" />
+        }
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Change Image</label>
+        <input type="file" name="image" class="form-control" accept="image/*" />
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="IsActive" class="form-check-input" />
+        <label class="form-check-label">Active</label>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        Update Article
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary ms-2">
+        Cancel
+    </a>
+</form>
+
+@section Scripts {
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+            .catch(error => console.error(error));
+    </script>
+
+    <partial name="_ValidationScriptsPartial" />
+}

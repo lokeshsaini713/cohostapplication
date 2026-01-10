@@ -1,6 +1,8 @@
 ﻿using Business.IServices;
+using Data;
 using FirebaseAdmin.Messaging;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Shared.Model.Notification;
 using Shared.Model.Request.WebUser;
 using Shared.Utility;
@@ -13,7 +15,12 @@ namespace Web.Controllers
 {
     public class HomeController(IAccountService accountService, ILogger<HomeController> logger, IWebHostEnvironment env) : Controller
     {
+        private readonly AppDbContext _context;
 
+        public HomeController(AppDbContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             return View();
@@ -101,6 +108,29 @@ namespace Web.Controllers
 
             return View();
         }
+
+       
+        [HttpGet("latest")]
+        public IActionResult Latest()
+        {
+            var data = _context.Articles
+                .Where(x => x.IsActive)
+                .OrderByDescending(x => x.PublishedDate)
+                .Take(3)
+                .Select(x => new
+                {
+                    x.Title,
+                    x.Slug,
+                    x.ShortDescription,
+                    x.ImagePath,
+                    Date = x.PublishedDate.ToString("MMMM dd, yyyy"),
+                    x.Category
+                })
+                .ToList();
+
+            return Ok(data);
+        }
+
 
         //        [HttpPost]
         //        [ValidateAntiForgeryToken]

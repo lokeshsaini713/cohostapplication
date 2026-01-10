@@ -11,8 +11,7 @@ namespace Data
             : base(options) { }
 
         public DbSet<Shared.Model.UserDetail> UserDetail { get; set; }
-        // Add DbSet for other tables
-
-        // Optional: OnModelCreating for custom mapping
+        public DbSet<Article> Articles { get; set; }
+    
     }
 }
