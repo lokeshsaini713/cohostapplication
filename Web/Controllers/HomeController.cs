@@ -13,14 +13,8 @@ using Web.Models;
 
 namespace Web.Controllers
 {
-    public class HomeController(IAccountService accountService, ILogger<HomeController> logger, IWebHostEnvironment env) : Controller
+    public class HomeController(AppDbContext context, IAccountService accountService, ILogger<HomeController> logger, IWebHostEnvironment env) : Controller
     {
-        private readonly AppDbContext _context;
-
-        public HomeController(AppDbContext context)
-        {
-            _context = context;
-        }
         public IActionResult Index()
         {
             return View();
@@ -109,13 +103,14 @@ namespace Web.Controllers
             return View();
         }
 
-       
+
         [HttpGet("latest")]
         public IActionResult Latest()
         {
-            var data = _context.Articles
-                .Where(x => x.IsActive)
-                .OrderByDescending(x => x.PublishedDate)
+            var data = context.Articles
+                .Where(x => x.IsActive)              // ✅ FILTER
+                .OrderBy(x => x.SortOrder)           // ✅ SORT
+                .ThenByDescending(x => x.PublishedDate)
                 .Take(3)
                 .Select(x => new
                 {

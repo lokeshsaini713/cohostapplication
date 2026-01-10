@@ -5,8 +5,8 @@
 
 <h2>Create Article</h2>
 
-<form asp-action="Create" method="post" enctype="multipart/form-data">
-
+<form asp-action="Create" asp-controller="Articles" asp-area="admin" method="post" enctype="multipart/form-data">
+   
     <div class="mb-3">
         <label class="form-label">Title</label>
         <input asp-for="Title" class="form-control" required />
@@ -33,7 +33,19 @@
 
     <div class="mb-3">
         <label class="form-label">Upload Image</label>
-        <input type="file" name="image" class="form-control" accept="image/*" />
+        <input type="file" name="image" class="form-control"  />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Display Order</label>
+        <input asp-for="SortOrder"
+               type="number"
+               class="form-control"
+               value="0"
+               min="0" />
+        <small class="text-muted">
+            Lower number appears first
+        </small>
     </div>
 
     <div class="form-check mb-3">
@@ -50,11 +62,7 @@
     </a>
 </form>
 
-@section Scripts {
-    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
-    <script>
-        ClassicEditor
-            .create(
+
 
 @section scripts {
     <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
@@ -62,7 +70,15 @@
         ClassicEditor
             .create(document.querySelector('#editor'))
             .catch(error => console.error(error));
+
+               document.querySelector('form').addEventListener('submit', function () {
+            for (const editor of document.querySelectorAll('.ck-editor__editable')) {
+                editor.dispatchEvent(new Event('change'));
+            }
+        });
     </script>
+
+      
 }
 
 

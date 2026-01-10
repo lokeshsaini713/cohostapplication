@@ -15,6 +15,7 @@ public class Article
 
     public string ImagePath { get; set; }
 
+    public int SortOrder { get; set; }
     public DateTime PublishedDate { get; set; } = DateTime.Now;
 
     public bool IsActive { get; set; } = true;
