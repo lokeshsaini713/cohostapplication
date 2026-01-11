@@ -1,0 +1,46 @@
+﻿@model List<CaseStudy>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Sort</th>
+            <th width="120">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@item.ImagePath" width="80" />
+                </td>
+                <td>@item.Title</td>
+                <td>@item.Category</td>
+                <td>
+                    @if (item.IsActive)
+                    {
+                        <span class="badge bg-success">Active</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Inactive</span>
+                    }
+                </td>
+                <td>@item.SortOrder</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
+                        <i class="fa fa-edit"></i>
+                    </a>
+                    <button class="btn btn-sm btn-danger delete" data-id="@item.Id">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

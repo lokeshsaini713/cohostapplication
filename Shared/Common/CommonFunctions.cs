@@ -4,6 +4,19 @@ using System.Reflection;
 
 namespace Shared.Common
 {
+    public static class TechIconHelper
+    {
+        public static string GetIcon(string tech)
+        {
+            return tech switch
+            {
+                "Drupal" => "/assets/icons/drupal.svg",
+                ".NET" => "/assets/icons/dotnet.svg",
+                "React" => "/assets/icons/react.svg",
+                _ => ""
+            };
+        }
+    }
     public class CommonFunctions
     {
         public static string GetDescription(Enum value)

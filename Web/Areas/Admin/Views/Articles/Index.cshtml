@@ -9,9 +9,12 @@
     + Add Article
 </a>
 
-<table class="table table-bordered table-striped align-middle">
+
+
+<table class="table table-bordered table-striped align-middle" id="sortableTable">
     <thead class="table-dark">
         <tr>
+            <th>☰</th>
             <th>Image</th>
             <th>Title</th>
             <th>Slug (SEO URL)</th>
@@ -21,10 +24,11 @@
             <th width="150">Action</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody id="sortable">
         @foreach (var item in Model)
         {
             <tr data-id="@item.Id">
+                <td class="drag-handle" style="cursor:move">☰</td>
                 <td>
                     @if (!string.IsNullOrEmpty(item.ImagePath))
                     {
@@ -59,21 +63,24 @@
 
                 <td>@item.PublishedDate.ToString("dd MMM yyyy")</td>
 
-                <td>
+                <td class="text-center">
                     <a asp-action="Edit"
                        asp-route-id="@item.Id"
-                       class="btn btn-sm btn-warning">
-                        Edit
+                       class="btn btn-sm btn-outline-warning"
+                       title="Edit">
+                        <i class="bi bi-pencil-square"></i>
                     </a>
 
                     <button type="button"
-                            class="btn btn-sm btn-success save-slug">
-                        Save Slug
+                            class="btn btn-sm btn-outline-success save-slug"
+                            title="Save Slug">
+                        <i class="bi bi-check-circle"></i>
                     </button>
 
                     <button type="button"
-                            class="btn btn-sm btn-danger delete-article">
-                        Delete
+                            class="btn btn-sm btn-outline-danger delete-article"
+                            title="Delete">
+                        <i class="bi bi-trash"></i>
                     </button>
                 </td>
             </tr>
@@ -82,15 +89,75 @@
 </table>
 
 @section Scripts {
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
+
+    <script>
+        $(function () {
+
+           $("#sortable").sortable({
+                 handle: ".drag-handle",
+                update: function () {
+
+                    let order = [];
+
+                    $("tbody tr").each(function (index) {
+                        order.push({
+                            id: $(this).data("id"),
+                            sortOrder: index + 1
+                        });
+                    });
+
+                    $.ajax({
+                        url: "/Admin/Articles/UpdateSortOrder",
+                        type: "POST",
+                        contentType: "application/json",
+                        data: JSON.stringify(order),
+                        success: function () {
+                            console.log("Sort order saved");
+                        },
+                        error: function () {
+                            alert("Sorting failed");
+                        }
+                    });
+                }
+            });
+                
+
+        });
+
+         $(document).on("click", ".save-slug", function () {
+
+            let row = $(this).closest("tr");
+            let id = row.data("id");
+            let slug = row.find(".slug-input").val();
+
+            $.ajax({
+                url: "/Admin/Articles/UpdateSlug",
+                type: "POST",
+                data: {
+                    id: id,
+                    slug: slug
+                },
+                success: function () {
+                    alert("Slug updated successfully");
+                },
+                error: function () {
+                    alert("Failed to update slug");
+                }
+            });
+        });
+    </script>
 
                 <script>
       
   
-        $(document).ready(function () {
-
+     
             $('.save-slug').click(function () {
 
                 var row = $(this).closest('tr');
@@ -145,7 +212,7 @@
             $(this).val(val);
         });
 
-          });
+        
     </script>
 
 }

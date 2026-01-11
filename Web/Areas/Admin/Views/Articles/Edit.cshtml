@@ -53,6 +53,40 @@
                class="form-control"
                min="0" />
     </div>
+    <hr />
+    <h5 class="mt-3">SEO Meta Information</h5>
+
+    <div class="mb-3">
+        <label class="form-label">Meta Title</label>
+        <input type="text"
+               name="MetaTitle"
+               class="form-control"
+               maxlength="60"
+               placeholder="SEO title (max 60 characters)" />
+        <small class="text-muted">
+            Recommended: 50–60 characters
+        </small>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Meta Description</label>
+        <textarea name="MetaDescription"
+                  class="form-control"
+                  rows="3"
+                  maxlength="160"
+                  placeholder="SEO description (max 160 characters)"></textarea>
+        <small class="text-muted">
+            Recommended: 140–160 characters
+        </small>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Meta Keywords</label>
+        <input type="text"
+               name="MetaKeywords"
+               class="form-control"
+               placeholder="keyword1, keyword2, keyword3" />
+    </div>
     <div class="form-check mb-3">
         <input asp-for="IsActive" class="form-check-input" />
         <label class="form-check-label">Active</label>

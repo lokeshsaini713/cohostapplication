@@ -38,6 +38,37 @@ WHERE Slug IS NULL;
 ALTER TABLE Articles
 ADD SortOrder INT NOT NULL CONSTRAINT DF_Articles_SortOrder DEFAULT 0;
 
-ALTER TABLE Articles
-ADD SortOrder INT NOT NULL CONSTRAINT DF_Articles_SortOrder DEFAULT 0;
+
 select *from Articles
+
+ALTER TABLE Articles
+ADD MetaTitle NVARCHAR(160),
+    MetaDescription NVARCHAR(300),
+    MetaKeywords NVARCHAR(250);
+
+    CREATE TABLE CaseStudies (
+    Id INT IDENTITY PRIMARY KEY,
+    Title NVARCHAR(250) NOT NULL,
+    Slug NVARCHAR(250) NOT NULL UNIQUE,
+    ShortDescription NVARCHAR(500),
+    ImagePath NVARCHAR(500),
+    Category NVARCHAR(100),
+    Technology NVARCHAR(200),
+    CountryCode NVARCHAR(10),
+    IsActive BIT DEFAULT 1,
+    SortOrder INT DEFAULT 0,
+    CreatedDate DATETIME DEFAULT GETDATE()
+);
+
+
+ALTER TABLE CaseStudies
+ADD Technologies NVARCHAR(200);
+
+ALTER TABLE CaseStudies
+ CreatedDate DATETIME2 DEFAULT GETDATE();
+
+ ALTER TABLE CaseStudies
+ALTER COLUMN CreatedDate datetime2 NOT NULL;
+
+ALTER TABLE CaseStudies
+DROP CONSTRAINT DF__CaseStudi__Creat__10E07F16;

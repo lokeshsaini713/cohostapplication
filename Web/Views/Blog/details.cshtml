@@ -32,7 +32,93 @@
             </div>
         </div>
         <div class="undefined mt-5">
-            <div class="small-container container"><h2>Related Post</h2><div class="row"><div class="col-md-4 col-sm-12"><div class="Articles_ArticalBox__iUGhA"><div class="undefined Articles_ArticalImg__ry2S2"><a href="/press-and-events/ai-agent-websites-integration"><img alt="Article Image" class="" src="/assets/uploads/blog/aagents.webp"></a></div><div class="Articles_ArticalContant__hqctz"><div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between"><div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center"><img alt="calendar-icon" class="" src="/assets/calendar-icon.webp"> December 24, 2025</div><div class="Articles_TechArticalInfo__8dhr8">Tech</div></div><h3><a href="/press-and-events/ai-agent-websites-integration">AI Agent Integration for Websites: Use Cases, Costs, and Real Results</a></h3><p>Discover AI agent integration for websites, real use cases, costs, and results. Learn how modern AI agents improve customer experience and scalability.</p><a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="/press-and-events/ai-agent-websites-integration">Keep Reading</a></div></div></div><div class="col-md-4 col-sm-12"><div class="Articles_ArticalBox__iUGhA"><div class="undefined Articles_ArticalImg__ry2S2"><a href="/press-and-events/dotsquares-official-progress-sitefinity-partner"><img alt="Article Image" class="" src="/assets/uploads/blog/sief.webp"></a></div><div class="Articles_ArticalContant__hqctz"><div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between"><div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center"><img alt="calendar-icon" class="" src="/assets/calendar-icon.webp"> December 18, 2025</div><div class="Articles_TechArticalInfo__8dhr8">Tech</div></div><h3><a href="/press-and-events/dotsquares-official-progress-sitefinity-partner">Dotsquares Becomes Official Progress Sitefinity Partner</a></h3><p>We are now official Progress Partner, delivering intelligent Sitefinity CMS solutions, AI-powered personalisation, &amp; enterprise-grade digital experiences globally.</p><a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="/press-and-events/dotsquares-official-progress-sitefinity-partner">Keep Reading</a></div></div></div><div class="col-md-4 col-sm-12"><div class="Articles_ArticalBox__iUGhA"><div class="undefined Articles_ArticalImg__ry2S2"><a href="/press-and-events/hubspot-ai-smart-crm-solutions"><img alt="Article Image" class="" src="/assets/uploads/blog/hubsief.webp"></a></div><div class="Articles_ArticalContant__hqctz"><div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between"><div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center"><img alt="calendar-icon" class="" src="/assets/calendar-icon.webp"> December 18, 2025</div><div class="Articles_TechArticalInfo__8dhr8">Tech</div></div><h3><a href="/press-and-events/hubspot-ai-smart-crm-solutions">How HubSpot’s AI-Powered Smart CRM Is Redefining Customer Relationships</a></h3><p>Discover how HubSpot’s AI-powered Smart CRM uses automation, Breeze AI, and integrations to create personalised, human customer relationships.</p><a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="/press-and-events/hubspot-ai-smart-crm-solutions">Keep Reading</a></div></div></div></div></div>
+            <div class="small-container container">
+                <h2>Related Post</h2>
+                <div class="row">
+                    @if (ViewBag.RelatedArticles != null && ViewBag.RelatedArticles.Count > 0)
+                    {
+                        @foreach (var item in ViewBag.RelatedArticles)
+                        {
+                            <div class="col-md-4 col-sm-12">
+                                <div class="Articles_ArticalBox__iUGhA">
+                                    <div class="undefined Articles_ArticalImg__ry2S2">
+                                        <a href="/press-and-events/@item.Slug">
+                                            <img alt="Article Image" class="" src="@item.ImagePath">
+                                        </a>
+                                    </div>
+
+                                    <div class="Articles_ArticalContant__hqctz">
+                                        <div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between">
+                                            <div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center">
+                                                <img alt="calendar-icon" class="" src="/assets/calendar-icon.webp">
+                                                @item.PublishedDate.ToString("MMMM dd, yyyy")
+                                            </div>
+                                            <div class="Articles_TechArticalInfo__8dhr8">
+                                                @item.Category
+                                            </div>
+                                        </div>
+
+                                        <h3>
+                                            <a href="/press-and-events/@item.Slug">
+                                                @item.Title
+                                            </a>
+                                        </h3>
+
+                                        <p>
+                                            @item.ShortDescription
+                                        </p>
+
+                                        <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow"
+                                           href="/press-and-events/@item.Slug">
+                                            Keep Reading
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else{
+                        <div>No Related Post Yet</div>
+                    }
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const metaTitle = "@(Model.Title ?? Model.Title)";
+            const metaDescription = "@(Model.MetaDescription ?? Model.ShortDescription)";
+            const metaKeywords = "@Model.MetaKeywords";
+
+            // TITLE
+            document.title = metaTitle;
+
+            // DESCRIPTION
+            let descTag = document.querySelector('meta[name="description"]');
+            if (!descTag) {
+                descTag = document.createElement('meta');
+                descTag.setAttribute('name', 'description');
+                document.head.appendChild(descTag);
+            }
+            descTag.setAttribute('content', metaDescription);
+
+            // KEYWORDS (optional)
+            if (metaKeywords) {
+                let keyTag = document.querySelector('meta[name="keywords"]');
+                if (!keyTag) {
+                    keyTag = document.createElement('meta');
+                    keyTag.setAttribute('name', 'keywords');
+                    document.head.appendChild(keyTag);
+                }
+                keyTag.setAttribute('content', metaKeywords);
+            }
+        });
+    </script>
+
+
+}

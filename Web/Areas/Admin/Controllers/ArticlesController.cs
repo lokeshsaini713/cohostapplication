@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Logging;
+using Shared.Model.DTO;
 using Shared.Utility;
 
 [Area("Admin")]
@@ -50,6 +51,16 @@ public class ArticlesController : Controller
 
         model.PublishedDate = DateTime.Now;
 
+
+        // AUTO SLUG (fallback)
+        if (string.IsNullOrEmpty(model.Slug))
+            model.Slug = model.Title.ToLower().Replace(" ", "-");
+
+        // AUTO META FALLBACKS (BEST PRACTICE)
+        model.MetaTitle ??= model.Title;
+        model.MetaDescription ??= model.ShortDescription;
+
+
         _context.Articles.Add(model);
         await _context.SaveChangesAsync();
 
@@ -75,6 +86,7 @@ public class ArticlesController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(Article model, IFormFile image)
     {
+        ModelState.Remove("image");
         if (!ModelState.IsValid)
             return View(model);
 
@@ -89,6 +101,14 @@ public class ArticlesController : Controller
 
         // Keep old slug (important for SEO)
         model.Slug = existing.Slug;
+
+
+       
+
+        // AUTO META FALLBACKS (BEST PRACTICE)
+        model.MetaTitle ??= model.Title;
+        model.MetaDescription ??= model.ShortDescription;
+
 
         // Handle Image Change
         if (image != null && image.Length > 0)
@@ -159,6 +179,22 @@ public class ArticlesController : Controller
 
         await _context.SaveChangesAsync();
 
+        return Ok();
+    }
+
+    [HttpPost]
+    public IActionResult UpdateSortOrder([FromBody] List<SortOrderDto> list)
+    {
+        foreach (var item in list)
+        {
+            var article = _context.Articles.Find(item.Id);
+            if (article != null)
+            {
+                article.SortOrder = item.SortOrder;
+            }
+        }
+
+        _context.SaveChanges();
         return Ok();
     }
 

@@ -20,7 +20,20 @@ namespace Web.Controllers
             if (article == null)
                 return NotFound();
 
+            // 🔥 RELATED ARTICLES
+            var relatedArticles = context.Articles
+                .Where(x => x.Category == article.Category
+                         && x.Id != article.Id
+                         && x.IsActive)
+                .OrderByDescending(x => x.PublishedDate)
+                .Take(3)
+                .ToList();
+
+            ViewBag.RelatedArticles = relatedArticles;
+
             return View(article);
         }
+
+
     }
 }

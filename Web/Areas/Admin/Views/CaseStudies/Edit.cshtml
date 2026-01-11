@@ -1,0 +1,79 @@
+﻿@model CaseStudy
+
+@{
+    ViewData["Title"] = "Edit Case Study";
+}
+
+<h2>
+    Edit Case Study</hs2>
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" asp-for="Id" />
+
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Short Description</label>
+            <textarea asp-for="ShortDescription" class="form-control" rows="3"></textarea>
+        </div>
+
+
+        <div class="mb-3">
+            <label class="form-label">Category</label>
+            <select asp-for="Category" class="form-select">
+                <option value="Tech">Tech</option>
+                <option value="Press">Press</option>
+                <option value="CaseStudy">Case Study</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Upload Image</label>
+            <input type="file" name="ImageFile" class="form-control" />
+
+            @if (!string.IsNullOrEmpty(Model.ImagePath))
+            {
+                <img src="@Model.ImagePath" width="120" class="mt-2 rounded" />
+            }
+        </div>
+
+        <!-- TECHNOLOGIES -->
+        <div class="mb-3">
+            <label class="form-label">Technologies</label>
+            <div class="d-flex gap-3 flex-wrap">
+
+                <label>
+                    <input type="checkbox" name="Technologies" value="Drupal"
+                           @(Model.Technologies?.Contains("Drupal") == true ? "checked" : "") />
+                    Drupal
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Technologies" value=".NET"
+                           @(Model.Technologies?.Contains(".NET") == true ? "checked" : "") />
+                    .NET
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Technologies" value="React"
+                           @(Model.Technologies?.Contains("React") == true ? "checked" : "") />
+                    React
+                </label>
+
+            </div>
+        </div>
+
+       
+        <div class="mb-3 form-check">
+            <input asp-for="IsActive" class="form-check-input" />
+            <label class="form-check-label">Active</label>
+        </div>
+
+        <button type="submit" class="btn btn-success">Update</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+
+    </form>
