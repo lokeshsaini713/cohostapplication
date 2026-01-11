@@ -17,9 +17,11 @@ public class CaseStudiesController : Controller
 
     public IActionResult Index()
     {
-        var data = _context.CaseStudies
-            .OrderBy(x => x.SortOrder)
-            .ToList();
+        var data = _context.CaseStudies.ToList();
+
+        //var data = _context.CaseStudies
+        //    .OrderBy(x => x.SortOrder)
+        //    .ToList();
 
         return View(data);
     }
@@ -34,16 +36,15 @@ public class CaseStudiesController : Controller
     {
         if (imageFile != null)
         {
-            //var fileName = Guid.NewGuid() + Path.GetExtension(imageFile.FileName);
-            //var path = Path.Combine("wwwroot/assets/uploads/casestudy", fileName);
-
-            //using var stream = new FileStream(path, FileMode.Create);
-            //imageFile.CopyTo(stream);
-
             model.ImagePath = await SaveImage(imageFile);
         }
 
-        model.Slug = "lokesh";//model.Slug.ToLower().Replace(" ", "-");
+        // AUTO SLUG (fallback)
+        if (string.IsNullOrEmpty(model.Slug))
+            model.Slug = model.Title.ToLower().Replace(" ", "-");
+
+        model.Technology = model.Technologies;
+        model.CountryCode ="India";
         _context.CaseStudies.Add(model);
         _context.SaveChanges();
 
@@ -75,7 +76,7 @@ public class CaseStudiesController : Controller
 
         if (imageFile != null && imageFile.Length > 0)
         {
-            model.ImagePath = await SaveImage(imageFile);
+            data.ImagePath = await SaveImage(imageFile);
 
             //var fileName = Guid.NewGuid() + Path.GetExtension(imageFile.FileName);
             //    var path = Path.Combine("wwwroot/assets/uploads/casestudy", fileName);
@@ -87,7 +88,10 @@ public class CaseStudiesController : Controller
         }
 
         data.Title = model.Title;
-        data.Slug = model.Slug.ToLower().Replace(" ", "-");
+        if (string.IsNullOrEmpty(model.Slug))
+            model.Slug = model.Title.ToLower().Replace(" ", "-");
+        data.Technology = model.Technologies;
+        data.CountryCode = "India";
         data.ShortDescription = model.ShortDescription;
         data.Category = model.Category;
         data.Technology = model.Technology;

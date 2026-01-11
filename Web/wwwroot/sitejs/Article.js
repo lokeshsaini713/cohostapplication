@@ -32,7 +32,7 @@ $("#consultationForm").submit(function (e) {
 });
 $(document).ready(function () {
 
-
+    loadCaseStudies()
    
     $.ajax({
         url: '/latest',
@@ -93,3 +93,57 @@ $(document).ready(function () {
     });
 
 });
+
+
+  
+function loadCaseStudies() {
+    $.ajax({
+        url: '/CaseStudy/GetCaseStudies',
+        type: 'GET',
+        success: function (data) {
+            let html = '';
+
+            $.each(data, function (index, item) {
+
+                html += `
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                        <a href="/case-study/${item.slug}">
+                            <div class="HomeCaseStudy_CaseStudiesBox__cIG_H">
+                                <div class="HomeCaseStudy_caseStudiesImg__53nAu">
+                                    <img src="${item.imagePath}" alt="${item.category}" />
+
+                                    <div class="HomeCaseStudy_caseStudiesContent__bD5FS">
+                                        <h4>${item.title}</h4>
+                                        <p>${item.shortDescription}</p>
+                                    </div>
+
+                                    <div class="HomeCaseStudy_caseDevFlag___fF08">
+                                        
+
+                                        <span>
+                                          <img alt="Microsoft.Net 6" class="" src="./assets/netlogo.webp"/>
+                                            <h6>${item.technology}</h6>
+                                        </span>
+
+                                        <span>
+                                          <img alt="Angular" class="" src="./assets/angular-icon.webp"/>
+                                            <h6>Angular 19</h6>
+                                        </span>
+                                        <span>
+                                          <img alt="react" class="" src="./assets/react-icon.webp"/>
+                                            <h6>React</h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>`;
+            });
+
+            $('#caseStudyRow').html(html);
+        },
+        error: function () {
+            console.error("Case studies load failed");
+        }
+    });
+}
