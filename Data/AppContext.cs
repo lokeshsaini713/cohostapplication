@@ -13,6 +13,7 @@ namespace Data
         public DbSet<Shared.Model.UserDetail> UserDetail { get; set; }
         public DbSet<Article> Articles { get; set; }
         public DbSet<CaseStudy> CaseStudies { get; set; }
-    
+        public DbSet<Lead> Leads { get; set; }
+
     }
 }

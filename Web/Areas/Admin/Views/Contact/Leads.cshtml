@@ -1,0 +1,59 @@
+﻿@model List<Lead>
+
+@{
+    ViewData["Title"] = "Leads Dashboard";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">📋 Consultation Leads</h2>
+
+    <form method="get" class="mb-3">
+        <div class="input-group">
+            <input type="text"
+                   name="search"
+                   class="form-control"
+                   placeholder="Search by name, email or phone"
+                   value="@Context.Request.Query["search"]" />
+            <button class="btn btn-primary">Search</button>
+        </div>
+    </form>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Company</th>
+                <th>NDA</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var lead in Model)
+            {
+                <tr>
+                    <td>@lead.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")</td>
+                    <td>@lead.FullName</td>
+                    <td>@lead.Email</td>
+                    <td>@lead.Phone</td>
+                    <td>@lead.Company</td>
+                    <td>
+                        @if (lead.NDA)
+                        {
+                            <span class="badge bg-success">Yes</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">No</span>
+                        }
+                    </td>
+                    <td style="max-width:300px; white-space:pre-wrap;">
+                        @lead.Message
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

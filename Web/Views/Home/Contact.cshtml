@@ -1,0 +1,328 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+    Layout = "_Layout";
+}
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #25D366;
+        color: #fff;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        z-index: 9999;
+        text-decoration: none;
+    }
+
+        .whatsapp-float:hover {
+            background: #1ebe5d;
+        }
+
+</style>
+<a href="https://wa.me/919024255861?text=Hi%20I%20want%20to%20discuss%20my%20project"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    💬
+</a>
+
+<div class="modal fade"
+     id="scheduleCallModal"
+     tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Schedule a Free Strategy Call</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-0">
+
+                <!-- OPTION 1: CALENDLY EMBED -->
+                <iframe src="https://calendly.com/YOUR-CALENDLY-USERNAME/30min"
+                        width="100%"
+                        height="600"
+                        frameborder="0"></iframe>
+
+                <!-- OPTION 2: FALLBACK LINK -->
+                <div class="text-center p-3 d-none">
+                    <a href="https://calendly.com/YOUR-CALENDLY-USERNAME/30min"
+                       target="_blank"
+                       class="btn btn-primary">
+                        Open Scheduler
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div>
+    <!-- CONTACT / CONSULTATION -->
+    <div class="ContactUsInfo_contactUsInfoSec__RCLDz sec-pad bg-white">
+        <div class="small-container container">
+            <div class="row">
+
+                <!-- LEFT CONTENT -->
+                <div class="mb-4 mb-md-0 col-md-4">
+                    <div class="headingBlock mb-3 mb-md-5 text-center">
+                        <div class="sub-hd">CONTACT US</div>
+
+                        <h2>
+                            <span>Get a Free 30-Minute Strategy Consultation</span>
+                        </h2>
+
+                        <p>
+                            Speak directly with senior IT consultants and get
+                            <strong>clear technical direction, cost estimates, and next steps</strong>
+                            for your SaaS, web, or enterprise project — no obligation.
+                        </p>
+
+                        <p class="small text-muted mt-2">
+                            ⭐ Trusted by startups, enterprises & global clients
+                        </p>
+                    </div>
+
+                    <img src="assets/awards.png"
+                         alt="Industry awards & recognitions"
+                         class="ContactUsInfo_awardImg__pkSv0"
+                         loading="lazy" />
+                </div>
+
+                <!-- FORM -->
+                <div class="col-md-8">
+                    <div class="ContactUsInfo_CtForm___rmYv">
+                        <h6 class="mb-3">
+                            Takes less than 60 seconds • Our experts respond within 24 hours
+                        </h6>
+
+                        <form id="user-form" noValidate>
+
+                            <div class="row">
+
+                                <!-- NAME -->
+                                <div class="mb-4 col-md-6">
+                                    <div class="ContactUsInfo_RequiredFld__A09NJ form-floating">
+                                        <input type="text"
+                                               class="border-bottom rounded-0 form-control"
+                                               id="fullName"
+                                               name="fullName"
+                                               placeholder="Full Name"
+                                               required />
+                                        <label for="fullName">Full Name </label>
+                                    </div>
+                                </div>
+
+                                <!-- EMAIL -->
+                                <div class="mb-4 col-md-6">
+                                    <div class="ContactUsInfo_RequiredFld__A09NJ form-floating">
+                                        <input type="email"
+                                               class="border-bottom rounded-0 form-control"
+                                               id="email"
+                                               name="email"
+                                               placeholder="E-mail Address"
+                                               required />
+                                        <label for="email">Work Email Address </label>
+                                    </div>
+                                    <small class="text-muted">No spam. Ever.</small>
+                                </div>
+
+                                <!-- PHONE -->
+                                <div class="mb-4 col-md-6">
+                                    <div class="ContactUsInfo_RequiredFld__A09NJ form-floating">
+                                        <input type="tel"
+                                               class="border-bottom rounded-0 form-control"
+                                               id="phoneNumber"
+                                               name="phoneNumber"
+                                               placeholder="Phone Number"
+                                               required />
+                                        <label for="phoneNumber">Phone Number </label>
+                                    </div>
+                                    <small class="text-muted">
+                                        Used only for consultation-related communication
+                                    </small>
+                                </div>
+
+                                <!-- COMPANY -->
+                                <div class="mb-4 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text"
+                                               class="border-bottom rounded-0 form-control"
+                                               id="companyName"
+                                               name="companyName"
+                                               placeholder="Company Name" />
+                                        <label for="companyName">Company / Startup (Optional)</label>
+                                    </div>
+                                </div>
+
+                                <!-- MESSAGE -->
+                                <div class="mb-4 col-md-12">
+                                    <div class="ContactUsInfo_textareaField__WolJJ form-floating">
+                                        <textarea class="border-bottom rounded-0 form-control"
+                                                  id="message"
+                                                  name="message"
+                                                  placeholder="Tell us about your project"
+                                                  style="height:110px"></textarea>
+                                        <label for="message">
+                                            Project Details (Optional – helps us prepare better)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- NDA -->
+                                <div class="mb-4 col-md-12">
+                                    <div class="form-check ContactUsInfo_CheckBox__xs2Ec">
+                                        <input type="checkbox"
+                                               id="nda"
+                                               class="form-check-input" />
+                                        <label for="nda" class="form-check-label">
+                                            I’d like to sign an NDA
+                                            <span class="text-muted">(Your idea stays protected)</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- CTA -->
+                                <div class="mb-4 col-md-12">
+                                    <button type="submit" class="btn-custom w-100 btn btn-primary">
+                                        🔒 Book My Free Consultation
+                                    </button>
+                                    <p class="small text-center text-muted mt-2">
+                                        No commitment • Confidential • Expert guidance
+                                    </p>
+                                </div>
+
+                              @*   <button type="button"
+                                        class="btn btn-outline-primary w-100 mt-2"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#scheduleCallModal">
+                                    📅 Schedule a Call Instead
+                                </button> *@
+                                <p class="text-center mt-3 small">
+                                    Prefer instant answers?
+                                    <a href="https://wa.me/919024255861?text=" +
+                                       encodeURIComponent(
+                                       `Hi, I'm ${formData.fullName}.
+                                       Email: ${formData.email}
+                                       Project: ${formData.message}"
+                                       target="_blank">
+                                        Chat with us on WhatsApp
+                                    </a>
+                                </p>
+
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CONNECT WITH US -->
+    <div class="ConnectWithUs_connectWithUs__FfeYm sec-pad">
+        <div class="container">
+            <div class="headingBlock mb-3 mb-md-5 text-center">
+                <div class="sub-hd">CONNECT WITH US</div>
+                <h2>
+                    <span>Prefer to connect instantly?</span>
+                </h2>
+                <p>
+                    Talk directly with our technical consultants — no sales pressure.
+                </p>
+            </div>
+
+            <div class="row">
+
+                <!-- PHONE -->
+                <div class="mb-4 col-md-6">
+                    <div class="ConnectWithUs_connectWithUsCard__Wn3b6">
+                        <h4 class="d-flex align-items-center gap-3">
+                            <img src="assets/expert1.svg" alt="Call expert" />
+                            Talk to an Expert
+                        </h4>
+                        <p>
+                            Need immediate clarification or technical advice?
+                            Our consultants are just a call away.
+                        </p>
+                        <ul>
+                            <li>India <a href="tel:+919024255861">(+91) 9024255861</a></li>
+                            <li>India <a href="tel:+918114421877">(+91) 8114421877</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="mb-4 col-md-6">
+                    <div class="ConnectWithUs_connectWithUsCard__Wn3b6">
+                        <h4 class="d-flex align-items-center gap-3">
+                            <img src="assets/expert2.svg" alt="Email expert" />
+                            Email Our Team
+                        </h4>
+                        <p>
+                            Share your requirements, RFPs, or technical questions anytime.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="mailto:office@cohostweb.com">office@cohostweb.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+  @section Scripts{
+    <script src="~/sitejs/contact.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const metaTitle = "Contact Cohostweb | Web, App, Software & SEO Services";
+            const metaDescription = "Contact Cohostweb to discuss web development, app development, software & SEO services. Get expert support and a free consultation today.";
+            const metaKeywords = "";
+
+            // TITLE
+            document.title = metaTitle;
+
+            // DESCRIPTION
+            let descTag = document.querySelector('meta[name="description"]');
+            if (!descTag) {
+                descTag = document.createElement('meta');
+                descTag.setAttribute('name', 'description');
+                document.head.appendChild(descTag);
+            }
+            descTag.setAttribute('content', metaDescription);
+
+            // KEYWORDS (optional)
+            if (metaKeywords) {
+                let keyTag = document.querySelector('meta[name="keywords"]');
+                if (!keyTag) {
+                    keyTag = document.createElement('meta');
+                    keyTag.setAttribute('name', 'keywords');
+                    document.head.appendChild(keyTag);
+                }
+                keyTag.setAttribute('content', metaKeywords);
+            }
+        });
+
+        </script>
+
+
+  }

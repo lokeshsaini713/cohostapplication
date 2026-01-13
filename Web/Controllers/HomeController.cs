@@ -20,14 +20,14 @@ namespace Web.Controllers
             return View();
         }
 
-        [Route("PrivacyPolicy")]
+        [Route("privacy-policy")]
         public IActionResult Privacy()
         {
             return View();
         }
 
 
-        [Route("TermsAndConditions")]
+        [Route("terms-conditions")]
         public IActionResult TermsAndConditions()
         {
             return View();
@@ -38,7 +38,7 @@ namespace Web.Controllers
             return View();
         }
 
-        [Route("AboutUs")]
+        [Route("about-us")]
         public IActionResult AboutUs()
         {
             return View();
@@ -239,6 +239,11 @@ namespace Web.Controllers
             //smtp.Send(mail);
 
             return Json(new { success = res,dis= templateDirectory });
+        }
+        [Route("Contact.html")]
+        public IActionResult Contact()
+        {
+            return View();
         }
     }
 }

@@ -32,7 +32,7 @@ $("#consultationForm").submit(function (e) {
 });
 $(document).ready(function () {
 
-    loadCaseStudies()
+    //loadCaseStudies()
    
     $.ajax({
         url: '/latest',

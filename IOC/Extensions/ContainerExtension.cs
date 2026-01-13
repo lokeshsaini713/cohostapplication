@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Common;
 
 namespace IOC.Extensions
 {
@@ -14,6 +15,7 @@ namespace IOC.Extensions
             services.AddTransient<IEmailFunctions, EmailFunctions>();
             services.AddTransient<IEmailHelperCore, EmailHelperCore>();
             services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<EmailService>();
         }
 
     }

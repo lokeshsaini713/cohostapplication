@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-public class Article
+﻿public class Article
 {
     public int Id { get; set; }
 

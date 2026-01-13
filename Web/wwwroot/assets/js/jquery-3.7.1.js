@@ -1180,14 +1180,14 @@ function setDocument( node ) {
 	// spec-compliant support, which is fine because use of `:has()` in such
 	// environments will fail in the qSA path and fall back to jQuery traversal
 	// anyway.
-	support.cssHas = assert( function() {
-		try {
-			document.querySelector( ":has(*,:jqfake)" );
-			return false;
-		} catch ( e ) {
-			return true;
-		}
-	} );
+	//support.cssHas = assert( function() {
+	//	try {
+	//		//document.querySelector( ":has(*,:jqfake)" );
+	//		return false;
+	//	} catch ( e ) {
+	//		return true;
+	//	}
+	//} );
 
 	// ID filter and find
 	if ( support.getById ) {

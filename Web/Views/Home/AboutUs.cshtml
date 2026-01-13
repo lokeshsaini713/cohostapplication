@@ -59,3 +59,38 @@
     </div>
 </div>
 
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const metaTitle = "About Cohostweb | Software, Web, App & SEO Company";
+            const metaDescription = "Discover Cohostweb, a leading software, web, app & SEO company delivering reliable digital solutions that help businesses grow online.";
+            const metaKeywords = "";
+
+            // TITLE
+            document.title = metaTitle;
+
+            // DESCRIPTION
+            let descTag = document.querySelector('meta[name="description"]');
+            if (!descTag) {
+                descTag = document.createElement('meta');
+                descTag.setAttribute('name', 'description');
+                document.head.appendChild(descTag);
+            }
+            descTag.setAttribute('content', metaDescription);
+
+            // KEYWORDS (optional)
+            if (metaKeywords) {
+                let keyTag = document.querySelector('meta[name="keywords"]');
+                if (!keyTag) {
+                    keyTag = document.createElement('meta');
+                    keyTag.setAttribute('name', 'keywords');
+                    document.head.appendChild(keyTag);
+                }
+                keyTag.setAttribute('content', metaKeywords);
+            }
+        });
+    </script>
+
+
+}

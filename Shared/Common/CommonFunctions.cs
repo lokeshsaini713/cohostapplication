@@ -4,6 +4,7 @@ using System.Reflection;
 
 namespace Shared.Common
 {
+
     public static class TechIconHelper
     {
         public static string GetIcon(string tech)

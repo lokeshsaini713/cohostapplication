@@ -1866,7 +1866,42 @@ At CohostWeb, we make web development simple and accessible for startups, small 
    </div>
   
  
-   
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const metaTitle = "Web Development Company | Custom Website Solutions | Cohostweb";
+            const metaDescription = "Cohostweb offers professional web development services including custom websites, business portals & scalable web solutions that drive growth.";
+            const metaKeywords = "";
+
+            // TITLE
+            document.title = metaTitle;
+
+            // DESCRIPTION
+            let descTag = document.querySelector('meta[name="description"]');
+            if (!descTag) {
+                descTag = document.createElement('meta');
+                descTag.setAttribute('name', 'description');
+                document.head.appendChild(descTag);
+            }
+            descTag.setAttribute('content', metaDescription);
+
+            // KEYWORDS (optional)
+            if (metaKeywords) {
+                let keyTag = document.querySelector('meta[name="keywords"]');
+                if (!keyTag) {
+                    keyTag = document.createElement('meta');
+                    keyTag.setAttribute('name', 'keywords');
+                    document.head.appendChild(keyTag);
+                }
+                keyTag.setAttribute('content', metaKeywords);
+            }
+        });
+    </script>
+
+
+}
+
    
 
   
