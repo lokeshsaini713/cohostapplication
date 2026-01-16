@@ -240,7 +240,7 @@ namespace Web.Controllers
 
             return Json(new { success = res,dis= templateDirectory });
         }
-        [Route("Contact.html")]
+        [Route("contact-us")]
         public IActionResult Contact()
         {
             return View();
