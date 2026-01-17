@@ -111,7 +111,7 @@ namespace Web.Controllers
                 .Where(x => x.IsActive)              // ✅ FILTER
                 .OrderBy(x => x.SortOrder)           // ✅ SORT
                 .ThenByDescending(x => x.PublishedDate)
-                .Take(3)
+                .Take(6)
                 .Select(x => new
                 {
                     x.Title,
