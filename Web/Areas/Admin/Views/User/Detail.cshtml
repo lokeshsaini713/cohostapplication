@@ -47,13 +47,13 @@
                                     @if (Model.ProfileImage != null)
                                     {
                                         <a href="@(Model.ProfileImageUrl == null ? "#" : (Model.ProfileImageUrl))" target="_blank">
-                                            <img id="imgUser" onerror="if(this.src != '@SiteKeys.SiteUrl@Constants.DefaultUserImage')this.src='@SiteKeys.SiteUrl@Constants.DefaultUserImage';" src="@(Model.ProfileImageUrl)" alt="" style="height:70px;width:70px;" class="rounded-circle">
+                                            <img id="imgUser" onerror="if(this.src != '@SiteKeys.SiteUrl@Constants.DefaultUserImage')this.src='@SiteKeys.SiteUrl@Constants.DefaultUserImage';" src="@(Model.ProfileImageUrl)" alt="blog" style="height:70px;width:70px;" class="rounded-circle">
                                         </a>
                                     }
                                     else
                                     {
                                         <a href="#" target="_blank">
-                                            <img id="imgUser" type="hidden" src="@SiteKeys.SiteUrl@Constants.DefaultUserImage" alt="" style="height:70px; width:70px;" class="rounded-circle">
+                                            <img id="imgUser" type="hidden" src="@SiteKeys.SiteUrl@Constants.DefaultUserImage" alt="defultimg" style="height:70px; width:70px;" class="rounded-circle">
                                         </a>
                                     }
                                 </div>

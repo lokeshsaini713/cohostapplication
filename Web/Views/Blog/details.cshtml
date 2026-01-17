@@ -18,7 +18,7 @@
             <div class="small-container container">
                 <div class="flex-wrap justify-content-between mb-4 hstack gap-3"><span class="PressEventsDetail_eventDate__w_9HV"></span><span class="PressEventsDetail_techTag__ojUo8">@Model.Category</span></div><div class="article-description mb-4">
                     <div class="graphql">
-                        <p><img alt="" border="0" class="aligncenter size-full wp-image-7596" hspace="0" src="@Model.ImagePath" style="max-width:100%;"></p>
+                        <p><img alt="img" border="0" class="aligncenter size-full wp-image-7596" hspace="0" src="@Model.ImagePath" style="max-width:100%;"></p>
 
                         @Html.Raw(Model.Content)
                         <div id="why-wholesale"></div>
@@ -28,7 +28,7 @@
                             text-align: justify;
                         }
                     </style>
-                </div><div class="PressEventsDetail_followIcons__1W3M9 mb-4 mt-4 align-items-center hstack gap-3"><strong>Follow Us</strong><a href="https://www.facebook.com/dotsquaresuk/"><img alt="facebook" class="" src="/assets/facebook_icon.webp"></a><a href="https://x.com/dotsquares"><img alt="x-twitter" class="" src="/assets/x-twitter.webp"></a><a href="https://www.linkedin.com/company/dotsquares/"><img alt="linkedin" class="" src="/assets/linkedin_icon.webp"></a></div>
+                </div><div class="PressEventsDetail_followIcons__1W3M9 mb-4 mt-4 align-items-center hstack gap-3"><strong>Follow Us</strong><a href="https://www.facebook.com/cohostweb/"><img alt="facebook-icon" class="" src="/assets/facebook_icon.webp"></a><a href="https://x.com/cohostweb"><img alt="x-twitter-icon" class="" src="/assets/x-twitter.webp"></a><a href="https://www.linkedin.com/company/cohostweb/"><img alt="linkedin-icon" class="" src="/assets/linkedin_icon.webp"></a></div>
             </div>
         </div>
         <div class="undefined mt-5">
@@ -43,7 +43,7 @@
                                 <div class="Articles_ArticalBox__iUGhA">
                                     <div class="undefined Articles_ArticalImg__ry2S2">
                                         <a href="/press-and-events/@item.Slug">
-                                            <img alt="Article Image" class="" src="@item.ImagePath">
+                                            <img alt="Article-Image" class="" src="@item.ImagePath">
                                         </a>
                                     </div>
 
@@ -59,7 +59,7 @@
                                         </div>
 
                                         <h3>
-                                            <a href="/press-and-events/@item.Slug">
+                                            <a href="/blog/@item.Slug">
                                                 @item.Title
                                             </a>
                                         </h3>
@@ -69,7 +69,7 @@
                                         </p>
 
                                         <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow"
-                                           href="/press-and-events/@item.Slug">
+                                           href="/blog/@item.Slug">
                                             Keep Reading
                                         </a>
                                     </div>
@@ -89,6 +89,19 @@
 
 @section Scripts {
     <script>
+                $(document).ready(function () {
+            var $img = $(".Header_Logo___7H4X.navbar-brand img");
+
+            if ($img.length) {
+                var currentSrc = $img.prop("src");
+
+                // Remove '/blog' from the URL
+                var newSrc = currentSrc.replace("/blog", "");
+
+                $img.prop("src", newSrc);
+            }
+        });
+
         document.addEventListener("DOMContentLoaded", function () {
 
             const metaTitle = "@(Model.Title ?? Model.Title)";
