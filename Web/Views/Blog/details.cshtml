@@ -16,7 +16,11 @@
     <div class="InnerBannerServices_innerBannerServicesBlock__CEpRF d-flex align-items-center"><div class="small-container container"><div> <h1>@Model.Title</h1></div></div></div><div class="PressEventsDetail_pressEventsDetailSec__962Y5 sec-pad">
         <div class="PressEventsDetail_pressEventsSinglePost__x6tvj">
             <div class="small-container container">
-                <div class="flex-wrap justify-content-between mb-4 hstack gap-3"><span class="PressEventsDetail_eventDate__w_9HV"></span><span class="PressEventsDetail_techTag__ojUo8">@Model.Category</span></div><div class="article-description mb-4">
+                <div class="flex-wrap justify-content-between mb-4 hstack gap-3">
+                    <span class="PressEventsDetail_eventDate__w_9HV"></span>
+                    <span class="PressEventsDetail_techTag__ojUo8">@Model.Category</span>
+                </div>
+                <div class="article-description mb-4">
                     <div class="graphql">
                         <p><img alt="img" border="0" class="aligncenter size-full wp-image-7596" hspace="0" src="@Model.ImagePath" style="max-width:100%;"></p>
 
@@ -65,7 +69,9 @@
                                         </h3>
 
                                         <p>
-                                            @item.ShortDescription
+                                            @(item.ShortDescription.Length > 200
+                                                                                ? item.ShortDescription.Substring(0, 200) + "..."
+                                                                                : item.ShortDescription)
                                         </p>
 
                                         <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow"
@@ -77,7 +83,8 @@
                             </div>
                         }
                     }
-                    else{
+                    else
+                    {
                         <div>No Related Post Yet</div>
                     }
                 </div>

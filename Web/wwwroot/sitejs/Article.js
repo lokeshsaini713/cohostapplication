@@ -45,16 +45,39 @@
                         </div>
                         <div class="Articles_ArticalContant__hqctz">
                             <h3><a href="/blog/${a.slug}">${a.title}</a></h3>
-                            <p>${a.shortDescription}</p>
+                            <p class="short-desc" data-url="/blog/${a.slug}">${a.shortDescription}</p>
                         </div>
                     </div>
                 </div>`;
             });
             $('#articlesContainer').html(html);
+            truncateDescriptions();
         },
         error: function (xhr) {
             console.error('Articles load failed', xhr.responseText);
         }
+
+       
     });
+
+    function truncateDescriptions() {
+        let maxLength = 200;
+
+        $(".short-desc").each(function () {
+            var fullText = $(this).text().trim();
+
+            if (fullText.length > maxLength) {
+                var shortText = fullText.substring(0, maxLength);
+                let url = $(this).data('url')
+                $(this).html(
+                    shortText +
+                    '... <a href="'+url+'"  class="read-more" >Read more</a>'
+                );
+
+                $(this).data("full", fullText);
+                $(this).data("short", shortText);
+            }
+        });
+    }
 
 });
