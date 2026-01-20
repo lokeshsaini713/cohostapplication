@@ -46,6 +46,9 @@
                         <div class="Articles_ArticalContant__hqctz">
                             <h3><a href="/blog/${a.slug}">${a.title}</a></h3>
                             <p class="short-desc" data-url="/blog/${a.slug}">${a.shortDescription}</p>
+                        <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="/blog/${a.slug}">
+                        Keep Reading
+                        </a>
                         </div>
                     </div>
                 </div>`;
@@ -71,7 +74,7 @@
                 let url = $(this).data('url')
                 $(this).html(
                     shortText +
-                    '... <a href="'+url+'"  class="read-more" >Read more</a>'
+                    '... '// <a href="'+url+'"  class="read-more" >Read more</a>'
                 );
 
                 $(this).data("full", fullText);

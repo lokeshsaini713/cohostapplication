@@ -1,1767 +1,1258 @@
 ﻿@model ConsultationViewModel
 
 @{
-    ViewData["Title"] = "Web Development & Mobile App | E-commerce & SEO Services";;
-    Layout ="_Layout";
+    ViewData["Title"] = "Web Development & Mobile App | E-commerce & SEO Services"; ;
+    Layout = "_Layout";
 }
 <style>
-        .inner-banner {
-            background: linear-gradient(90deg, #0d6efd, #0a58ca);
-            color: #fff;
-            padding: 80px 0;
-        }
+    .inner-banner {
+        background: linear-gradient(90deg, #0d6efd, #0a58ca);
+        color: #fff;
+        padding: 80px 0;
+    }
+
         .inner-banner h1 {
             font-size: 42px;
             font-weight: 700;
         }
-        .content-section {
-            padding: 60px 0;
-        }
+
+    .content-section {
+        padding: 60px 0;
+    }
+
         .content-section h2 {
             font-size: 30px;
             margin-top: 40px;
             margin-bottom: 15px;
             font-weight: 600;
         }
+
         .content-section h3 {
             font-size: 24px;
             margin-top: 30px;
             font-weight: 600;
         }
+
         .content-section ul {
             padding-left: 20px;
         }
-        .content-section ul li {
-            margin-bottom: 8px;
-        }
-    </style>
+
+            .content-section ul li {
+                margin-bottom: 8px;
+            }
+</style>
 
 <div>
-   <div class="HomeBanner_homeBanner__EJVSA">
-    <div>
-     <!--$-->
-     <video autoplay="" loop="" muted="" playsinline="" poster="./assets/poster.webp" preload="none">
-      <!-- <source src="./assets/Banner-Vid-21.webm?123" type="video/webm"/>
-      <source src="./assets/Banner-Vid-21.ogv" type="video/ogg"/> -->
-      <source src="./assets/Banner-Vid-21.mp4" type="video/mp4"/>
-      Your browser does not support the video tag.
-     </video>
-     <!--/$-->
-    </div>
-    <div class="HomeBanner_homeBannerInfo__hEIj_">
-     <div class="container">
-     
-      <h1>
-       <span>
+    <div class="HomeBanner_homeBanner__EJVSA">
+        <div>
+            <!--$-->
+            <video autoplay="" loop="" muted="" playsinline="" poster="./assets/poster.webp" preload="none">
+                <source src="./assets/Banner-Vid-21.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <!--/$-->
+        </div>
+        <div class="HomeBanner_homeBannerInfo__hEIj_">
+            <div class="container">
+
+                <h1>
+                    <span>
                         Software, Web, App & Digital Marketing Solutions
                     </span>
                     for Growing Businesses
-      </h1>
-      <h2>
+                </h1>
+                <h2>
                     Cohostweb – Your Trusted Digital Solutions Partner
-      </h2>
-      <div class="HomeBanner_teachServices__oQwoa justify-content-center flex-wrap list-group list-group-horizontal">
-       <div class="list-group-item">
-        <a href="software-development">
-         <img alt="Software-Development" class="" src="./assets/software-dev.svg"/>
-         Software Development
-        </a>
-       </div>
-       <div class="list-group-item">
-        <a href="app-development">
-         <img alt="Mobile-Apps-Development" class="" src="./assets/mobile-app-dev.svg"/>
-         Mobile App Development
-        </a>
-       </div>
-       <div class="list-group-item">
-        <a href="/web-development">
-         <img alt="Web-Development" class="" src="./assets/web-app-dev.svg"/>
-         Web Development
-        </a>
-       </div>
-       <div class="list-group-item">
-        <a href="ecommerce-development">
-         <img alt="E-commerce Services" class="" src="./assets/cart-icon-white.svg"/>
-         E-commerce Services
-        </a>
-       </div>
-        <div class="list-group-item">
-        <a href="search-engine-optimization">
-         <img alt="SEO (Search Engine Optimization)" class="" src="./assets/hubspot-crm-white.svg"/>
-         SEO (Search Engine Optimization)
-        </a>
-       </div>
-       <!-- <div class="list-group-item">
-        <a href="ai-ml-development.html">
-         <img alt="AI/ML Solutions" class="" src="./assets/ai-and-ml.webp"/>
-         AI/ML Solutions
-        </a>
-       </div>
-       <div class="list-group-item">
-        <a href="hubspot-consulting-services.html">
-         <img alt="HubSpot" class="" src="./assets/hubspot-crm-white.svg"/>
-         HubSpot
-        </a>
-       </div>
-       <div class="list-group-item">
-        <a href="zoho-consulting-services.html">
-         <img alt="Zoho Solutions" class="" src="./assets/zoho-crm-white.svg"/>
-         Zoho Solutions
-        </a>
-       </div>
-       <div class="list-group-item">
-        <a href="salesforce-consulting-services.html">
-         <img alt="Salesforce Solutions" class="" src="./assets/sale-force-icon-white.svg"/>
-         Salesforce Solutions
-        </a>
-       </div> -->
-      </div>
-      <div class="HomeBanner_bannerBtn__IAHMC">
-       <a class="btn-custom btn-arrow" href="contact-us">
-        Discuss Your Business Needs
-       </a>
-      </div>
-     </div>
+                </h2>
+                <div class="HomeBanner_teachServices__oQwoa justify-content-center flex-wrap list-group list-group-horizontal">
+                    <div class="list-group-item">
+                        <a href="software-development">
+                            <img alt="Software-Development" class="" src="./assets/software-dev.svg" />
+                            Software Development
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="app-development">
+                            <img alt="Mobile-Apps-Development" class="" src="./assets/mobile-app-dev.svg" />
+                            Mobile App Development
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="/web-development">
+                            <img alt="Web-Development" class="" src="./assets/web-app-dev.svg" />
+                            Web Development
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="ecommerce-development">
+                            <img alt="E-commerce Services" class="" src="./assets/cart-icon-white.svg" />
+                            E-commerce Services
+                        </a>
+                    </div>
+                    <div class="list-group-item">
+                        <a href="search-engine-optimization">
+                            <img alt="SEO (Search Engine Optimization)" class="" src="./assets/hubspot-crm-white.svg" />
+                            SEO (Search Engine Optimization)
+                        </a>
+                    </div>
+                    <!-- <div class="list-group-item">
+                     <a href="ai-ml-development.html">
+                      <img alt="AI/ML Solutions" class="" src="./assets/ai-and-ml.webp"/>
+                      AI/ML Solutions
+                     </a>
+                    </div>
+                    <div class="list-group-item">
+                     <a href="hubspot-consulting-services.html">
+                      <img alt="HubSpot" class="" src="./assets/hubspot-crm-white.svg"/>
+                      HubSpot
+                     </a>
+                    </div>
+                    <div class="list-group-item">
+                     <a href="zoho-consulting-services.html">
+                      <img alt="Zoho Solutions" class="" src="./assets/zoho-crm-white.svg"/>
+                      Zoho Solutions
+                     </a>
+                    </div>
+                    <div class="list-group-item">
+                     <a href="salesforce-consulting-services.html">
+                      <img alt="Salesforce Solutions" class="" src="./assets/sale-force-icon-white.svg"/>
+                      Salesforce Solutions
+                     </a>
+                    </div> -->
+                </div>
+                <div class="HomeBanner_bannerBtn__IAHMC">
+                    <a class="btn-custom btn-arrow" href="contact-us">
+                        Discuss Your Business Needs
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-   </div>
-   <!-- <div class="PartnerSlider_PartnerSliderSec__Q97Zl bg-white">
-      <h4>
-     Partnered With Startups and
-    
-     <span>
-      Fortune 500
-     </span>
-    </h4>
-    <div>
-     <div class="slick-slider PartnerSlider_PartnerLogoSlider__NQxwU partners-slick-option slick-initialized" dir="ltr">
-      <button class="slick-arrow slick-prev" data-role="none" style="display:block" type="button">
-       
-       Previous
-      </button>
-      <div class="slick-list">
-       <div class="slick-track" style="width:811.1111111111111%;left:-100%">
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-9" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fisher.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-8" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/choic.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-7" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/mac.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-6" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/oport.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-5" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/stanf.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-4" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nikpo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-3" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/unsw.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-2" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/monas.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-1" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/redro.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active slick-current" data-index="0" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/jsjd-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="1" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/saint.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="2" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/honda-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="3" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/yankee-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="4" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/tui-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="5" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/away-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="6" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/commnunity-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="7" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/justeat-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="false" class="slick-slide slick-active" data-index="8" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/allurion-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="9" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/well-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="10" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/azets-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="11" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/comdo-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="12" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/Friday-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="13" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dream-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="14" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fujitsu-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="15" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nhs-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="16" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/vmoney-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="17" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/shilplay-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="18" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/thaomas-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="19" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/airbub-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="20" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dukin-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="21" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/trade-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="22" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/corbel-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="23" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fisher.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="24" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/choic.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="25" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/mac.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="26" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/oport.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="27" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/stanf.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="28" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nikpo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="29" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/unsw.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="30" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/monas.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide" data-index="31" style="outline:none;width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/redro.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="32" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/jsjd-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="33" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/saint.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="34" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/honda-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="35" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/yankee-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="36" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/tui-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="37" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/away-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="38" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/commnunity-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="39" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/justeat-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="40" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/allurion-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="41" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/well-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="42" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/azets-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="43" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/comdo-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="44" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/Friday-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="45" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dream-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="46" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fujitsu-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="47" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nhs-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="48" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/vmoney-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="49" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/shilplay-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="50" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/thaomas-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="51" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/airbub-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="52" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dukin-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="53" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/trade-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="54" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/corbel-logo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="55" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fisher.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="56" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/choic.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="57" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/mac.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="58" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/oport.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="59" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/stanf.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="60" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nikpo.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="61" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/unsw.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="62" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/monas.webp"/>
-          </div>
-         </div>
-        </div>
-        <div aria-hidden="true" class="slick-slide slick-cloned" data-index="63" style="width:1.36986301369863%" tabindex="-1">
-         <div>
-          <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
-           <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/redro.webp"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-      <button class="slick-arrow slick-next" data-role="none" style="display:block" type="button">
-       Next
-      </button>
-     </div>
-    </div>
-   </div> -->
-   <div class="DrivingSuccess_DrivingSuccess___oCmD bg-white sec-pad">
-    <div class="container">
-     <div class="headingBlock mb-3 mb-md-5 text-center">
-      <div class="sub-hd">
-       Driving Success
-      </div>
-      <h2 class="">
-       <span>
-        Optimise Savings for Exponential Growth
-       </span>
-      </h2>
-     </div>
-     <div class="row">
-      <div class="col-md-4">
-       <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
-        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
-         <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
-          <strong>
-           80%
-          </strong>
-          Cost Savings
-         </div>
-         <img alt="elevate1" class="" src="./assets/elevate1.svg"/>
-        </div>
-        <div>
-         <h3>
-          Smarter Development Investments
-         </h3>
-         <p>
-          Our development approach is designed to maximize value by combining on-site expertise with nearshore support, helping control costs without compromising quality
-         </p>
-        </div>
-       </div>
-      </div>
-      <div class="col-md-4">
-       <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
-        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
-         <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
-          <strong>
-           95%
-          </strong>
-          Productivity Boost
-         </div>
-         <img alt="elevate2" class="" src="./assets/elevate2.svg"/>
-        </div>
-        <div>
-         <h3>
-          Enhanced Efficiency &amp; Performance
-         </h3>
-         <p>
-                                Our agile practices and experienced team help speed up processes, simplify operations, and deliver stronger productivity across projects
-         </p>
-        </div>
-       </div>
-      </div>
-      <div class="col-md-4">
-       <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
-        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
-         <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
-          <strong>
-           90%
-          </strong>
-          Threat Prevention
-         </div>
-         <img alt="elevate3" class="" src="./assets/elevate3.svg"/>
-        </div>
-        <div>
-         <h3>
-          Enterprise-Grade Security
-         </h3>
-         <p>
-          Our security approach follows established industry standards to protect your systems, maintain data integrity, and meet compliance requirements
-         </p>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-   <div class="Services_servicesSec__xiw3v">
-    <div class="container">
-     <div class="headingBlock mb-3 mb-md-5 text-center">
-      <div class="sub-hd">
-       Services
-      </div>
-      <h2 class="">
-       <span>
-        Bridging Innovation &amp; Excellence With Modern Tech Solutions
-       </span>
-      </h2>
-      <p class="">
-       We develop cutting-edge solutions and transform existing ones through collaborative development that prioritises your success.
-      </p>
-     </div>
-     <div class="row">
-      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-       <div class="Services_webDevServiceBox__gxN4A">
-        <div class="Services_webDevServiceImg__L5y_4">
-         <img alt="custom soft dev" class="" src="./assets/service-images/custom-soft-dev.webp"/>
-        </div>
-        <div class="Services_webDevServiceContent__cZeDA">
-         <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
-          <img alt="Software Development" class="" src="./assets/software-dev.svg"/>
-          <span>
-           Software Development
-          </span>
-         </div>
-         <p>
-          Transforming client needs into software solutions that leverage the latest technologies for exceptional performance and functionality.
-         </p>
-         <div class="Services_webDevServiceButton__TxECN hstack gap-3">
-                                <a class="btn-custom btn-line btn-small btn-rds" href="javascript:void(0)">
-           Learn More
-          </a>
-          <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
-           Contact Us
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-       <div class="Services_webDevServiceBox__gxN4A">
-        <div class="Services_webDevServiceImg__L5y_4">
-         <img alt="custom mobile app" class="" src="./assets/service-images/custom-mobile-app.webp"/>
-        </div>
-        <div class="Services_webDevServiceContent__cZeDA">
-         <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
-          <img alt="Mobile App Development" class="" src="./assets/mobile-app-icon.webp"/>
-          <span>
-           Mobile App Development
-          </span>
-         </div>
-         <p>
-          Whether you're looking to create a custom app from scratch or modernise an existing one to match the latest technology trends, we can develop it according to your preferences.
-         </p>
-         <div class="Services_webDevServiceButton__TxECN hstack gap-3">
-          <a class="btn-custom btn-line btn-small btn-rds" href="javascript:void(0)">
-           Learn More
-          </a>
-          <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
-           Contact Us
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-       <div class="Services_webDevServiceBox__gxN4A">
-        <div class="Services_webDevServiceImg__L5y_4">
-         <img alt="web Development" class="" src="./assets/service-images/web-dev.webp"/>
-        </div>
-        <div class="Services_webDevServiceContent__cZeDA">
-         <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
-          <img alt="Web Development" class="" src="./assets/icon-development.webp"/>
-          <span>
-           Web Development
-          </span>
-         </div>
-         <p>
-          Your doorway to the world of the web. Get a customized and user-friendly website loaded with the latest technology stack.
-         </p>
-         <div class="Services_webDevServiceButton__TxECN hstack gap-3">
-          <a class="btn-custom btn-line btn-small btn-rds" href="javascript:void(0)">
-           Learn More
-          </a>
-          <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
-           Contact Us
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-       <div class="Services_webDevServiceBox__gxN4A">
-        <div class="Services_webDevServiceImg__L5y_4">
-         <img alt="custom ecommerce" class="" src="./assets/service-images/custom-ecommerce.webp"/>
-        </div>
-        <div class="Services_webDevServiceContent__cZeDA">
-         <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
-          <img alt="E-Commerce" class="" src="./assets/service-images/cart-shopping.webp"/>
-          <span>
-           E-Commerce
-          </span>
-         </div>
-         <p>
-          Get ready to sell! We develop robust and user-friendly E-Commerce platforms to streamline your online sales and maximize your reach.
-         </p>
-         <div class="Services_webDevServiceButton__TxECN hstack gap-3">
-          <a class="btn-custom btn-line btn-small btn-rds" href="javascript:void(0)">
-           Learn More
-          </a>
-          <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
-           Contact Us
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-       <div class="Services_webDevServiceBox__gxN4A">
-        <div class="Services_webDevServiceImg__L5y_4">
-         <img alt="custom security" class="" src="./assets/service-images/custom-security.webp"/>
-        </div>
-        <div class="Services_webDevServiceContent__cZeDA">
-         <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
-          <img alt="Cloud Solutions" class="" src="./assets/service-images/cloud-icon.webp"/>
-          <span>
-           SEO
-          </span>
-         </div>
-         <p>
-                                SEO helps websites rank higher on Google by improving content, speed, and user experience, bringing more organic traffic and business growth
-         </p>
-         <div class="Services_webDevServiceButton__TxECN hstack gap-3">
-                                <a class="btn-custom btn-line btn-small btn-rds" href="javascript:void(0)">
-           Learn More
-          </a>
-          <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
-           Contact Us
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-    
-      <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-       <div class="Services_webDevServiceBox__gxN4A">
-        <div class="Services_webDevServiceImg__L5y_4">
-         <img alt=" API Dev &amp; Integration" class="" src="./assets/service-images/ai-ml.webp"/>
-        </div>
-        <div class="Services_webDevServiceContent__cZeDA">
-         <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
-          <img alt=" API Dev &amp; Integration" class="" src="./assets/service-images/ai-ml-brain.webp"/>
-          <span>
-           API Dev &amp; Integration
-          </span>
-         </div>
-         <p>
-                                We create APIs that are easy to integrate, secure, and built to scale, with experience across REST, GraphQL, and external platforms.
-         </p>
-         <div class="Services_webDevServiceButton__TxECN hstack gap-3">
-          <a class="btn-custom btn-line btn-small btn-rds" href="">
-           Learn More
-          </a>
-          <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
-           Contact Us
-          </a>
-         </div>
-        </div>
-       </div>
-      </div>
-    
-     
-     </div>
-    </div>
-   </div>
-   <!-- <div class="CustomAISolutions_CustomAISolutions__j5lot bg-white sec-pad">
-    <div class="container">
-     <div class="CustomAISolutions_CustomAISolutionsBlock__N3AEu">
-      <div class="sub-hd">
-       Custom AI solutions
-      </div>
-      <h2>
-       Creating Future-Ready AI
-       <br/>
-       Solutions with
-       <span>
-        Advanced Automation
-        <br/>
-       </span>
-       <span>
-        Seamless Integration
-        <br/>
-       </span>
-       <span>
-        Innovative Intelligence
-        <br/>
-       </span>
-       <span>
-        Cutting-Edge Technology
-        <br/>
-       </span>
-      </h2>
-      <ul class="CustomAISolutions_CustomAISolutions__j5lot align-items-center nav nav-tabs" id="CustomAISolutions" role="tablist">
-       <li class="nav-item" role="presentation">
-        <button aria-controls="CustomAISolutions-tabpane-ai-powered-automation" aria-selected="true" class="nav-link active" data-rr-ui-event-key="ai-powered-automation" id="CustomAISolutions-tab-ai-powered-automation" role="tab" type="button">
-         <span>
-          <img alt="AI Powered Automation" class="" src="./assets/elevate8.svg"/>
-          AI Powered Automation
-         </span>
-        </button>
-       </li>
-       <li class="nav-item" role="presentation">
-        <button aria-controls="CustomAISolutions-tabpane-decision-intelligence" aria-selected="false" class="nav-link" data-rr-ui-event-key="decision-intelligence" id="CustomAISolutions-tab-decision-intelligence" role="tab" tabindex="-1" type="button">
-         <span>
-          <img alt="Decision Intelligence" class="" src="./assets/elevate6.svg"/>
-          Decision Intelligence
-         </span>
-        </button>
-       </li>
-       <li class="nav-item" role="presentation">
-        <button aria-controls="CustomAISolutions-tabpane-strategy-development" aria-selected="false" class="nav-link" data-rr-ui-event-key="strategy-development" id="CustomAISolutions-tab-strategy-development" role="tab" tabindex="-1" type="button">
-         <span>
-          <img alt="Strategy &amp; Development" class="" src="./assets/elevate7.svg"/>
-          Strategy &amp; Development
-         </span>
-        </button>
-       </li>
-      </ul>
-      <div class="tab-content">
-       <div aria-labelledby="CustomAISolutions-tab-ai-powered-automation" class="fade undefined tab-pane active show" id="CustomAISolutions-tabpane-ai-powered-automation" role="tabpanel">
-        <div class="row">
-         <div class="col-md-6">
-          <p>
-           Our solutions reduce repetitive work, simplify tasks, and improve overall workflow. By streamlining processes and enhancing productivity, we help businesses save time, reduce errors, and focus on growth and innovation.
-          </p>
-          <ul class="CustomAISolutions_CustomTextList__jP_h7 list-group">
-           <li class="list-group-item">
-            Automated workflows
-           </li>
-           <li class="list-group-item">
-            Faster decision-making
-           </li>
-           <li class="list-group-item">
-            Seamless system integration
-           </li>
-           <li class="list-group-item">
-            Cost-efficient operations
-           </li>
-          </ul>
-          <a class="btn-custom btn-arrow" href="ai-powered-software-development.html">
-           Know More
-          </a>
-         </div>
-         <div class="col-md-6">
-          <div class="CustomAISolutions_SolutionsTabImage__oYllW">
-           <img alt="elevate-img" class="" src="./assets/elevate-img.webp"/>
-          </div>
-         </div>
-        </div>
-       </div>
-       <div aria-labelledby="CustomAISolutions-tab-decision-intelligence" class="fade undefined tab-pane" id="CustomAISolutions-tabpane-decision-intelligence" role="tabpanel">
-        <div class="row">
-         <div class="col-md-6">
-          <p>
-           Use AI insights to find growth opportunities, improve operations, and manage risks in real time. From predicting maintenance needs to demand forecasting, our solutions help you make smarter business decisions with confidence.
-          </p>
-          <ul class="CustomAISolutions_CustomTextList__jP_h7 list-group">
-           <li class="list-group-item">
-            AI-powered analytics
-           </li>
-           <li class="list-group-item">
-            Predictive modeling
-           </li>
-           <li class="list-group-item">
-            Real-time monitoring
-           </li>
-           <li class="list-group-item">
-            Operational forecasting
-           </li>
-          </ul>
-          <a class="btn-custom btn-arrow" href="ai-powered-software-development.html">
-           Know More
-          </a>
-         </div>
-         <div class="col-md-6">
-          <div class="CustomAISolutions_SolutionsTabImage__oYllW">
-           <img alt="elevate-img" class="" src="./assets/elevate-img2.webp"/>
-          </div>
-         </div>
-        </div>
-       </div>
-       <div aria-labelledby="CustomAISolutions-tab-strategy-development" class="fade undefined tab-pane" id="CustomAISolutions-tabpane-strategy-development" role="tabpanel">
-        <div class="row">
-         <div class="col-md-6">
-          <p>
-           Turn your AI ideas into reality with tailored solutions. Whether starting out or expanding, we create AI tools that fit your business needs and future goals, making AI integration simple and effective.
-          </p>
-          <ul class="CustomAISolutions_CustomTextList__jP_h7 list-group">
-           <li class="list-group-item">
-            AI strategy consultation
-           </li>
-           <li class="list-group-item">
-            Custom AI models
-           </li>
-           <li class="list-group-item">
-            AI software integration
-           </li>
-           <li class="list-group-item">
-            Scalable AI infrastructure
-           </li>
-          </ul>
-          <a class="btn-custom btn-arrow" href="ai-powered-software-development.html">
-           Know More
-          </a>
-         </div>
-         <div class="col-md-6">
-          <div class="CustomAISolutions_SolutionsTabImage__oYllW">
-           <img alt="elevate-img" class="" src="./assets/elevate-img3.webp"/>
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div> -->
-   
- 
-  
-   <div class="Technologies_technologiesOuter__R_U_r sec-pad">
-    <div class="container">
-     <div class="headingBlock mb-3 mb-md-5 text-center">
-      <div class="sub-hd">
-       Technologies
-      </div>
-      <h2 class="">
-       <span>
-        Our Technology Stack and Platforms
-       </span>
-      </h2>
-      <p class="">
-       Over 1,000 experts with 23+ years of experience in over 50 cutting-edge technologies.
-      </p>
-     </div>
-    </div>
-    <div class="Technologies_dsTechLogo__4RP9T d-flex mb-4 mb-md-5">
-     <div class="Technologies_marqueeGroup__Q4igw d-flex flex-column align-items-center justify-content-center">
-      <div class="Technologies_animateSlideToLeft__mtX_0 undefined">
-       <ul class="Technologies_marqueeGroupLogo__o_bgW flex-row justify-content-center align-items-center list-group">
-       
-        
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_sharepoint" class="" src="./assets/ds_sharepoint.webp"/>
-         </a>
-        </li>
-        
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_umbraco" class="" src="./assets/ds_umbraco.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_wordpress" class="" src="./assets/ds_wordpress.webp"/>
-         </a>
-        </li>
-       
-       @*  <li class="list-group-item">
-         <a href="technology/woocommerce-development.html">
-          <img alt="ds_woocommerce" class="" src="./assets/ds_woocommerce.webp"/>
-         </a>
-        </li> *@
-       
-        
-       
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_sharepoint" class="" src="./assets/ds_sharepoint.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-                            <a href="javascript:void(0)">
-          <img alt="s_pantheon" class="" src="./assets/ds_pantheon.webp"/>
-         </a>
-        </li>
-       </ul>
-      </div>
-      <div class="Technologies_animateSlideToRight__aV9IJ undefined">
-       <ul class="Technologies_marqueeGroupLogo__o_bgW flex-row justify-content-center align-items-center list-group">
-        <li class="list-group-item">
-                            <a href="javascript:void(0)">
-          <img alt="ds_android" class="" src="../assets/ds_android.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_reactNative" class="" src="./assets/ds_reactNative.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_iOS" class="" src="./assets/ds_iOS.webp"/>
-         </a>
-        </li>
-          
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_unity" class="" src="./assets/ds_unity.webp"/>
-         </a>
-        </li>
-      
-       
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_autodeskmaya" class="" src="./assets/ds_autodeskmaya.webp"/>
-         </a>
-        </li>
-        
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_,magento" class="" src="./assets/ds_%2cmagento.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_devops" class="" src="./assets/ds_devops.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_android" class="" src="./assets/ds_android.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_reactNative" class="" src="./assets/ds_reactNative.webp"/>
-         </a>
-        </li>
-       </ul>
-      </div>
-      <div class="Technologies_animateSlideToLeft__mtX_0 undefined">
-       <ul class="Technologies_marqueeGroupLogo__o_bgW flex-row justify-content-center align-items-center list-group">
-        <li class="list-group-item">
-                            <a href="javascript:void(0)">
-          <img alt="ds_php" class="" src="./assets/ds_php.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_python" class="" src="./assets/ds_python.webp"/>
-         </a>
-        </li>
-      
-        <li class="list-group-item">
-                            <a href="javascript:void(0)">
-          <img alt="ds_dotnet" class="" src="./assets/ds_dotnet.webp"/>
-         </a>
-        </li>
-       
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_angular" class="" src="./assets/ds_angular.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_html5" class="" src="./assets/ds_html5.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_nodejs" class="" src="./assets/ds_nodejs.webp"/>
-         </a>
-        </li>
-      
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_reactjs" class="" src="./assets/ds_reactjs.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_javascript" class="" src="./assets/ds_javascript.webp"/>
-         </a>
-        </li>
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_chash" class="" src="./assets/ds_chash.webp"/>
-         </a>
-        </li>
-        
-        <li class="list-group-item">
-         <a href="javascript:void(0)">
-          <img alt="ds_php" class="" src="./assets/ds_php.webp"/>
-         </a>
-        </li>
-        
-       
-        <li class="list-group-item">
-                            <a href="javascript:void(0)">
-          <img alt="ds_dotnet" class="" src="./assets/ds_dotnet.webp"/>
-         </a>
-        </li>
-       </ul>
-      </div>
-     </div>
-    </div>
-    <div class="d-flex align-items-center justify-content-center">
-     <a href="contact-us">
-      <button class="btn-custom btn-arrow btn-line btn btn-primary" type="button">
-       Book a FREE Consultation
-      </button>
-     </a>
-    </div>
-   </div>
-   
-   <div class="undefined sec-pad bg-white">
-    <div class="container">
-     
-    </div>
-   </div>
-    <div class="undefined sec-pad bg-white" id="portfolio">
-    <div class="container">
-     <div class="headingBlock mb-3 mb-md-5 text-center">
-      <div class="sub-hd">
-       Case studies
-      </div>
-      <h2 class="">
-       <span>
-        Read Our Client Success Stories
-       </span>
-      </h2>
-      <p class="">
-       Grow your business with a team that wants to see you win
-      </p>
-     </div>
-            <div class="row" id="caseStudyRow">
-      
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-       <a href="javascript:void(0)">
-        <div class="HomeCaseStudy_CaseStudiesBox__cIG_H">
-         <div class="HomeCaseStudy_caseStudiesImg__53nAu">
-          <img alt="Website &amp; Enterprise Application Development" class="" src="./assets/case-study-4.webp"/>
-          <div class="HomeCaseStudy_caseStudiesContent__bD5FS">
-           <h4>
-            Website &amp; Trading Application Development
-           </h4>
-           <p>
-            Cohostweb Enhances Networking Opportunities for GonnaHappen
-           </p>
-          </div>
-          <div class="HomeCaseStudy_caseDevFlag___fF08">
-           <span>
-            <img alt="In" class="" src="./assets/india.webp"/>
-            <h6>
-             IN
-            </h6>
-           </span>
-           <span>
-            <img alt="dotnet" class="" src="./assets/ds_dotnet.webp"/>
-            <h6>
-             .NET Core 8,Azure,Angular
-            </h6>
-           </span>
-          </div>
-         </div>
-        </div>
-       </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-       <a href="javascript:void(0)">
-        <div class="HomeCaseStudy_CaseStudiesBox__cIG_H">
-         <div class="HomeCaseStudy_caseStudiesImg__53nAu">
-          <img alt="App Development" class="" src="./assets/case-study-5.webp"/>
-          <div class="HomeCaseStudy_caseStudiesContent__bD5FS">
-           <h4>
-            Web Development
-           </h4>
-           <p>
-            State Wide Logistics: Delivering Excellence with Precision and Innovation
-           </p>
-          </div>
-          <div class="HomeCaseStudy_caseDevFlag___fF08">
-           <span>
-            <img alt="AU" class="" src="./assets/india.webp"/>
-            <h6>
-             IN
-            </h6>
-           </span>
-           <span>
-            <img alt="Microsoft.Net 6" class="" src="./assets/netlogo.webp"/>
-            <h6>
-             Microsoft.Net 6,React, Azure, SQL Server
-            </h6>
-           </span>
-          </div>
-         </div>
-        </div>
-       </a>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                    <a href="javascript:void(0)">
-        <div class="HomeCaseStudy_CaseStudiesBox__cIG_H">
-         <div class="HomeCaseStudy_caseStudiesImg__53nAu">
-          <img alt="Website Upgradation" class="" src="./assets/case-study-6.webp"/>
-          <div class="HomeCaseStudy_caseStudiesContent__bD5FS">
-           <h4>
-            Website Upgradation/Mentaince
-           </h4>
-           <p>
-            Seamless Dotnet Upgrade: From Dotnet fremwork to 10 Core 
-           </p>
-          </div>
-          <div class="HomeCaseStudy_caseDevFlag___fF08">
-           <span>
-            <img alt="In" class="" src="./assets/india.webp"/>
-            <h6>
-             IN
-            </h6>
-           </span>
-           <span>
-            <img alt="Drupal , React, Elastic Search" class="" src="./assets/drupal-img.webp"/>
-            <h6>
-             .NET 10 , React, Elastic Search,AWS
-            </h6>
-           </span>
-          </div>
-         </div>
-        </div>
-       </a>
-      </div>
-     </div>
- 
-    </div>
-   </div>
-   <!-- <div class="HomeTestimonials_TestimonialsSec__FDv1l sec-pad">
-    <div class="container-fluid">
-     <div class="headingBlock mb-3 mb-md-5 text-center">
-      <div class="sub-hd">
-       Client Testimonials
-      </div>
-      <h2 class="">
-       <span>
-        What Our Clients Say
-       </span>
-      </h2>
-      <p class="">
-       Discover how we've helped businesses achieve their goals through our dedicated service and expertise.
-      </p>
-     </div>
+    <!-- <div class="PartnerSlider_PartnerSliderSec__Q97Zl bg-white">
+       <h4>
+      Partnered With Startups and
+
+      <span>
+       Fortune 500
+      </span>
+     </h4>
      <div>
-      <div class="slick-slider HomeTestimonials_TestimonialSliderCarousel__G43Vo testimonial-slick-option slick-initialized" dir="ltr">
+      <div class="slick-slider PartnerSlider_PartnerLogoSlider__NQxwU partners-slick-option slick-initialized" dir="ltr">
        <button class="slick-arrow slick-prev" data-role="none" style="display:block" type="button">
-        /*
+
         Previous
        </button>
        <div class="slick-list">
-        <div class="slick-track" style="width:340%;left:-100%">
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-5" style="width:5.882352941176471%" tabindex="-1">
+        <div class="slick-track" style="width:811.1111111111111%;left:-100%">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-9" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/JNsRzCm0e6scda3.html?si=d_6m4LcV4Rkcmnpd">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient6.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Austin
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Alao-Amadasun
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fisher.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-4" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-8" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/RZY74gporu890c5.html?si=Tigj9dv-i0xeANFA">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient2.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Tom Squire
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Shieldpay
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/choic.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-3" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-7" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/rSyj86Rc9546fc2.html?si=Y68tg8Ck9rJyGk7T">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient3.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Nick
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Director at insidelines.com.au
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/mac.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-2" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-6" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/watch1a61.html?si=6ssbrnTWVhFAXZCC">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient4.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Matt Brown
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Magical Maths Club
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/oport.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-1" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-5" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/watch3330.html?si=7YYhtAUS_oAdxZeS">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient5.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Kevin Wolf
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Marketing Manager, Samuel, Son &amp; C
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/stanf.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="false" class="slick-slide slick-active slick-current" data-index="0" style="outline:none;width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-4" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/aX2w6J2nn2Y31ad.html?si=4q7Wgs762sBtYMqE">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient1.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Mark Osmond
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Mood Addict.com
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nikpo.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="false" class="slick-slide slick-active" data-index="1" style="outline:none;width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-3" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/JNsRzCm0e6scda3.html?si=d_6m4LcV4Rkcmnpd">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient6.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Austin
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Alao-Amadasun
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/unsw.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="false" class="slick-slide slick-active" data-index="2" style="outline:none;width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-2" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/RZY74gporu890c5.html?si=Tigj9dv-i0xeANFA">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient2.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Tom Squire
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Shieldpay
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/monas.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="false" class="slick-slide slick-active" data-index="3" style="outline:none;width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="-1" style="width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/rSyj86Rc9546fc2.html?si=Y68tg8Ck9rJyGk7T">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient3.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Nick
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Director at insidelines.com.au
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/redro.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="false" class="slick-slide slick-active" data-index="4" style="outline:none;width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active slick-current" data-index="0" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/watch1a61.html?si=6ssbrnTWVhFAXZCC">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient4.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Matt Brown
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Magical Maths Club
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/jsjd-logo.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide" data-index="5" style="outline:none;width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="1" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/watch3330.html?si=7YYhtAUS_oAdxZeS">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient5.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Kevin Wolf
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Marketing Manager, Samuel, Son &amp; C
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/saint.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="6" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="2" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/aX2w6J2nn2Y31ad.html?si=4q7Wgs762sBtYMqE">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient1.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Mark Osmond
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Mood Addict.com
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/honda-logo.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="7" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="3" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/JNsRzCm0e6scda3.html?si=d_6m4LcV4Rkcmnpd">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient6.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Austin
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Alao-Amadasun
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/yankee-logo.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="8" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="4" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/RZY74gporu890c5.html?si=Tigj9dv-i0xeANFA">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient2.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Tom Squire
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Shieldpay
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/tui-logo.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="9" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="5" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/embed/rSyj86Rc9546fc2.html?si=Y68tg8Ck9rJyGk7T">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient3.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Nick
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Director at insidelines.com.au
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/away-logo.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="10" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="6" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/watch1a61.html?si=6ssbrnTWVhFAXZCC">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient4.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Matt Brown
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Magical Maths Club
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/commnunity-logo.webp"/>
            </div>
           </div>
          </div>
-         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="11" style="width:5.882352941176471%" tabindex="-1">
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="7" style="outline:none;width:1.36986301369863%" tabindex="-1">
           <div>
-           <div class="HomeTestimonials_item___zwST" style="width:100%;display:inline-block" tabindex="-1">
-            <a class="TestimonialsCard_TestBox__9Q3qQ" href="../www.youtube.com/watch3330.html?si=7YYhtAUS_oAdxZeS">
-             <figure>
-              <img alt="Client" class="" src="./assets/newclient5.webp"/>
-             </figure>
-             <img alt="Rating" class="TestimonialsCard_Teststar__Zq8vB" src="./assets/client-star.svg"/>
-             <p class="TestimonialsCard_TestinewName__yB_7m">
-              Kevin Wolf
-             </p>
-             <p class="TestimonialsCard_TestinewDesignation__dPm7J">
-              Marketing Manager, Samuel, Son &amp; C
-             </p>
-            </a>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/justeat-logo.webp"/>
            </div>
           </div>
          </div>
-        </div>
-       </div> */
-        -->
-       <!-- <button class="slick-arrow slick-next" data-role="none" style="display:block" type="button">
-       
-       
-       </button> -->
-      </div>
-<div>
-      <!-- <div class="container">
-       <div class="text-center mt-4">
-        <div class="clutch-widget" data-clutchcompany-id="77483" data-height="375" data-nofollow="true" data-url="https://widget.clutch.co" data-widget-type="12">
-         <iframe height="375px" id="iframe-0.7632967876667411" src="../widget.clutch.co/widgets/get/1269b8.html?ref_domain=www.cohostweb.com&amp;uid=77483&amp;rel_nofollow=true&amp;ref_path=/" style="border:none;display:block" title="12" width="100%">
-         </iframe>
-        </div>
-        <div class="trustpilot-widget" data-businessunit-id="59d343700000ff0005aca999" data-locale="en-GB" data-review-languages="en" data-stars="4,5" data-style-height="140px" data-style-width="100%" data-template-id="53aa8912dec7e10d38f59f36">
-         <a href="../uk.trustpilot.com/review/cohostweb.html" rel="noopener" target="_blank">
-          Trustpilot
-         </a>
+         <div aria-hidden="false" class="slick-slide slick-active" data-index="8" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/allurion-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="9" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/well-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="10" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/azets-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="11" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/comdo-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="12" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/Friday-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="13" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dream-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="14" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fujitsu-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="15" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nhs-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="16" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/vmoney-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="17" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/shilplay-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="18" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/thaomas-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="19" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/airbub-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="20" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dukin-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="21" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/trade-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="22" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/corbel-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="23" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fisher.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="24" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/choic.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="25" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/mac.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="26" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/oport.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="27" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/stanf.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="28" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nikpo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="29" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/unsw.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="30" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/monas.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide" data-index="31" style="outline:none;width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/redro.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="32" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/jsjd-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="33" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/saint.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="34" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/honda-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="35" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/yankee-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="36" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/tui-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="37" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/away-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="38" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/commnunity-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="39" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/justeat-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="40" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/allurion-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="41" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/well-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="42" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/azets-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="43" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/comdo-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="44" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/Friday-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="45" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dream-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="46" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fujitsu-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="47" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nhs-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="48" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/vmoney-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="49" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/shilplay-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="50" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/thaomas-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="51" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/airbub-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="52" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/dukin-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="53" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/trade-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="54" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/corbel-logo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="55" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/fisher.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="56" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/choic.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="57" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/mac.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="58" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/oport.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="59" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/stanf.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="60" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/nikpo.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="61" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/unsw.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="62" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/monas.webp"/>
+           </div>
+          </div>
+         </div>
+         <div aria-hidden="true" class="slick-slide slick-cloned" data-index="63" style="width:1.36986301369863%" tabindex="-1">
+          <div>
+           <div class="PartnerSlider_item__gHC4q" style="width:100%;display:inline-block" tabindex="-1">
+            <img alt="DSPartnere" class="" src="./assets/uploads/client_logo/redro.webp"/>
+           </div>
+          </div>
+         </div>
         </div>
        </div>
-      </div> -->
+       <button class="slick-arrow slick-next" data-role="none" style="display:block" type="button">
+        Next
+       </button>
+      </div>
      </div>
-   <div class="HomeContact_HomeContact__uJEce sec-pad bg-black">
-    <div class="container">
-     <div class="row">
-      <div class="col-lg-5">
-       <div class="sub-hd">
-        Contact Us
-       </div>
-       <h2>
-        Get Customized Solutions, Recommendations, and Estimates for Your Requirements.
-       </h2>
-       <ul class="HomeContact_homeCtInfo__lbuIF d-flex align-items-center list-group">
-        <li class="list-group-item d-flex align-items-center">
-         <img alt="circle-check-green" data-nimg="1" decoding="async" height="20" loading="lazy" src="./assets/circle-check-green.svg" style="color:transparent" width="20"/>
-         100% Confidential
-        </li>
-        
-       </ul>
-       <div class="HomeContact_homeCtEmail__hX64X d-flex align-items-center">
-        <img alt="office-mail" data-nimg="1" decoding="async" height="50" loading="lazy" src="./assets/office-mail.svg" style="color:transparent" width="50"/>
-        <div>
-         <span class="d-block">
-          Or Reach Out To Us At
-         </span>
-         <a href="mailto:office@cohostweb.com" target="_blank">
-          office@cohostweb.com
-         </a>
+    </div> -->
+    <div class="DrivingSuccess_DrivingSuccess___oCmD bg-white sec-pad">
+        <div class="container">
+            <div class="headingBlock mb-3 mb-md-5 text-center">
+                <div class="sub-hd">
+                    Driving Success
+                </div>
+                <h2 class="">
+                    <span>
+                        Optimise Savings for Exponential Growth
+                    </span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
+                        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
+                            <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
+                                <strong>
+                                    80%
+                                </strong>
+                                Cost Savings
+                            </div>
+                            <img alt="elevate1" class="" src="./assets/elevate1.svg" />
+                        </div>
+                        <div>
+                            <h3>
+                                Smarter Development Investments
+                            </h3>
+                            <p>
+                                Our development approach is designed to maximize value by combining on-site expertise with nearshore support, helping control costs without compromising quality
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
+                        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
+                            <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
+                                <strong>
+                                    95%
+                                </strong>
+                                Productivity Boost
+                            </div>
+                            <img alt="elevate2" class="" src="./assets/elevate2.svg" />
+                        </div>
+                        <div>
+                            <h3>
+                                Enhanced Efficiency &amp; Performance
+                            </h3>
+                            <p>
+                                Our agile practices and experienced team help speed up processes, simplify operations, and deliver stronger productivity across projects
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="DrivingSuccess_DrivingSuccessCard__Xnnj2">
+                        <div class="DrivingSuccess_DrivingSuccessCardTop__5q67k d-flex align-items-center justify-content-between">
+                            <div class="DrivingSuccess_DrivingSuccessNumber__J9b69">
+                                <strong>
+                                    90%
+                                </strong>
+                                Threat Prevention
+                            </div>
+                            <img alt="elevate3" class="" src="./assets/elevate3.svg" />
+                        </div>
+                        <div>
+                            <h3>
+                                Enterprise-Grade Security
+                            </h3>
+                            <p>
+                                Our security approach follows established industry standards to protect your systems, maintain data integrity, and meet compliance requirements
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-       </div>
-      </div>
-      <div class="col-lg-7">
-       <p>
-        Fill out the form and we will contact you
-       </p>
+    </div>
+    <div class="Services_servicesSec__xiw3v">
+        <div class="container">
+            <div class="headingBlock mb-3 mb-md-5 text-center">
+                <div class="sub-hd">
+                    Services
+                </div>
+                <h2 class="">
+                    <span>
+                        Bridging Innovation &amp; Excellence With Modern Tech Solutions
+                    </span>
+                </h2>
+                <p class="">
+                    We develop cutting-edge solutions and transform existing ones through collaborative development that prioritises your success.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="Services_webDevServiceBox__gxN4A">
+                        <div class="Services_webDevServiceImg__L5y_4">
+                            <img alt="custom soft dev" class="" src="./assets/service-images/custom-soft-dev.webp" />
+                        </div>
+                        <div class="Services_webDevServiceContent__cZeDA">
+                            <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
+                                <img alt="Software Development" class="" src="./assets/software-dev.svg" />
+                                <span>
+                                    Software Development
+                                </span>
+                            </div>
+                            <p>
+                                Transforming client needs into software solutions that leverage the latest technologies for exceptional performance and functionality.
+                            </p>
+                            <div class="Services_webDevServiceButton__TxECN hstack gap-3">
+                                <a class="btn-custom btn-line btn-small btn-rds" href="/contact-us">
+                                    Learn More
+                                </a>
+                                <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="Services_webDevServiceBox__gxN4A">
+                        <div class="Services_webDevServiceImg__L5y_4">
+                            <img alt="custom mobile app" class="" src="./assets/service-images/custom-mobile-app.webp" />
+                        </div>
+                        <div class="Services_webDevServiceContent__cZeDA">
+                            <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
+                                <img alt="Mobile App Development" class="" src="./assets/mobile-app-icon.webp" />
+                                <span>
+                                    Mobile App Development
+                                </span>
+                            </div>
+                            <p>
+                                Whether you're looking to create a custom app from scratch or modernise an existing one to match the latest technology trends, we can develop it according to your preferences.
+                            </p>
+                            <div class="Services_webDevServiceButton__TxECN hstack gap-3">
+                                <a class="btn-custom btn-line btn-small btn-rds" href="/contact-us">
+                                    Learn More
+                                </a>
+                                <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="Services_webDevServiceBox__gxN4A">
+                        <div class="Services_webDevServiceImg__L5y_4">
+                            <img alt="web Development" class="" src="./assets/service-images/web-dev.webp" />
+                        </div>
+                        <div class="Services_webDevServiceContent__cZeDA">
+                            <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
+                                <img alt="Web Development" class="" src="./assets/icon-development.webp" />
+                                <span>
+                                    Web Development
+                                </span>
+                            </div>
+                            <p>
+                                Your doorway to the world of the web. Get a customized and user-friendly website loaded with the latest technology stack.
+                            </p>
+                            <div class="Services_webDevServiceButton__TxECN hstack gap-3">
+                                <a class="btn-custom btn-line btn-small btn-rds" href="/contact-us">
+                                    Learn More
+                                </a>
+                                <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="Services_webDevServiceBox__gxN4A">
+                        <div class="Services_webDevServiceImg__L5y_4">
+                            <img alt="custom ecommerce" class="" src="./assets/service-images/custom-ecommerce.webp" />
+                        </div>
+                        <div class="Services_webDevServiceContent__cZeDA">
+                            <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
+                                <img alt="E-Commerce" class="" src="./assets/service-images/cart-shopping.webp" />
+                                <span>
+                                    E-Commerce
+                                </span>
+                            </div>
+                            <p>
+                                Get ready to sell! We develop robust and user-friendly E-Commerce platforms to streamline your online sales and maximize your reach.
+                            </p>
+                            <div class="Services_webDevServiceButton__TxECN hstack gap-3">
+                                <a class="btn-custom btn-line btn-small btn-rds" href="/ecommerce-development">
+                                    Learn More
+                                </a>
+                                <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="Services_webDevServiceBox__gxN4A">
+                        <div class="Services_webDevServiceImg__L5y_4">
+                            <img alt="custom security" class="" src="./assets/service-images/custom-security.webp" />
+                        </div>
+                        <div class="Services_webDevServiceContent__cZeDA">
+                            <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
+                                <img alt="Cloud Solutions" class="" src="./assets/service-images/cloud-icon.webp" />
+                                <span>
+                                    SEO
+                                </span>
+                            </div>
+                            <p>
+                                SEO helps websites rank higher on Google by improving content, speed, and user experience, bringing more organic traffic and business growth
+                            </p>
+                            <div class="Services_webDevServiceButton__TxECN hstack gap-3">
+                                <a class="btn-custom btn-line btn-small btn-rds" href="/search-engine-optimization">
+                                    Learn More
+                                </a>
+                                <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="Services_webDevServiceBox__gxN4A">
+                        <div class="Services_webDevServiceImg__L5y_4">
+                            <img alt=" API Dev &amp; Integration" class="" src="./assets/service-images/ai-ml.webp" />
+                        </div>
+                        <div class="Services_webDevServiceContent__cZeDA">
+                            <div class="Services_webDevServiceHd__fz0k2 hstack gap-2">
+                                <img alt=" API Dev &amp; Integration" class="" src="./assets/service-images/ai-ml-brain.webp" />
+                                <span>
+                                    API Dev &amp; Integration
+                                </span>
+                            </div>
+                            <p>
+                                We create APIs that are easy to integrate, secure, and built to scale, with experience across REST, GraphQL, and external platforms.
+                            </p>
+                            <div class="Services_webDevServiceButton__TxECN hstack gap-3">
+                                <a class="btn-custom btn-line btn-small btn-rds" href="/">
+                                    Learn More
+                                </a>
+                                <a class="Services_contactBtn__U_awq btn-custom btn-arrow btn-small btn-blue btn-rds" href="contact-us">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="Technologies_technologiesOuter__R_U_r sec-pad">
+        <div class="container">
+            <div class="headingBlock mb-3 mb-md-5 text-center">
+                <div class="sub-hd">
+                    Technologies
+                </div>
+                <h2 class="">
+                    <span>
+                        Our Technology Stack and Platforms
+                    </span>
+                </h2>
+                <p class="">
+                    Over 1,000 experts with 23+ years of experience in over 50 cutting-edge technologies.
+                </p>
+            </div>
+        </div>
+        <div class="Technologies_dsTechLogo__4RP9T d-flex mb-4 mb-md-5">
+            <div class="Technologies_marqueeGroup__Q4igw d-flex flex-column align-items-center justify-content-center">
+                <div class="Technologies_animateSlideToLeft__mtX_0 undefined">
+                    <ul class="Technologies_marqueeGroupLogo__o_bgW flex-row justify-content-center align-items-center list-group">
+
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_sharepoint" class="" src="./assets/ds_sharepoint.webp" />
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_umbraco" class="" src="./assets/ds_umbraco.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_wordpress" class="" src="./assets/ds_wordpress.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_sharepoint" class="" src="./assets/ds_sharepoint.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="s_pantheon" class="" src="./assets/ds_pantheon.webp" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Technologies_animateSlideToRight__aV9IJ undefined">
+                    <ul class="Technologies_marqueeGroupLogo__o_bgW flex-row justify-content-center align-items-center list-group">
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_android" class="" src="../assets/ds_android.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_reactNative" class="" src="./assets/ds_reactNative.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_iOS" class="" src="./assets/ds_iOS.webp" />
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_unity" class="" src="./assets/ds_unity.webp" />
+                            </a>
+                        </li>
+
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_autodeskmaya" class="" src="./assets/ds_autodeskmaya.webp" />
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_,magento" class="" src="./assets/ds_%2cmagento.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_devops" class="" src="./assets/ds_devops.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_android" class="" src="./assets/ds_android.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_reactNative" class="" src="./assets/ds_reactNative.webp" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Technologies_animateSlideToLeft__mtX_0 undefined">
+                    <ul class="Technologies_marqueeGroupLogo__o_bgW flex-row justify-content-center align-items-center list-group">
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_php" class="" src="./assets/ds_php.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_python" class="" src="./assets/ds_python.webp" />
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_dotnet" class="" src="./assets/ds_dotnet.webp" />
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_angular" class="" src="./assets/ds_angular.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_html5" class="" src="./assets/ds_html5.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_nodejs" class="" src="./assets/ds_nodejs.webp" />
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_reactjs" class="" src="./assets/ds_reactjs.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_javascript" class="" src="./assets/ds_javascript.webp" />
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_chash" class="" src="./assets/ds_chash.webp" />
+                            </a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_php" class="" src="./assets/ds_php.webp" />
+                            </a>
+                        </li>
+
+
+                        <li class="list-group-item">
+                            <a href="/contact-us">
+                                <img alt="ds_dotnet" class="" src="./assets/ds_dotnet.webp" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+            <a href="contact-us">
+                <button class="btn-custom btn-arrow btn-line btn btn-primary" type="button">
+                    Book a FREE Consultation
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="undefined sec-pad bg-white">
+        <div class="container">
+        </div>
+    </div>
+    <div class="undefined sec-pad bg-white" id="portfolio">
+        <div class="container">
+            <div class="headingBlock mb-3 mb-md-5 text-center">
+                <div class="sub-hd">
+                    Case studies
+                </div>
+                <h2 class="">
+                    <span>
+                        Read Our Client Success Stories
+                    </span>
+                </h2>
+                <p class="">
+                    Grow your business with a team that wants to see you win
+                </p>
+            </div>
+            <div class="row" id="caseStudyRow">
+
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                    <a href="/contact-us">
+                        <div class="HomeCaseStudy_CaseStudiesBox__cIG_H">
+                            <div class="HomeCaseStudy_caseStudiesImg__53nAu">
+                                <img alt="Website &amp; Enterprise Application Development" class="" src="./assets/case-study-4.webp" />
+                                <div class="HomeCaseStudy_caseStudiesContent__bD5FS">
+                                    <h4>
+                                        Website &amp; Trading Application Development
+                                    </h4>
+                                    <p>
+                                        Cohostweb Enhances Networking Opportunities for GonnaHappen
+                                    </p>
+                                </div>
+                                <div class="HomeCaseStudy_caseDevFlag___fF08">
+                                    <span>
+                                        <img alt="In" class="" src="./assets/india.webp" />
+                                        <h6>
+                                            IN
+                                        </h6>
+                                    </span>
+                                    <span>
+                                        <img alt="dotnet" class="" src="./assets/ds_dotnet.webp" />
+                                        <h6>
+                                            .NET Core 8,Azure,Angular
+                                        </h6>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                    <a href="/contact-us">
+                        <div class="HomeCaseStudy_CaseStudiesBox__cIG_H">
+                            <div class="HomeCaseStudy_caseStudiesImg__53nAu">
+                                <img alt="App Development" class="" src="./assets/case-study-5.webp" />
+                                <div class="HomeCaseStudy_caseStudiesContent__bD5FS">
+                                    <h4>
+                                        Web Development
+                                    </h4>
+                                    <p>
+                                        State Wide Logistics: Delivering Excellence with Precision and Innovation
+                                    </p>
+                                </div>
+                                <div class="HomeCaseStudy_caseDevFlag___fF08">
+                                    <span>
+                                        <img alt="AU" class="" src="./assets/india.webp" />
+                                        <h6>
+                                            IN
+                                        </h6>
+                                    </span>
+                                    <span>
+                                        <img alt="Microsoft.Net 6" class="" src="./assets/netlogo.webp" />
+                                        <h6>
+                                            Microsoft.Net 6,React, Azure, SQL Server
+                                        </h6>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                    <a href="/contact-us">
+                        <div class="HomeCaseStudy_CaseStudiesBox__cIG_H">
+                            <div class="HomeCaseStudy_caseStudiesImg__53nAu">
+                                <img alt="Website Upgradation" class="" src="./assets/case-study-6.webp" />
+                                <div class="HomeCaseStudy_caseStudiesContent__bD5FS">
+                                    <h4>
+                                        Website Upgradation/Mentaince
+                                    </h4>
+                                    <p>
+                                        Seamless Dotnet Upgrade: From Dotnet fremwork to 10 Core
+                                    </p>
+                                </div>
+                                <div class="HomeCaseStudy_caseDevFlag___fF08">
+                                    <span>
+                                        <img alt="In" class="" src="./assets/india.webp" />
+                                        <h6>
+                                            IN
+                                        </h6>
+                                    </span>
+                                    <span>
+                                        <img alt="Drupal , React, Elastic Search" class="" src="./assets/drupal-img.webp" />
+                                        <h6>
+                                            .NET 10 , React, Elastic Search,AWS
+                                        </h6>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div>
+</div>
+<div class="HomeContact_HomeContact__uJEce sec-pad bg-black">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="sub-hd">
+                    Contact Us
+                </div>
+                <h2>
+                    Get Customized Solutions, Recommendations, and Estimates for Your Requirements.
+                </h2>
+                <ul class="HomeContact_homeCtInfo__lbuIF d-flex align-items-center list-group">
+                    <li class="list-group-item d-flex align-items-center">
+                        <img alt="circle-check-green" data-nimg="1" decoding="async" height="20" loading="lazy" src="./assets/circle-check-green.svg" style="color:transparent" width="20" />
+                        100% Confidential
+                    </li>
+
+                </ul>
+                <div class="HomeContact_homeCtEmail__hX64X d-flex align-items-center">
+                    <img alt="office-mail" data-nimg="1" decoding="async" height="50" loading="lazy" src="./assets/office-mail.svg" style="color:transparent" width="50" />
+                    <div>
+                        <span class="d-block">
+                            Or Reach Out To Us At
+                        </span>
+                        <a href="mailto:office@cohostweb.com" target="_blank">
+                            office@cohostweb.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <p>
+                    Fill out the form and we will contact you
+                </p>
                 <form id="consultationForm" method="post">
                     @Html.AntiForgeryToken()
 
@@ -1779,7 +1270,7 @@
                             </div>
                         </div>
 
-                        
+
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input class="form-control"
@@ -1831,142 +1322,43 @@
 
                     </div>
                 </form>
-      </div>
-     </div>
+            </div>
+        </div>
     </div>
-   </div>
-   <div class="NewsArticles_NewsArticlesSec__rMUDl sec-pad" id="blog">
+</div>
+<div class="NewsArticles_NewsArticlesSec__rMUDl sec-pad" id="blog">
     <div class="container">
-     <div class="headingBlock mb-3 mb-md-5 text-center">
-      <div class="sub-hd">
-       NEWS &amp; INSIGHTS
-      </div>
-      <h2 class="">
-       <span>
-        Latest Articles
-       </span>
-      </h2>
-      <p class="">
-       Stay updated with our latest news, insights, and technology trends.
-      </p>
-     </div>
+        <div class="headingBlock mb-3 mb-md-5 text-center">
+            <div class="sub-hd">
+                NEWS &amp; INSIGHTS
+            </div>
+            <h2 class="">
+                <span>
+                    Latest Articles
+                </span>
+            </h2>
+            <p class="">
+                Stay updated with our latest news, insights, and technology trends.
+            </p>
+        </div>
         <div class="row" id="articlesContainer">
-     @*  <div class="col-md-4">
-       <div class="Articles_ArticalBox__iUGhA">
-        <div class="undefined Articles_ArticalImg__ry2S2">
-         <a href="press-and-events/how-to-fix-nextjs-rce-vulnerability.html">
-          <img alt="Article Image" class="" src="./assets/uploads/blog/rce.webp"/>
-         </a>
         </div>
-        <div class="Articles_ArticalContant__hqctz">
-         <div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between">
-          <div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center">
-           <img alt="calendar-icon" class="" src="./assets/calendar-icon.webp"/>
-           <!-- -->
-           December 10, 2025
-          </div>
-          <div class="Articles_TechArticalInfo__8dhr8">
-           Tech
-          </div>
-         </div>
-         <h3>
-          <a href="press-and-events/how-to-fix-nextjs-rce-vulnerability.html">
-           How to Fix the Next.js RCE Vulnerability (CVE-2025-66478)
-          </a>
-         </h3>
-         <p>
-          Learn about the critical Next.js App Router RCE vulnerability (CVE-2025-66478), who is affected, and how to fix it quickly to protect your application.
-         </p>
-         <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="press-and-events/how-to-fix-nextjs-rce-vulnerability.html">
-          Keep Reading
-         </a>
-        </div>
-       </div>
-      </div>
-      <div class="col-md-4">
-       <div class="Articles_ArticalBox__iUGhA">
-        <div class="undefined Articles_ArticalImg__ry2S2">
-         <a href="press-and-events/rise-of-api-testing-automation.html">
-          <img alt="Article Image" class="" src="./assets/uploads/blog/apitest.webp"/>
-         </a>
-        </div>
-        <div class="Articles_ArticalContant__hqctz">
-         <div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between">
-          <div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center">
-           <img alt="calendar-icon" class="" src="./assets/calendar-icon.webp"/>
-           <!-- -->
-           December 08, 2025
-          </div>
-          <div class="Articles_TechArticalInfo__8dhr8">
-           Press
-          </div>
-         </div>
-         <h3>
-          <a href="press-and-events/rise-of-api-testing-automation.html">
-           The Rise of API Testing Automation
-          </a>
-         </h3>
-         <p>
-          Discover why API testing automation is essential for modern applications. Learn its benefits, tools, challenges, and how automation enhances API development.
-         </p>
-         <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="press-and-events/rise-of-api-testing-automation.html">
-          Keep Reading
-         </a>
-        </div>
-       </div>
-      </div>
-      <div class="col-md-4">
-       <div class="Articles_ArticalBox__iUGhA">
-        <div class="undefined Articles_ArticalImg__ry2S2">
-         <a href="press-and-events/servicenow-playbooks-automating-guided-workflows.html">
-          <img alt="Article Image" class="" src="./assets/uploads/blog/serve.webp"/>
-         </a>
-        </div>
-        <div class="Articles_ArticalContant__hqctz">
-         <div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between">
-          <div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center">
-           <img alt="calendar-icon" class="" src="./assets/calendar-icon.webp"/>
-           <!-- -->
-           December 08, 2025
-          </div>
-          <div class="Articles_TechArticalInfo__8dhr8">
-           Press
-          </div>
-         </div>
-         <h3>
-          <a href="press-and-events/servicenow-playbooks-automating-guided-workflows.html">
-           ServiceNow Playbooks: Automating Complex Workflows with Guided Steps
-          </a>
-         </h3>
-         <p>
-          Discover how ServiceNow Playbooks simplify complex workflows with guided steps, automation, and improved visibility. Learn how organisations use Playbooks to boost efficiency, reduce errors, and streamline ITSM, HR, and CSM processes.
-         </p>
-         <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="press-and-events/servicenow-playbooks-automating-guided-workflows.html">
-          Keep Reading
-         </a>
-        </div>
-       </div>
-      </div> *@
-     </div>
     </div>
-   </div>
-  <!--/$-->
-  <div class="HomeSidebar_HomeSidebar__jjnPg">
-   <div class="HomeSidebar_HomeSidebarBtn__63D4h">
-    @* <img alt="sidebar" class="HomeSidebar_sidebarsanta__p0Ltu" src="./assets/lets-talk/"/> *@
-   @*  <figure>
-     <img alt="sidebar" class="HomeSidebar_firssstside__EmleB" src="./assets/lets-talk/sidebaar51.png"/>
-    </figure> *@
-    <p>
-     Unlock Savings — 50% Off On First Order
-    </p>
-    <img alt="sidebar" class="" src="./assets/lets-talk/sidebaar6.png"/>
-   </div>
-  </div>
+</div>
+<!--/$-->
+<div class="HomeSidebar_HomeSidebar__jjnPg">
+    <div class="HomeSidebar_HomeSidebarBtn__63D4h">
 
-  @section Scripts{
-            <script src="~/sitejs/index.js"></script>
-            <script src="~/sitejs/article.js"></script>
-    
-  }
-  
+        <p>
+            Unlock Savings — 50% Off On First Order
+        </p>
+        <img alt="sidebar" class="" src="./assets/lets-talk/sidebaar6.png" />
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/sitejs/index.js"></script>
+    <script src="~/sitejs/article.js"></script>
+
+}
+
