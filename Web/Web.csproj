@@ -32,6 +32,7 @@
   <ItemGroup>
     <None Include="Areas\Admin\Views\User\Index.cshtml" />
     <None Include="Areas\Admin\Views\Shared\_Breadcrumb.cshtml" />
+    <None Include="wwwroot\sitemap.xml" />
   </ItemGroup>
 
   <ItemGroup>
