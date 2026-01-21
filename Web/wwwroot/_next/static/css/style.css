@@ -242,3 +242,19 @@
     color: #fff;
     padding: 7px 35px 10px;
 }
+
+.Articles_ArticalBox__iUGhA {
+    background-color: #353333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: calc(100% - 20px);
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    padding-bottom: 35px;
+    position: relative;
+}
+
+    .Articles_ArticalBox__iUGhA .Articles_ArticalContant__hqctz h3 a {
+        color: #fff;
+    }
+    

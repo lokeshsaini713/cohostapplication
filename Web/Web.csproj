@@ -27,6 +27,8 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Firebase\" />
+    <Folder Include="wwwroot\_next\static\chunks\app\%28main%29\contact\" />
+    <Folder Include="wwwroot\_next\static\chunks\app\%28main%29\hire-on-demand-developers\" />
   </ItemGroup>
 
   <ItemGroup>
