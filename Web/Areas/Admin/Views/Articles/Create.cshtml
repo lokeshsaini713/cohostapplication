@@ -1,120 +1,314 @@
-﻿@model Article
+@model Article
+
 @{
     ViewData["Title"] = "Create Article";
 }
 
-<h2>Create Article</h2>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Create Article</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger">
+                        <strong>Please fix the following errors:</strong>
+                        <ul>
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <li>@error.ErrorMessage</li>
+                            }
+                        </ul>
+                    </div>
+                }
+                
+                <div asp-validation-summary="All" class="alert alert-danger"></div>
 
-<form asp-action="Create" asp-controller="Articles" asp-area="admin" method="post" enctype="multipart/form-data">
-   
-    <div class="mb-3">
-        <label class="form-label">Title</label>
-        <input asp-for="Title" class="form-control" required />
-        <span asp-validation-for="Title" class="text-danger"></span>
+                <div class="row">
+                    <!-- Title -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="Title" class="form-label">Title <span class="text-danger">*</span></label>
+                        <input asp-for="Title" class="form-control" placeholder="Enter article title" id="titleInput" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                        <div class="form-check mt-2">
+                            <input type="checkbox" class="form-check-input" id="autoSlugCheck" checked>
+                            <label class="form-check-label small text-muted" for="autoSlugCheck">
+                                Auto-generate slug from title
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Slug Preview -->
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label">Generated Slug (SEO URL)</label>
+                        <div class="input-group">
+                            <span class="input-group-text">/blog/</span>
+                            <input type="text" class="form-control" id="slugPreview" readonly>
+                            <button class="btn btn-outline-secondary" type="button" onclick="copySlug()">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <small class="text-muted">This will be your article's URL</small>
+                    </div>
+
+                    <!-- Short Description -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="ShortDescription" class="form-label">Short Description</label>
+                        <textarea asp-for="ShortDescription" class="form-control" rows="3" placeholder="Brief description of the article"></textarea>
+                        <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="Content" class="form-label">Content <span class="text-danger">*</span></label>
+                        <textarea asp-for="Content" class="form-control" rows="10" id="contentEditor"></textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+
+                    <!-- Category -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Category" class="form-label">Category</label>
+                        <select asp-for="Category" class="form-select">
+                            <option value="">-- Select Category --</option>
+                            <option value="Tech">Tech</option>
+                            <option value="Business">Business</option>
+                            <option value="Lifestyle">Lifestyle</option>
+                            <option value="Health">Health</option>
+                            <option value="Education">Education</option>
+                        </select>
+                        <span asp-validation-for="Category" class="text-danger"></span>
+                    </div>
+
+                    <!-- Current Image -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Image Preview</label>
+                        <div class="border rounded p-2 text-center bg-light" id="imagePreviewContainer" style="min-height: 150px;">
+                            <img id="imagePreview" src="" alt="Preview" class="img-fluid" style="max-height: 150px; display: none;">
+                            <div id="noImageText" class="d-flex align-items-center justify-content-center" style="height: 150px;">
+                                <span class="text-muted">
+                                    <i class="fas fa-image fa-3x mb-2 d-block"></i>
+                                    No image selected
+                                </span>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-secondary mt-2" onclick="document.getElementById('imageInput').click()">
+                            <i class="fas fa-upload"></i> Choose File
+                        </button>
+                        <span class="text-muted small ms-2" id="fileName">No file chosen</span>
+                    </div>
+
+                    <!-- Change Image -->
+                    <div class="col-md-12 mb-3">
+                        <label for="imageInput" class="form-label">Change Image</label>
+                        <input type="file" name="image" id="imageInput" class="form-control" accept="image/*" />
+                    </div>
+
+                    <!-- Display Order -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="SortOrder" class="form-label">Display Order</label>
+                        <input asp-for="SortOrder" type="number" class="form-control" />
+                        <small class="text-muted">Lower number appears first</small>
+                        <span asp-validation-for="SortOrder" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- SEO Meta Information -->
+                <h4 class="mb-3">SEO Meta Information</h4>
+
+                <div class="row">
+                    <!-- Meta Title -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="MetaTitle" class="form-label">Meta Title</label>
+                        <input asp-for="MetaTitle" class="form-control" placeholder="SEO title (max 60 characters)" maxlength="60" id="metaTitle" />
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">Recommended: 50-60 characters</small>
+                            <small class="text-muted"><span id="metaTitleCount">0</span>/60</small>
+                        </div>
+                        <span asp-validation-for="MetaTitle" class="text-danger"></span>
+                    </div>
+
+                    <!-- Meta Description -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="MetaDescription" class="form-label">Meta Description</label>
+                        <textarea asp-for="MetaDescription" class="form-control" rows="2" placeholder="SEO description (max 160 characters)" maxlength="160" id="metaDescription"></textarea>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">Recommended: 140-160 characters</small>
+                            <small class="text-muted"><span id="metaDescCount">0</span>/160</small>
+                        </div>
+                        <span asp-validation-for="MetaDescription" class="text-danger"></span>
+                    </div>
+
+                    <!-- Meta Keywords -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="MetaKeywords" class="form-label">Meta Keywords</label>
+                        <input asp-for="MetaKeywords" class="form-control" placeholder="keyword1, keyword2, keyword3" />
+                        <small class="text-muted">Separate keywords with commas</small>
+                        <span asp-validation-for="MetaKeywords" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- Active Checkbox -->
+                <div class="form-check mb-3">
+                    <input asp-for="IsActive" type="checkbox" class="form-check-input" checked />
+                    <label asp-for="IsActive" class="form-check-label">Active</label>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span id="btnText">Save Article</span>
+                        <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div class="mb-3">
-        <label class="form-label">Short Description</label>
-        <textarea asp-for="ShortDescription" class="form-control" rows="3" required></textarea>
+<!-- Toast Notification -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" id="toastMessage"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
     </div>
+</div>
 
-    <div class="mb-3">
-        <label class="form-label">Content</label>
-        <textarea id="editor" asp-for="Content"></textarea>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Category</label>
-        <select asp-for="Category" class="form-select">
-            <option value="Tech">Tech</option>
-            <option value="Press">Press</option>
-            <option value="Press">Artificial Intelligence(AI),.NET Development</option>
-            <option value="Press">Programming Tools</option>
-            <option value="Press">Visual Studio</option>
-        </select>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Upload Image</label>
-        <input type="file" name="image" class="form-control"  />
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Display Order</label>
-        <input asp-for="SortOrder"
-               type="number"
-               class="form-control"
-               value="0"
-               min="0" />
-        <small class="text-muted">
-            Lower number appears first
-        </small>
-    </div>
-    <hr />
-    <h5 class="mt-3">SEO Meta Information</h5>
-
-    <div class="mb-3">
-        <label class="form-label">Meta Title</label>
-        <input type="text"
-               name="MetaTitle"
-               class="form-control"
-               maxlength="60"
-               placeholder="SEO title (max 60 characters)" />
-        <small class="text-muted">
-            Recommended: 50–60 characters
-        </small>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Meta Description</label>
-        <textarea name="MetaDescription"
-                  class="form-control"
-                  rows="3"
-                  maxlength="160"
-                  placeholder="SEO description (max 160 characters)"></textarea>
-        <small class="text-muted">
-            Recommended: 140–160 characters
-        </small>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Meta Keywords</label>
-        <input type="text"
-               name="MetaKeywords"
-               class="form-control"
-               placeholder="keyword1, keyword2, keyword3" />
-    </div>
-    <div class="form-check mb-3">
-        <input asp-for="IsActive" class="form-check-input" checked />
-        <label class="form-check-label">Active</label>
-    </div>
-
-    <button type="submit" class="btn btn-primary">
-        Save Article
-    </button>
-
-    <a asp-action="Index" class="btn btn-secondary ms-2">
-        Cancel
-    </a>
-</form>
-
-
-
-@section scripts {
-    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Optional: Add CKEditor or TinyMCE for rich text editing -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
     <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => console.error(error));
+        // Toast notification
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            toast.className = `toast align-items-center text-white border-0 bg-${type}`;
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+        }
 
-               document.querySelector('form').addEventListener('submit', function () {
-            for (const editor of document.querySelectorAll('.ck-editor__editable')) {
-                editor.dispatchEvent(new Event('change'));
+        ClassicEditor
+            .create(document.querySelector('#contentEditor'), {
+                toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|', 'blockQuote', 'insertTable', '|', 'undo', 'redo']
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+        // Slug generation
+        function generateSlug(text) {
+            return text
+                .toLowerCase()
+                .trim()
+                .replace(/[^\w\s-]/g, '') // Remove non-word chars
+                .replace(/[\s_-]+/g, '-') // Replace spaces, underscores, hyphens with single hyphen
+                .replace(/^-+|-+$/g, ''); // Remove leading/trailing hyphens
+        }
+
+        // Auto-generate slug from title
+        document.getElementById('titleInput').addEventListener('input', function(e) {
+            if (document.getElementById('autoSlugCheck').checked) {
+                const slug = generateSlug(e.target.value);
+                document.getElementById('slugPreview').value = slug;
             }
         });
+
+        // Copy slug to clipboard
+        function copySlug() {
+            const slugInput = document.getElementById('slugPreview');
+            slugInput.select();
+            document.execCommand('copy');
+            
+            const btn = event.target.closest('button');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+            }, 2000);
+        }
+
+        // Image preview
+        document.getElementById('imageInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const fileName = file?.name || 'No file chosen';
+            document.getElementById('fileName').textContent = fileName;
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                    document.getElementById('imagePreview').style.display = 'block';
+                    document.getElementById('noImageText').style.display = 'none';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Character counters
+        function updateCharCount(inputId, countId) {
+            const input = document.getElementById(inputId);
+            const count = document.getElementById(countId);
+            
+            input.addEventListener('input', function() {
+                const length = this.value.length;
+                count.textContent = length;
+                
+                // Color coding
+                const maxLength = parseInt(this.getAttribute('maxlength'));
+                if (length >= maxLength) {
+                    count.parentElement.classList.add('text-danger');
+                    count.parentElement.classList.remove('text-warning', 'text-muted');
+                } else if (length >= maxLength * 0.8) {
+                    count.parentElement.classList.add('text-warning');
+                    count.parentElement.classList.remove('text-danger', 'text-muted');
+                } else {
+                    count.parentElement.classList.add('text-muted');
+                    count.parentElement.classList.remove('text-danger', 'text-warning');
+                }
+            });
+        }
+
+        updateCharCount('metaTitle', 'metaTitleCount');
+        updateCharCount('metaDescription', 'metaDescCount');
+
+        // Form validation enhancement
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnSpinner = document.getElementById('btnSpinner');
+            
+            const title = document.getElementById('titleInput').value.trim();
+            const content = document.querySelector('#contentEditor').value.trim();
+
+            if (!title) {
+                e.preventDefault();
+                showToast('Please enter a title', 'danger');
+                return false;
+            }
+
+            if (!content) {
+                e.preventDefault();
+                showToast('Please enter content', 'danger');
+                return false;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.textContent = 'Saving...';
+            btnSpinner.classList.remove('d-none');
+        });
     </script>
-
-      
 }
-
-

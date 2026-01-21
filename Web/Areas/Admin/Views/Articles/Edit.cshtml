@@ -1,113 +1,326 @@
-﻿@model Article
+@model Article
+
 @{
     ViewData["Title"] = "Edit Article";
 }
 
-<h2>Edit Article</h2>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header bg-warning">
+            <h2 class="mb-0">Edit Article</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Id" />
+                
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div class="alert alert-danger">
+                        <strong>Please fix the following errors:</strong>
+                        <ul>
+                            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <li>@error.ErrorMessage</li>
+                            }
+                        </ul>
+                    </div>
+                }
+                
+                <div asp-validation-summary="All" class="alert alert-danger"></div>
 
-<form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <!-- Title -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="Title" class="form-label">Title <span class="text-danger">*</span></label>
+                        <input asp-for="Title" class="form-control" placeholder="Enter article title" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
 
-    <input type="hidden" asp-for="Id" />
-    <input type="hidden" asp-for="Slug" />
-    <input type="hidden" asp-for="ImagePath" />
+                    <!-- Current Slug (Read-only for SEO) -->
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label">Current Slug (SEO URL)</label>
+                        <div class="input-group">
+                            <span class="input-group-text">/blog/</span>
+                            <input type="text" class="form-control" value="@Model.Slug" readonly>
+                            <button class="btn btn-outline-secondary" type="button" onclick="copySlug()">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <small class="text-warning">
+                            <i class="fas fa-exclamation-triangle"></i> Changing slug after publication can break external links. Use "Edit Slug" button in the article list if necessary.
+                        </small>
+                    </div>
 
-    <div class="mb-3">
-        <label class="form-label">Title</label>
-        <input asp-for="Title" class="form-control" required />
+                    <!-- Short Description -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="ShortDescription" class="form-label">Short Description</label>
+                        <textarea asp-for="ShortDescription" class="form-control" rows="3" placeholder="Brief description of the article">@Model.ShortDescription</textarea>
+                        <span asp-validation-for="ShortDescription" class="text-danger"></span>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="Content" class="form-label">Content <span class="text-danger">*</span></label>
+                        <textarea asp-for="Content" class="form-control" rows="10" id="contentEditor">@Model.Content</textarea>
+                        <span asp-validation-for="Content" class="text-danger"></span>
+                    </div>
+
+                    <!-- Category -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Category" class="form-label">Category</label>
+                        <select asp-for="Category" class="form-select">
+                            <option value="">-- Select Category --</option>
+                            <option value="Tech">Tech</option>
+                            <option value="Business">Business</option>
+                            <option value="Lifestyle">Lifestyle</option>
+                            <option value="Health">Health</option>
+                            <option value="Education">Education</option>
+                        </select>
+                        <span asp-validation-for="Category" class="text-danger"></span>
+                    </div>
+
+                    <!-- Current Image -->
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Current Image</label>
+                        <div class="border rounded p-2 text-center bg-light" id="imagePreviewContainer" style="min-height: 150px;">
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <img id="imagePreview" src="@Model.ImagePath" alt="Current Image" class="img-fluid" style="max-height: 150px; object-fit: contain;" />
+                            }
+                            else
+                            {
+                                <img id="imagePreview" src="" alt="Preview" class="img-fluid" style="max-height: 150px; display: none;">
+                                <div id="noImageText" class="d-flex align-items-center justify-content-center" style="height: 150px;">
+                                    <span class="text-muted">
+                                        <i class="fas fa-image fa-3x mb-2 d-block"></i>
+                                        No image selected
+                                    </span>
+                                </div>
+                            }
+                        </div>
+                        <button type="button" class="btn btn-sm btn-secondary mt-2" onclick="document.getElementById('imageInput').click()">
+                            <i class="fas fa-upload"></i> Choose New File
+                        </button>
+                        <span class="text-muted small ms-2" id="fileName">@(string.IsNullOrEmpty(Model.ImagePath) ? "No file chosen" : "Current image will be kept if no new file is selected")</span>
+                    </div>
+
+                    <!-- Change Image -->
+                    <div class="col-md-12 mb-3">
+                        <label for="imageInput" class="form-label">Change Image</label>
+                        <input type="file" name="image" id="imageInput" class="form-control" accept="image/*" />
+                        <small class="text-muted">Leave empty to keep current image</small>
+                    </div>
+
+                    <!-- Display Order -->
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="SortOrder" class="form-label">Display Order</label>
+                        <input asp-for="SortOrder" type="number" class="form-control" />
+                        <small class="text-muted">Lower number appears first</small>
+                        <span asp-validation-for="SortOrder" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- SEO Meta Information -->
+                <h4 class="mb-3">SEO Meta Information</h4>
+
+                <div class="row">
+                    <!-- Meta Title -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="MetaTitle" class="form-label">Meta Title</label>
+                        <input asp-for="MetaTitle" class="form-control" placeholder="SEO title (max 60 characters)" maxlength="60" id="metaTitle" />
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">Recommended: 50-60 characters</small>
+                            <small class="text-muted"><span id="metaTitleCount">@(Model.MetaTitle?.Length ?? 0)</span>/60</small>
+                        </div>
+                        <span asp-validation-for="MetaTitle" class="text-danger"></span>
+                    </div>
+
+                    <!-- Meta Description -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="MetaDescription" class="form-label">Meta Description</label>
+                        <textarea asp-for="MetaDescription" class="form-control" rows="2" placeholder="SEO description (max 160 characters)" maxlength="160" id="metaDescription">@Model.MetaDescription</textarea>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">Recommended: 140-160 characters</small>
+                            <small class="text-muted"><span id="metaDescCount">@(Model.MetaDescription?.Length ?? 0)</span>/160</small>
+                        </div>
+                        <span asp-validation-for="MetaDescription" class="text-danger"></span>
+                    </div>
+
+                    <!-- Meta Keywords -->
+                    <div class="col-md-12 mb-3">
+                        <label asp-for="MetaKeywords" class="form-label">Meta Keywords</label>
+                        <input asp-for="MetaKeywords" class="form-control" placeholder="keyword1, keyword2, keyword3" />
+                        <small class="text-muted">Separate keywords with commas</small>
+                        <span asp-validation-for="MetaKeywords" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <hr />
+
+                <!-- Active Checkbox -->
+                <div class="form-check mb-3">
+                    <input asp-for="IsActive" type="checkbox" class="form-check-input" />
+                    <label asp-for="IsActive" class="form-check-label">Active</label>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                    <button type="submit" class="btn btn-warning" id="submitBtn">
+                        <span id="btnText">Update Article</span>
+                        <span id="btnSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div class="mb-3">
-        <label class="form-label">Short Description</label>
-        <textarea asp-for="ShortDescription" class="form-control" rows="3" required></textarea>
+<!-- Toast Notification -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" id="toastMessage"></div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
     </div>
-
-    <div class="mb-3">
-        <label class="form-label">Content</label>
-        <textarea id="editor" asp-for="Content"></textarea>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Category</label>
-        <select asp-for="Category" class="form-select">
-            <option value="Tech">Tech</option>
-            <option value="Press">Press</option>
-        </select>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Current Image</label><br />
-        @if (!string.IsNullOrEmpty(Model.ImagePath))
-        {
-            <img src="@Model.ImagePath" width="150" class="mb-2 rounded" />
-        }
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Change Image</label>
-        <input type="file" name="image" class="form-control" accept="image/*" />
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Display Order</label>
-        <input asp-for="SortOrder"
-               type="number"
-               class="form-control"
-               min="0" />
-    </div>
-    <hr />
-    <h5 class="mt-3">SEO Meta Information</h5>
-
-    <div class="mb-3">
-        <label class="form-label">Meta Title</label>
-        <input type="text"
-               name="MetaTitle"
-               class="form-control"
-               maxlength="60"
-               placeholder="SEO title (max 60 characters)" />
-        <small class="text-muted">
-            Recommended: 50–60 characters
-        </small>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Meta Description</label>
-        <textarea name="MetaDescription"
-                  class="form-control"
-                  rows="3"
-                  maxlength="160"
-                  placeholder="SEO description (max 160 characters)"></textarea>
-        <small class="text-muted">
-            Recommended: 140–160 characters
-        </small>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label">Meta Keywords</label>
-        <input type="text"
-               name="MetaKeywords"
-               class="form-control"
-               placeholder="keyword1, keyword2, keyword3" />
-    </div>
-    <div class="form-check mb-3">
-        <input asp-for="IsActive" class="form-check-input" />
-        <label class="form-check-label">Active</label>
-    </div>
-
-    <button type="submit" class="btn btn-success">
-        Update Article
-    </button>
-
-    <a asp-action="Index" class="btn btn-secondary ms-2">
-        Cancel
-    </a>
-</form>
+</div>
 
 @section Scripts {
-    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .catch(error => console.error(error));
-    </script>
-
     <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Optional: Add CKEditor or TinyMCE for rich text editing -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
+    <script>
+        // Toast notification
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            toast.className = `toast align-items-center text-white border-0 bg-${type}`;
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+        }
+
+        ClassicEditor
+            .create(document.querySelector('#contentEditor'), {
+                toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', '|', 'blockQuote', 'insertTable', '|', 'undo', 'redo']
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+        // Copy slug to clipboard
+        function copySlug() {
+            const slugInput = event.target.closest('.input-group').querySelector('input');
+            slugInput.select();
+            document.execCommand('copy');
+            
+            const btn = event.target.closest('button');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+            }, 2000);
+        }
+
+        // Image preview with new file selection
+        document.getElementById('imageInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const fileName = file?.name || 'No file chosen';
+            document.getElementById('fileName').textContent = fileName;
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.getElementById('imagePreview');
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                    const noImageText = document.getElementById('noImageText');
+                    if (noImageText) {
+                        noImageText.style.display = 'none';
+                    }
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Character counters
+        function updateCharCount(inputId, countId) {
+            const input = document.getElementById(inputId);
+            const count = document.getElementById(countId);
+            
+            // Initial count
+            if (input && count) {
+                const initialLength = input.value?.length || 0;
+                count.textContent = initialLength;
+                
+                input.addEventListener('input', function() {
+                    const length = this.value.length;
+                    count.textContent = length;
+                    
+                    // Color coding
+                    const maxLength = parseInt(this.getAttribute('maxlength'));
+                    if (length >= maxLength) {
+                        count.parentElement.classList.add('text-danger');
+                        count.parentElement.classList.remove('text-warning', 'text-muted');
+                    } else if (length >= maxLength * 0.8) {
+                        count.parentElement.classList.add('text-warning');
+                        count.parentElement.classList.remove('text-danger', 'text-muted');
+                    } else {
+                        count.parentElement.classList.add('text-muted');
+                        count.parentElement.classList.remove('text-danger', 'text-warning');
+                    }
+                });
+            }
+        }
+
+        updateCharCount('metaTitle', 'metaTitleCount');
+        updateCharCount('metaDescription', 'metaDescCount');
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnSpinner = document.getElementById('btnSpinner');
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.textContent = 'Updating...';
+            btnSpinner.classList.remove('d-none');
+            
+            // Validate required fields
+            const title = document.querySelector('input[name="Title"]').value.trim();
+            const content = document.querySelector('textarea[name="Content"]').value.trim();
+            
+            if (!title || !content) {
+                e.preventDefault();
+                submitBtn.disabled = false;
+                btnText.textContent = 'Update Article';
+                btnSpinner.classList.add('d-none');
+                showToast('Please fill in all required fields', 'danger');
+                return false;
+            }
+        });
+
+        // Warn before leaving with unsaved changes
+        let formChanged = false;
+        document.querySelector('form').addEventListener('change', function() {
+            formChanged = true;
+        });
+
+        window.addEventListener('beforeunload', function(e) {
+            if (formChanged) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
+
+        document.querySelector('form').addEventListener('submit', function() {
+            formChanged = false;
+        });
+    </script>
 }
