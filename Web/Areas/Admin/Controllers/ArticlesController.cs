@@ -102,7 +102,7 @@ namespace YourNamespace.Areas.Admin.Controllers
         // EDIT - POST (UPDATE)
         // =========================
         [HttpPost]
-        [ValidateAntiForgeryToken]
+   
         public async Task<IActionResult> Edit(Article model, IFormFile image)
         {
             // Remove validation for optional fields

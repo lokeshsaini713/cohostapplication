@@ -44,6 +44,15 @@
                             </a>
                         </div>
                         <div class="Articles_ArticalContant__hqctz">
+                        <div class="Articles_TechArticalBlock__dr3fa d-flex align-items-center justify-content-between">
+                                <div class="Articles_TechArticalDate__Q9EaZ d-flex align-items-center" style='color:white'>
+                                    <img src="./assets/calendar-icon.webp" alt="calendar-icon" />
+                                    ${a.date}
+                                </div>
+                                <div class="Articles_TechArticalInfo__8dhr8">
+                                    ${a.category}
+                                </div>
+                            </div>
                             <h3><a href="/blog/${a.slug}">${a.title}</a></h3>
                             <p class="short-desc" data-url="/blog/${a.slug}">${a.shortDescription}</p>
                         <a class="Articles_articleBtn__LJvRk btn-custom btn-small btn-arrow" href="/blog/${a.slug}">

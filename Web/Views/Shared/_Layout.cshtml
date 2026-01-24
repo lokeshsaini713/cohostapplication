@@ -248,39 +248,37 @@
     @await Html.PartialAsync("_CommonScriptsPartial")
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const dropdowns = document.querySelectorAll(".nav-item.dropdown");
-
-            dropdowns.forEach(dropdown => {
-                const toggle = dropdown.querySelector(".dropdown-toggle");
-
-                toggle.addEventListener("mouseover", function (e) {
-                    e.preventDefault();
-
-                    // Close other dropdowns
-                    dropdowns.forEach(d => {
-                        if (d !== dropdown) {
-                            d.classList.remove("show");
-                        }
+               document.addEventListener("DOMContentLoaded", function () {
+            // Event delegation for dropdown toggles
+            document.body.addEventListener("mouseover", function (e) {
+                const toggle = e.target.closest(".nav-item.dropdown .dropdown-toggle");
+                if (toggle) {
+                    const dropdown = toggle.closest(".nav-item.dropdown");
+                    document.querySelectorAll(".nav-item.dropdown").forEach(d => {
+                        if (d !== dropdown) d.classList.remove("show");
                     });
-
-                    // Toggle current dropdown
-                    dropdown.classList.toggle("show");
-                });
+                    dropdown.classList.add("show");
+                }
             });
 
-            // Close dropdown when clicking outside
-            document.addEventListener("click", function (e) {
-                dropdowns.forEach(dropdown => {
+            // Close dropdowns when clicking outside
+            document.addEventListener("mouseout", function (e) {
+                document.querySelectorAll(".nav-item.dropdown").forEach(dropdown => {
                     if (!dropdown.contains(e.target)) {
                         dropdown.classList.remove("show");
                     }
                 });
             });
 
+            // Close dropdowns on Escape key
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape") {
+                    document.querySelectorAll(".nav-item.dropdown").forEach(dropdown => {
+                        dropdown.classList.remove("show");
+                    });
+                }
+            });
         });
-
     </script>
 
     @RenderSection("Scripts", required: false)

@@ -106,8 +106,8 @@
 
                     <!-- Change Image -->
                     <div class="col-md-12 mb-3">
-                        <label for="imageInput" class="form-label">Change Image</label>
-                        <input type="file" name="image" id="imageInput" class="form-control" accept="image/*" />
+                        <label class="form-label">Change Image</label>
+                        <input type="file" name="image" class="form-control" />
                         <small class="text-muted">Leave empty to keep current image</small>
                     </div>
 
@@ -283,6 +283,7 @@
 
         // Form submission handler
         document.querySelector('form').addEventListener('submit', function(e) {
+            
             const submitBtn = document.getElementById('submitBtn');
             const btnText = document.getElementById('btnText');
             const btnSpinner = document.getElementById('btnSpinner');
@@ -313,6 +314,8 @@
         });
 
         window.addEventListener('beforeunload', function(e) {
+        debugger;
+
             if (formChanged) {
                 e.preventDefault();
                 e.returnValue = '';
@@ -320,6 +323,8 @@
         });
 
         document.querySelector('form').addEventListener('submit', function() {
+        debugger;
+
             formChanged = false;
         });
     </script>

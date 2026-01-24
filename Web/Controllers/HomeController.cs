@@ -3,6 +3,7 @@ using Data;
 using FirebaseAdmin.Messaging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Shared.Common;
 using Shared.Model.Notification;
 using Shared.Model.Request.WebUser;
 using Shared.Utility;
@@ -13,8 +14,9 @@ using Web.Models;
 
 namespace Web.Controllers
 {
-    public class HomeController(AppDbContext context, IAccountService accountService, ILogger<HomeController> logger, IWebHostEnvironment env) : Controller
+    public class HomeController(AppDbContext context, IAccountService accountService, ILogger<HomeController> logger, IWebHostEnvironment env, EmailService emailService) : Controller
     {
+
         public IActionResult Index()
         {
             return View();
@@ -172,73 +174,98 @@ namespace Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> BookConsultation([FromForm] ConsultationViewModel model)
+        public async Task<IActionResult> BookConsultation([FromForm] ConsultationViewModel lead)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+            var leadEntity = new Lead
+            {
+                FullName = lead.FullName,
+                Email = lead.Email,
+                Phone = lead.PhoneNumber,
+                Company = "home page request",
+                Message = lead.Message,
+                NDA = true,
+                Source = "Homepage",
+                PageUrl ="index"
+            };
+            try
+            {
+                context.Leads.Add(leadEntity);
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
 
-            //// Save to DB
-            //var entity = new Consultation
-            //{
-            //    FullName = model.FullName,
-            //    Email = model.Email,
-            //    PhoneNumber = model.PhoneNumber,
-            //    Message = model.Message
-            //};
-
-            //_context.Consultations.Add(entity);
-            //_context.SaveChanges();
-
+                throw;
+            }
+            
             // Send Email
-            var res = await accountService.SaveContactUsDetails(new ContactUsRequestModel { Email= model.Email ,Name=model.FullName,Query=model.Message});
+            //var res = await accountService.SaveContactUsDetails(new ContactUsRequestModel { Email= lead.Email ,Name= lead.FullName,Query= lead.Message});
 
-                        var mail = new MailMessage
-                        {
-                            From = new MailAddress("info@cohostweb.com"),
-                            Subject = "New Consultation Request",
-                            Body = $@"
-            Name: {model.FullName}
-            Email: {model.Email}
-            Phone: {model.PhoneNumber}
+            // 🔔 ADMIN EMAIL
+            var adminBody = $@"
+            <h2>New Consultation Request</h2>
+            <p><strong>Name:</strong> {lead.FullName}</p>
+            <p><strong>Email:</strong> {lead.Email}</p>
+            <p><strong>Phone:</strong> {lead.PhoneNumber}</p>
+            <p><strong>Company:</strong> N/A(homepage)</p>
+            <p><strong>NDA:</strong> Yes</p>
+            <p><strong>Message:</strong><br/>{lead.Message}</p>
+        ";
 
-            Message:
-            {model.Message}
-            "
-                        };
+            emailService.Send(
+                to: "info@cohostweb.com",
+                subject: "New Free Consultation Lead",
+                body: adminBody
+            );
 
-                        mail.To.Add("lokeshsaini713@gmail.com");
-                        System.Net.ServicePointManager.SecurityProtocol =
-               SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11;
-            //SmtpClient smtp = new SmtpClient();
-            //smtp.Host = "mail.cohostweb.com";
-            //smtp.UseDefaultCredentials = false;
-            //smtp.EnableSsl = true;
-            //System.Net.NetworkCredential credentials = new System.Net.NetworkCredential();
-            //credentials.UserName = "info@cohostweb.com";
-            //credentials.Password = "q8tuF32^8";
-            //smtp.Credentials = credentials;
-            //smtp.Port = 587;
+            // ✅ THANK YOU EMAIL TO USER
+            SendThankYouEmail(new LeadRequest { Email=lead.Email,FullName=lead.FullName,Message=lead.Message,Phone=lead.PhoneNumber, Company=lead.PhoneNumber});
 
-            //            smtp.Timeout = 30000;
+            return Json(new
+            {
+                success = true,
+                dis = "For reaching out! Our team will contact you shortly."
+            });
+        }
 
+        private void SendThankYouEmail(LeadRequest lead)
+        {
+            var body = $@"
+            <p>Hi {lead.FullName},</p>
 
-            //var smtp = new SmtpClient("target2earn.com", 587)
-            //{
-            //    Credentials = new NetworkCredential("target@target2earn.com", "target@12345"),
-            //    EnableSsl = true
-            //};
-            string rootPath = env.ContentRootPath;   // physical path where app is running
-                                                      // or if your template is in the web root (wwwroot), use:
-                                                      // string rootPath = _env.WebRootPath;
+            <p>Thank you for reaching out to <strong>Cohost Web</strong>.</p>
 
-            // combine with your relative folder
-            string templateDirectory = Path.Combine(rootPath, "EmailTemplates");
+            <p>We’ve received your request for a <strong>free 30-minute strategy consultation</strong>.
+            One of our senior consultants will contact you within <strong>24 hours</strong>.</p>
 
-            //smtp.Send(mail);
+            <p><strong>What happens next?</strong></p>
+            <ul>
+              <li>We review your requirements</li>
+              <li>Prepare technical insights & recommendations</li>
+              <li>Discuss timelines, architecture & cost estimates</li>
+            </ul>
 
-            return Json(new { success = res,dis= templateDirectory });
+            <p>If you’d like to talk sooner, you can:</p>
+            <ul>
+              <li>📞 Call us: +91 9024255861</li>
+              <li>💬 WhatsApp us anytime</li>
+              <li>📅 Schedule a call via our website</li>
+            </ul>
+
+            <p>Best regards,<br/>
+            <strong>Cohost Web Team</strong><br/>
+            https://www.cohostweb.com</p>
+        ";
+
+            emailService.Send(
+                to: lead.Email,
+                subject: "We’ve Received Your Consultation Request",
+                body: body
+            );
         }
         [Route("contact-us")]
         public IActionResult Contact()
